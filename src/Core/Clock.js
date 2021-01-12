@@ -5,7 +5,7 @@ var Core;
         function LwjglTimer() {
         }
         LwjglTimer.prototype.getTime = function () {
-            return 0;
+            return Date.now();
         };
         return LwjglTimer;
     }());
