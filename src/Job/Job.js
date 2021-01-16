@@ -67,16 +67,16 @@ this.Class=null;
 		this.Workers = [];//new ConcurrentLinkedQueue<Pawn>();
 	}
 
-	public boolean addPawn(Pawn NewPawn) {
-		if (Workers.contains(NewPawn))
+	/*public boolean */addPawn(/*Pawn*/ NewPawn) {
+		if (this.Workers.includes(NewPawn))
 			return false;
 
-		Task newTask = nextTask(NewPawn);
+		let newTask = this.nextTask(NewPawn);
 		if (newTask != null) {
 			if (NewPawn.PrimaryJob != null)
 				NewPawn.PrimaryJob.releaseCitizen(NewPawn);
 
-			Workers.add(NewPawn);
+			this.Workers.add(NewPawn);
 			NewPawn.PrimaryJob = this;
 			NewPawn.setTask(newTask);
 			return true;
@@ -84,31 +84,36 @@ this.Class=null;
 		return false;
 	}
 
-	public void releaseCitizen(Pawn OldCitizen) {
+	/*public void */releaseCitizen(/*Pawn */OldCitizen) {
 		if (OldCitizen.PrimaryJob == this)
 			OldCitizen.PrimaryJob = null;
-		if (Workers.contains(OldCitizen)) {
-			Workers.remove(OldCitizen);
+		if (this.Workers.includes(OldCitizen)) {
+			this.Workers.remove(OldCitizen);
 			OldCitizen.PrimaryJob = null;
 			//OldCitizen.CurrentTask = null;
 		}
 	}
 
-	public void setOnBreak(Pawn OnBreakPawn) {
+	/*public void */setOnBreak(/*Pawn*/ OnBreakPawn) {
 		OnBreakPawn.onBreak = true;
-		WorkersOnBrek++;
+		this.WorkersOnBrek++;
 	}
 
-	public abstract boolean needsWorkers();
+	//public abstract boolean needsWorkers();
 
-	public abstract Task nextTask(Pawn IdleCitizen);
+	//public abstract Task nextTask(Pawn IdleCitizen);
 
-	public abstract float evaluatePawn(Pawn IdleCitizen);
+	//public abstract float evaluatePawn(Pawn IdleCitizen);
 	
 	/*public String */getName() {
 		return this.Name;
 	}
 }
+addAbstractMethod("needsWorkers");
+
+addAbstractMethod("nextTask");
+
+addAbstractMethod ("evaluatePawn");
 
 Job.serialVersionUID=1;
 
