@@ -57,7 +57,14 @@ export class Job extends Serializable{
 
 	//public Job() {
 constructor{
-		this.Workers = new ConcurrentLinkedQueue<Pawn>();
+this.Paused = false;
+this.Priority =0;
+this.Name = "";
+this.WorkersOnBrek=0;
+this.Manager=null;
+this.Type =null;
+this.Class=null;
+		this.Workers = [];//new ConcurrentLinkedQueue<Pawn>();
 	}
 
 	public boolean addPawn(Pawn NewPawn) {
@@ -98,8 +105,8 @@ constructor{
 
 	public abstract float evaluatePawn(Pawn IdleCitizen);
 	
-	public String getName() {
-		return Name;
+	/*public String */getName() {
+		return this.Name;
 	}
 }
 
