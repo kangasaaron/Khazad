@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"type": "pwa-chrome",
+				"request": "launch",
+				"name": "run Tests",
+				"url": "http://127.0.0.1:5500/tests.html",
+				"webRoot": "${workspaceFolder}"
+			}
+		]
+	}
+}
