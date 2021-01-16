@@ -45,7 +45,7 @@ export class Job extends Serializable{
 		JOB_BREAK, // Short Jobs to fill worker needs
 		JOB_IDLE  // Jobs originating from the workers themselves
 	}
-*/
+
 	JobType Type;
 	JobClass Class;
 	boolean Paused;
@@ -54,7 +54,7 @@ export class Job extends Serializable{
 	ConcurrentLinkedQueue<Pawn> Workers;
 	int WorkersOnBrek;
 	JobManager Manager;
-
+*/
 	//public Job() {
 constructor{
 this.Paused = false;
