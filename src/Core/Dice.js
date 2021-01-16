@@ -1,42 +1,35 @@
-/* Generated from Java with JSweet 3.0.0 - http://www.jsweet.org */
-var Core;
-(function (Core) {
-    /**
-     *
-     * @author Impaler
-     * @class
-     */
-    var Dice = /** @class */ (function () {
-        function Dice() {
-            if (this.Generator === undefined) {
-                this.Generator = null;
-            }
-            this.Generator = new java.util.Random();
-            this.seed(0);
-        }
-        Dice.prototype.seed = function (Seed) {
-            this.Generator.setSeed(Seed);
-        };
-        Dice.prototype.roll$int$int = function (Min, Max) {
-            return this.Generator.nextInt(Max - Min + 1) + Min;
-        };
-        Dice.prototype.roll = function (Min, Max) {
-            if (((typeof Min === 'number') || Min === null) && ((typeof Max === 'number') || Max === null)) {
-                return this.roll$int$int(Min, Max);
-            }
-            else if (((typeof Min === 'number') || Min === null) && ((typeof Max === 'number') || Max === null)) {
-                return this.roll$float$float(Min, Max);
-            }
-            else
-                throw new Error('invalid overload');
-        };
-        Dice.prototype.roll$float$float = function (Min, Max) {
-            return this.Generator.nextFloat() * (Max - Min) + Min;
-        };
-        Dice.serialVersionUID = 1;
-        return Dice;
-    }());
-    Core.Dice = Dice;
-    Dice["__class"] = "Core.Dice";
-    Dice["__interfaces"] = ["java.io.Serializable"];
-})(Core || (Core = {}));
+/**
+ *
+ * @author Impaler
+ */
+import { Serializable } from "../other/Serializable.js";
+
+export class Dice extends Serializable {
+    constructor() {
+        super();
+        this.Generator = null;
+        this.seed(0);
+        this.uses = 0;
+    }
+    seed(Seed) {
+        this.Generator = d3.randomLcg(Seed);
+        this.uses = 0;
+    }
+    rollInt(Min, Max) {
+        this.uses++;
+        return Math.floor(this.Generator() * (Max - Min + 1) + Min);
+    }
+    roll(Min, Max) {
+        if (((typeof Min === 'number') || Min === null) && ((typeof Max === 'number') || Max === null) && Math.round(Min) === Min && Math.round(Max) === Max) {
+            return this.rollInt(Min, Max);
+        } else if (((typeof Min === 'number') || Min === null) && ((typeof Max === 'number') || Max === null)) {
+            return this.rollFloat(Min, Max);
+        } else
+            throw new Error('invalid overload');;
+    }
+    rollFloat(Min, Max) {
+        this.uses++;
+        return this.Generator() * (Max - Min) + Min;
+    }
+}
+Dice.serialVersionUID = 1;
