@@ -1,0 +1,990 @@
+{
+   "Material": [
+      {
+         "Name": {
+            "_Label": "MATERIAL_GYPSUM"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_LIGHT_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_TALC"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_LIGHT_GREY"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_JET"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_PUDDINGSTONE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_PETRIFIED_WOOD"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_MAROON"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_GRAPHITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_BRIMSTONE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_YELLOW"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_KIMBERLITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_NAVY_BLUE"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_BISMUTHINITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_LIGHT_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_REALGAR"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_DARK_RED"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_RED"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_ORPIMENT"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_YELLOW"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_STIBNITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_MARCASITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_YELLOW"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SYLVITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_RED"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_YELLOW"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_CRYOLITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_RED"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_PERICLASE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_LIGHT_GREY"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_ILMENITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_RUTILE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_MAROON"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_MAGNETITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_CHROMITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_PYROLUSITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_NAVY_BLUE"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_PITCHBLENDE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_PURPLE"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_BAUXITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_SALMON"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_SWIRLY"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_SWIRLY"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_SWIRLY"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_SWIRLY"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_SWIRLY"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_ALUMINUM_NUGGETS"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_BORAX"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_OLIVINE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_OLIVE"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_IGNEOUS_INTRUSIVE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_IGNEOUS_INTRUSIVE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_IGNEOUS_INTRUSIVE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_IGNEOUS_INTRUSIVE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_IGNEOUS_INTRUSIVE"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_HORNBLENDE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_KAOLINITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_PINK"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SERPENTINE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_DARK_GREEN"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_ORTHOCLASE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_PINK"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_MICROCLINE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_TEAL"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_CRYSTALLINE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_CRYSTALLINE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_CRYSTALLINE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_CRYSTALLINE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_CRYSTALLINE"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_MICA"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_CALCITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SALTPETER"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_ALABASTER"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_LIGHT_GREY"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SELENITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_LIGHT_GREY"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SATINSPAR"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_LIGHT_GREY"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_ANHYDRITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLUE"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_ALUNITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_LIGHT_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_RAW_ADAMANTINE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_AQUA"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               }
+            ]
+         }
+      }
+   ],
+   "_xmlns": "https://github.com/ImpalerWrG/Khazad"
+}

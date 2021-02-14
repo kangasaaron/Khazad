@@ -1,8 +1,7 @@
-import { Direction } from "../../Map/Coordinates/Direction.js";
-import { MapCoordinate } from "../../Map/Coordinates/MapCoordinate.js";
-import { AStarNode } from "../../PathFinding/AStarNode.js";
+import { Direction, MapCoordinate } from "../../Map.js";
+import { AStarNode } from "../../PathFinding.js";
 
-QUnit.module("AStarNode test", function() {
+QUnit.module("PathFinding/AStarNode test", function() {
     QUnit.test("constructor test", function(assert) {
         let a = new AStarNode();
         assert.ok(a instanceof AStarNode);

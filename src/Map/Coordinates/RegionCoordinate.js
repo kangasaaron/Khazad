@@ -15,7 +15,8 @@
  You should have received a copy of the GNU General Public License
  along with Khazad.  If not, see <http://www.gnu.org/licenses/> */
 
-import { Serializable } from "../../other/Serializable.js";
+import { Serializable } from "../../other.js";
+import { Types } from "../../other/Types.js";
 
 /**
  * Describes the location of a Region within the World map,
@@ -23,23 +24,16 @@ import { Serializable } from "../../other/Serializable.js";
  * @author Impaler
  */
 
-export class RegionCoordinate {
+export class RegionCoordinate extends Serializable() {
     constructor() {
+        super();
         this.X = 0;
         this.Y = 0;
     }
     copy(ArgumentCoordinates) {
-        if (!"X" in ArgumentCoordinates)
-            throw new TypeError("RegionCoordinate copy parameter needs an X");
-        if (!("Y" in ArgumentCoordinates))
-            throw new TypeError("RegionCoordinate copy parameter needs an Y");
-        if (!Number.isFinite(ArgumentCoordinates.X))
-            throw new TypeError("RegionCoordinate copy parameter X must be a number");
-        if (!Number.isFinite(ArgumentCoordinates.Y))
-            throw new TypeError("RegionCoordinate copy parameter Y must be a number");
-        // super();
+        Types.mustHaveAll(ArgumentCoordinates, 'X', 'Y');
+        Types.mustBeAll('finiteInteger', ArgumentCoordinates.X, ArgumentCoordinates.Y);
         this.X = ArgumentCoordinates.X;
         this.Y = ArgumentCoordinates.Y;
     }
 }
-Serializable.becomeImplementedBy(RegionCoordinate);

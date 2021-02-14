@@ -1,0 +1,297 @@
+{
+   "MaterialClass": [
+      {
+         "Name": {
+            "_Label": "MATERIALCLASS_LEATHER"
+         },
+         "DefaultMaterial": {
+            "_label": "MATERIAL_UNINITIALIZED"
+         },
+         "DefaultSurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_WALL",
+                  "_Texturelabel": "TEXTURE_MATT"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_FLOOR",
+                  "_Texturelabel": "TEXTURE_MATT"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIALCLASS_SILK_CLOTH"
+         },
+         "DefaultMaterial": {
+            "_label": "MATERIAL_UNINITIALIZED"
+         },
+         "DefaultSurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_WALL",
+                  "_Texturelabel": "TEXTURE_MATT"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_FLOOR",
+                  "_Texturelabel": "TEXTURE_MATT"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIALCLASS_PLANT_THREAD_CLOTH"
+         },
+         "DefaultMaterial": {
+            "_label": "MATERIAL_UNINITIALIZED"
+         },
+         "DefaultSurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_WALL",
+                  "_Texturelabel": "TEXTURE_MATT"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_FLOOR",
+                  "_Texturelabel": "TEXTURE_MATT"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIALCLASS_GREEN_GLASS"
+         },
+         "DefaultMaterial": {
+            "_label": "MATERIAL_GREEN_GLASS"
+         },
+         "DefaultSurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_WALL",
+                  "_Texturelabel": "TEXTURE_BRICK2"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_FLOOR",
+                  "_Texturelabel": "TEXTURE_BRICK2"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIALCLASS_CLEAR_GLASS"
+         },
+         "DefaultMaterial": {
+            "_label": "MATERIAL_CLEAR_GLASS"
+         },
+         "DefaultSurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_WALL",
+                  "_Texturelabel": "TEXTURE_BRICK2"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_FLOOR",
+                  "_Texturelabel": "TEXTURE_BRICK2"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIALCLASS_CRYSTAL_GLASS"
+         },
+         "DefaultMaterial": {
+            "_label": "MATERIAL_CRYSTAL_GLASS"
+         },
+         "DefaultSurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_WALL",
+                  "_Texturelabel": "TEXTURE_BRICK2"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_FLOOR",
+                  "_Texturelabel": "TEXTURE_BRICK2"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIALCLASS_ICE"
+         },
+         "DefaultMaterial": {
+            "_label": "MATERIAL_ICE"
+         },
+         "DefaultSurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ICE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_ICE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_ICE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_ICE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_ICE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_SMOOTH_WALL",
+                  "_Texturelabel": "TEXTURE_ICE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_SMOOTH_FLOOR",
+                  "_Texturelabel": "TEXTURE_ICE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_PEBBLES",
+                  "_Texturelabel": "TEXTURE_ICE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_BOULDER",
+                  "_Texturelabel": "TEXTURE_ICE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_WALL",
+                  "_Texturelabel": "TEXTURE_BRICK"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_FLOOR",
+                  "_Texturelabel": "TEXTURE_TILES"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIALCLASS_CHARCOAL"
+         },
+         "DefaultMaterial": {
+            "_label": "MATERIAL_UNINITIALIZED"
+         },
+         "DefaultSurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_WALL",
+                  "_Texturelabel": "TEXTURE_MATT"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_FLOOR",
+                  "_Texturelabel": "TEXTURE_MATT"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIALCLASS_POTASH"
+         },
+         "DefaultMaterial": {
+            "_label": "MATERIAL_UNINITIALIZED"
+         },
+         "DefaultSurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_WALL",
+                  "_Texturelabel": "TEXTURE_MATT"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_FLOOR",
+                  "_Texturelabel": "TEXTURE_MATT"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIALCLASS_ASHES"
+         },
+         "DefaultMaterial": {
+            "_label": "MATERIAL_ASHES"
+         },
+         "DefaultSurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_WALL",
+                  "_Texturelabel": "TEXTURE_MATT"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_FLOOR",
+                  "_Texturelabel": "TEXTURE_MATT"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIALCLASS_PEARLASH"
+         },
+         "DefaultMaterial": {
+            "_label": "MATERIAL_UNINITIALIZED"
+         },
+         "DefaultSurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_WALL",
+                  "_Texturelabel": "TEXTURE_MATT"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_FLOOR",
+                  "_Texturelabel": "TEXTURE_MATT"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIALCLASS_SOAP"
+         },
+         "DefaultMaterial": {
+            "_label": "MATERIAL_UNINITIALIZED"
+         },
+         "DefaultSurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_WALL",
+                  "_Texturelabel": "TEXTURE_MATT"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_FLOOR",
+                  "_Texturelabel": "TEXTURE_MATT"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIALCLASS_EXOTIC"
+         },
+         "DefaultMaterial": {
+            "_label": "MATERIAL_UNINITIALIZED"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIALCLASS_CREATURE"
+         },
+         "DefaultMaterial": {
+            "_label": "MATERIAL_UNINITIALIZED"
+         }
+      }
+   ],
+   "_xmlns": "https://github.com/ImpalerWrG/Khazad"
+}

@@ -69,6 +69,9 @@ public enum Direction implements Serializable  {
 	DIRECTION_DOWN_SOUTHWEST((byte) 146, -1, -1, -1), // Index 25
 
 	DIRECTION_DESTINATION((byte) 36, 0, 0, 0);
+	
+	// BitPacking  XX 0 YY 0 ZZ
+	//             76 5 43 2 10
 	public final byte Data;
 	private final int[] AxisValues = new int[Axis.values().length];
 	
@@ -186,7 +189,7 @@ public enum Direction implements Serializable  {
 
 	public boolean isPositive() {
 		int temp = Data;
-		int read = temp & 3;
+		int read = temp & 3; 
 
 		if (read == 1)
 			return true;

@@ -15,9 +15,8 @@
  You should have received a copy of the GNU General Public License
  along with Khazad.  If not, see <http://www.gnu.org/licenses/> */
 
-import { Serializable } from "../../other/Serializable.js";
-import { Byte } from "../../other/Integers.js";
-
+import { Serializable, Byte } from "../../other.js";
+import { Types } from "../../other/Types.js";
 
 /**
  * Provides the location of a Sector within a Region, the world is only 1 Sector thick 
@@ -25,13 +24,11 @@ import { Byte } from "../../other/Integers.js";
  * 
  * @author Impaler
  */
-export class SectorCoordinate {
+export class SectorCoordinate extends Serializable() {
 
     constructor(x = 0, y = 0) {
-        if (!Number.isFinite(x))
-            throw new TypeError("SectorCoordinate constructor parameter X must be a number");
-        if (!Number.isFinite(y))
-            throw new TypeError("SectorCoordinate constructor parameter Y must be a number");
+        Types.mustBeAll('finiteInteger', x, y);
+        super();
         this.X = new Byte(x);
         this.Y = new Byte(y);
     }
@@ -41,18 +38,16 @@ export class SectorCoordinate {
             return false;
         if (ArgumentCoordinates === this)
             return true;
-        if (ArgumentCoordinates.X === undefined || ArgumentCoordinates.X === null)
+        if (!Types.hasAll(ArgumentCoordinates, 'X', 'Y'))
             return false;
-        if (ArgumentCoordinates.Y === undefined || ArgumentCoordinates.Y === null)
+        if (!Types.are('finiteNumber', ArgumentCoordinates.X, ArgumentCoordinates.Y))
             return false;
         return (ArgumentCoordinates.X.equals(this.X) && ArgumentCoordinates.Y.equals(this.Y));
     }
 
     copy(ArgumentCoordinates) {
-        if (!("X" in ArgumentCoordinates))
-            throw new TypeError("can't copy ArgumentCoordinates");
-        if (!("Y" in ArgumentCoordinates))
-            throw new TypeError("can't copy ArgumentCoordinates");
+        Types.mustHaveAll(ArgumentCoordinates, "X", "Y");
+        Types.mustBeAll('finiteInteger', ArgumentCoordinates.X, ArgumentCoordinates.Y);
         this.X = new Byte(ArgumentCoordinates.X);
         this.Y = new Byte(ArgumentCoordinates.Y);
     }
@@ -64,5 +59,3 @@ export class SectorCoordinate {
         return hash;
     }
 }
-
-Serializable.becomeImplementedBy(SectorCoordinate);

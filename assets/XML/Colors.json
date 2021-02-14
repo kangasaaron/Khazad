@@ -1,0 +1,425 @@
+{
+   "Color": [
+      {
+         "Name": {
+            "_Label": "COLOR_WHITE"
+         },
+         "Channels": {
+            "_Red": "255",
+            "_Green": "255",
+            "_Blue": "255"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_SILVER"
+         },
+         "Channels": {
+            "_Red": "192",
+            "_Green": "192",
+            "_Blue": "192"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_LIGHT_GREY"
+         },
+         "Channels": {
+            "_Red": "128",
+            "_Green": "128",
+            "_Blue": "128"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_GREY"
+         },
+         "Channels": {
+            "_Red": "92",
+            "_Green": "92",
+            "_Blue": "92"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_DARK_GREY"
+         },
+         "Channels": {
+            "_Red": "64",
+            "_Green": "64",
+            "_Blue": "64"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_BLACK"
+         },
+         "Channels": {
+            "_Red": "0",
+            "_Green": "0",
+            "_Blue": "0"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_RED"
+         },
+         "Channels": {
+            "_Red": "255",
+            "_Green": "0",
+            "_Blue": "0"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_DARK_RED"
+         },
+         "Channels": {
+            "_Red": "80",
+            "_Green": "0",
+            "_Blue": "0"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_DARK_ORANGE"
+         },
+         "Channels": {
+            "_Red": "191",
+            "_Green": "104",
+            "_Blue": "32"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_ORANGE"
+         },
+         "Channels": {
+            "_Red": "255",
+            "_Green": "128",
+            "_Blue": "0"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_LIME"
+         },
+         "Channels": {
+            "_Red": "0",
+            "_Green": "255",
+            "_Blue": "0"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_BLUE"
+         },
+         "Channels": {
+            "_Red": "0",
+            "_Green": "0",
+            "_Blue": "255"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_AQUA"
+         },
+         "Channels": {
+            "_Red": "0",
+            "_Green": "255",
+            "_Blue": "255"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_MAGENTA"
+         },
+         "Channels": {
+            "_Red": "255",
+            "_Green": "0",
+            "_Blue": "255"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_YELLOW"
+         },
+         "Channels": {
+            "_Red": "255",
+            "_Green": "255",
+            "_Blue": "0"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_NAVY_BLUE"
+         },
+         "Channels": {
+            "_Red": "0",
+            "_Green": "0",
+            "_Blue": "128"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_GREEN"
+         },
+         "Channels": {
+            "_Red": "0",
+            "_Green": "255",
+            "_Blue": "0"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "GRASS_BRIGHT"
+         },
+         "Channels": {
+            "_Red": "0",
+            "_Green": "128",
+            "_Blue": "0"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "GRASS_DARK"
+         },
+         "Channels": {
+            "_Red": "0",
+            "_Green": "108",
+            "_Blue": "0"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_MAROON"
+         },
+         "Channels": {
+            "_Red": "128",
+            "_Green": "0",
+            "_Blue": "0"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_OLIVE"
+         },
+         "Channels": {
+            "_Red": "95",
+            "_Green": "124",
+            "_Blue": "16"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_OLIVE_LIGHT"
+         },
+         "Channels": {
+            "_Red": "191",
+            "_Green": "194",
+            "_Blue": "137"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_PURPLE"
+         },
+         "Channels": {
+            "_Red": "128",
+            "_Green": "0",
+            "_Blue": "128"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_TEAL"
+         },
+         "Channels": {
+            "_Red": "0",
+            "_Green": "128",
+            "_Blue": "128"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_DARK_GREEN"
+         },
+         "Channels": {
+            "_Red": "0",
+            "_Green": "30",
+            "_Blue": "0"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_BROWN"
+         },
+         "Channels": {
+            "_Red": "102",
+            "_Green": "61",
+            "_Blue": "41"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_DARK_BROWN"
+         },
+         "Channels": {
+            "_Red": "56",
+            "_Green": "37",
+            "_Blue": "9"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_ROYAL_BLUE"
+         },
+         "Channels": {
+            "_Red": "0",
+            "_Green": "0",
+            "_Blue": "192"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_SALMON"
+         },
+         "Channels": {
+            "_Red": "255",
+            "_Green": "128",
+            "_Blue": "128"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_PINK"
+         },
+         "Channels": {
+            "_Red": "255",
+            "_Green": "192",
+            "_Blue": "192"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_ORANGE"
+         },
+         "Channels": {
+            "_Red": "255",
+            "_Green": "128",
+            "_Blue": "0"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_FOREST_GREEN"
+         },
+         "Channels": {
+            "_Red": "0",
+            "_Green": "64",
+            "_Blue": "0"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_PEACH"
+         },
+         "Channels": {
+            "_Red": "255",
+            "_Green": "192",
+            "_Blue": "128"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_LEATHER"
+         },
+         "Channels": {
+            "_Red": "128",
+            "_Green": "64",
+            "_Blue": "0"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_ROYAL_PURPLE"
+         },
+         "Channels": {
+            "_Red": "128",
+            "_Green": "64",
+            "_Blue": "128"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_RED_ORANGE"
+         },
+         "Channels": {
+            "_Red": "255",
+            "_Green": "64",
+            "_Blue": "0"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_TAN"
+         },
+         "Channels": {
+            "_Red": "210",
+            "_Green": "180",
+            "_Blue": "140"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_BROWN2"
+         },
+         "Channels": {
+            "_Red": "128",
+            "_Green": "80",
+            "_Blue": "47"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_KHAKI"
+         },
+         "Channels": {
+            "_Red": "197",
+            "_Green": "169",
+            "_Blue": "42"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_BLOOD_RED"
+         },
+         "Channels": {
+            "_Red": "227",
+            "_Green": "30",
+            "_Blue": "0"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_COPPER"
+         },
+         "Channels": {
+            "_Red": "184",
+            "_Green": "115",
+            "_Blue": "51"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "COLOR_LAVENDAR"
+         },
+         "Channels": {
+            "_Red": "230",
+            "_Green": "230",
+            "_Blue": "250"
+         }
+      }
+   ],
+   "_xmlns": "https://github.com/ImpalerWrG/Khazad"
+}

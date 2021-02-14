@@ -1,0 +1,174 @@
+{
+   "Model": [
+      {
+         "Name": {
+            "_Label": "MODEL_SAGUARO"
+         },
+         "File": {
+            "_Path": "Models/Saguaro/Saguaro.obj"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MODEL_OAK"
+         },
+         "File": {
+            "_Path": "Models/oak/oak_leaves_snow.obj"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MODEL_MAPLE"
+         },
+         "File": {
+            "_Path": "Models/maple/maple.obj"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MODEL_BIRCH"
+         },
+         "File": {
+            "_Path": "Models/birch/birch.obj"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MODEL_CHESTNUT"
+         },
+         "File": {
+            "_Path": "Models/chestnut/chestnut.obj"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MODEL_PALM"
+         },
+         "File": {
+            "_Path": "Models/palm/palm.obj"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MODEL_LARCH"
+         },
+         "File": {
+            "_Path": "Models/larch/larch.obj"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MODEL_PINE"
+         },
+         "File": {
+            "_Path": "Models/pine/pine.obj"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MODEL_BOULDER"
+         },
+         "File": {
+            "_Path": "Models/stones/stone04.obj"
+         },
+         "Scale": {
+            "_value": "1.1"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MODEL_CHAIR"
+         },
+         "File": {
+            "_Path": "Models/chair/chair.obj"
+         },
+         "Scale": {
+            "_value": "1.6"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MODEL_BIN"
+         },
+         "File": {
+            "_Path": "Models/bin/bin.obj"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MODEL_CAGE"
+         },
+         "File": {
+            "_Path": "Models/cage/cage.obj"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MODEL_LEVER"
+         },
+         "File": {
+            "_Path": "Models/lever/lever.obj"
+         },
+         "Scale": {
+            "_value": "1.7"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MODEL_QERN"
+         },
+         "File": {
+            "_Path": "Models/qern/qern.obj"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MODEL_HATCH"
+         },
+         "File": {
+            "_Path": "Models/hatch/hatch.obj"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MODEL_MASONS_WORKSHOP"
+         },
+         "File": {
+            "_Path": "Models/masons_workshop/masons_workshop.obj"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MODEL_FLOOR_GRATE"
+         },
+         "File": {
+            "_Path": "Models/grates-bars/floor_grate.obj"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MODEL_WALL_GRATE"
+         },
+         "File": {
+            "_Path": "Models/grates-bars/wall_grate.obj"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MODEL_FLOOR_BARS"
+         },
+         "File": {
+            "_Path": "Models/grates-bars/floor_bars.obj"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MODEL_WALL_BARS"
+         },
+         "File": {
+            "_Path": "Models/grates-bars/wall_bars.obj"
+         }
+      }
+   ],
+   "_xmlns": "https://github.com/ImpalerWrG/Khazad"
+}

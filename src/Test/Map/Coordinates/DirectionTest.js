@@ -1,7 +1,5 @@
-import { Axis } from "../../../Map/Coordinates/Axis.js";
-import { Direction } from "../../../Map/Coordinates/Direction.js";
-import { Serializable } from "../../../other/Serializable.js";
-import { Enum } from "../../../other/Shims.js";
+import { Axis, Direction } from "../../../Map.js";
+import { Byte, Enum, Serializable } from "../../../other.js";
 
 QUnit.module("Map/Coordinates/Direction test", function() {
     QUnit.test("statics", function(assert) {
@@ -131,63 +129,63 @@ QUnit.module("Map/Coordinates/Direction test", function() {
         assert.equal(Direction.DIRECTION_DOWN_SOUTHEAST.AxisValues[Axis.AXIS_Y], -1);
         assert.equal(Direction.DIRECTION_DOWN_SOUTHEAST.AxisValues[Axis.AXIS_Z], -1);
 
-        assert.equal(Direction.DIRECTION_WEST, 128, 'DIRECTION_WEST');
+        assert.equal(Direction.DIRECTION_WEST, -128, 'DIRECTION_WEST');
         assert.ok(Direction.DIRECTION_WEST instanceof Enum);
         assert.ok(Direction.DIRECTION_WEST instanceof Direction);
         assert.equal(Direction.DIRECTION_WEST.AxisValues[Axis.AXIS_X], -1);
         assert.equal(Direction.DIRECTION_WEST.AxisValues[Axis.AXIS_Y], 0);
         assert.equal(Direction.DIRECTION_WEST.AxisValues[Axis.AXIS_Z], 0);
 
-        assert.equal(Direction.DIRECTION_UP_WEST, 129, 'DIRECTION_UP_WEST');
+        assert.equal(Direction.DIRECTION_UP_WEST, -127, 'DIRECTION_UP_WEST');
         assert.ok(Direction.DIRECTION_UP_WEST instanceof Enum);
         assert.ok(Direction.DIRECTION_UP_WEST instanceof Direction);
         assert.equal(Direction.DIRECTION_UP_WEST.AxisValues[Axis.AXIS_X], -1);
         assert.equal(Direction.DIRECTION_UP_WEST.AxisValues[Axis.AXIS_Y], 0);
         assert.equal(Direction.DIRECTION_UP_WEST.AxisValues[Axis.AXIS_Z], 1);
 
-        assert.equal(Direction.DIRECTION_DOWN_WEST, 130, 'DIRECTION_DOWN_WEST');
+        assert.equal(Direction.DIRECTION_DOWN_WEST, -126, 'DIRECTION_DOWN_WEST');
         assert.ok(Direction.DIRECTION_DOWN_WEST instanceof Enum);
         assert.ok(Direction.DIRECTION_DOWN_WEST instanceof Direction);
         assert.equal(Direction.DIRECTION_DOWN_WEST.AxisValues[Axis.AXIS_X], -1);
         assert.equal(Direction.DIRECTION_DOWN_WEST.AxisValues[Axis.AXIS_Y], 0);
         assert.equal(Direction.DIRECTION_DOWN_WEST.AxisValues[Axis.AXIS_Z], -1);
 
-        assert.equal(Direction.DIRECTION_NORTHWEST, 136, 'DIRECTION_NORTHWEST');
+        assert.equal(Direction.DIRECTION_NORTHWEST, -120, 'DIRECTION_NORTHWEST');
         assert.ok(Direction.DIRECTION_NORTHWEST instanceof Enum);
         assert.ok(Direction.DIRECTION_NORTHWEST instanceof Direction);
         assert.equal(Direction.DIRECTION_NORTHWEST.AxisValues[Axis.AXIS_X], -1);
         assert.equal(Direction.DIRECTION_NORTHWEST.AxisValues[Axis.AXIS_Y], 1);
         assert.equal(Direction.DIRECTION_NORTHWEST.AxisValues[Axis.AXIS_Z], 0);
 
-        assert.equal(Direction.DIRECTION_UP_NORTHWEST, 137, 'DIRECTION_UP_NORTHWEST');
+        assert.equal(Direction.DIRECTION_UP_NORTHWEST, -119, 'DIRECTION_UP_NORTHWEST');
         assert.ok(Direction.DIRECTION_UP_NORTHWEST instanceof Enum);
         assert.ok(Direction.DIRECTION_UP_NORTHWEST instanceof Direction);
         assert.equal(Direction.DIRECTION_UP_NORTHWEST.AxisValues[Axis.AXIS_X], -1);
         assert.equal(Direction.DIRECTION_UP_NORTHWEST.AxisValues[Axis.AXIS_Y], 1);
         assert.equal(Direction.DIRECTION_UP_NORTHWEST.AxisValues[Axis.AXIS_Z], 1);
 
-        assert.equal(Direction.DIRECTION_DOWN_NORTHWEST, 138, 'DIRECTION_DOWN_NORTHWEST');
+        assert.equal(Direction.DIRECTION_DOWN_NORTHWEST, -118, 'DIRECTION_DOWN_NORTHWEST');
         assert.ok(Direction.DIRECTION_DOWN_NORTHWEST instanceof Enum);
         assert.ok(Direction.DIRECTION_DOWN_NORTHWEST instanceof Direction);
         assert.equal(Direction.DIRECTION_DOWN_NORTHWEST.AxisValues[Axis.AXIS_X], -1);
         assert.equal(Direction.DIRECTION_DOWN_NORTHWEST.AxisValues[Axis.AXIS_Y], 1);
         assert.equal(Direction.DIRECTION_DOWN_NORTHWEST.AxisValues[Axis.AXIS_Z], -1);
 
-        assert.equal(Direction.DIRECTION_SOUTHWEST, 144, 'DIRECTION_SOUTHWEST');
+        assert.equal(Direction.DIRECTION_SOUTHWEST, -112, 'DIRECTION_SOUTHWEST');
         assert.ok(Direction.DIRECTION_SOUTHWEST instanceof Enum);
         assert.ok(Direction.DIRECTION_SOUTHWEST instanceof Direction);
         assert.equal(Direction.DIRECTION_SOUTHWEST.AxisValues[Axis.AXIS_X], -1);
         assert.equal(Direction.DIRECTION_SOUTHWEST.AxisValues[Axis.AXIS_Y], -1);
         assert.equal(Direction.DIRECTION_SOUTHWEST.AxisValues[Axis.AXIS_Z], 0);
 
-        assert.equal(Direction.DIRECTION_UP_SOUTHWEST, 145, 'DIRECTION_UP_SOUTHWEST');
+        assert.equal(Direction.DIRECTION_UP_SOUTHWEST, -111, 'DIRECTION_UP_SOUTHWEST');
         assert.ok(Direction.DIRECTION_UP_SOUTHWEST instanceof Enum);
         assert.ok(Direction.DIRECTION_UP_SOUTHWEST instanceof Direction);
         assert.equal(Direction.DIRECTION_UP_SOUTHWEST.AxisValues[Axis.AXIS_X], -1);
         assert.equal(Direction.DIRECTION_UP_SOUTHWEST.AxisValues[Axis.AXIS_Y], -1);
         assert.equal(Direction.DIRECTION_UP_SOUTHWEST.AxisValues[Axis.AXIS_Z], 1);
 
-        assert.equal(Direction.DIRECTION_DOWN_SOUTHWEST, 146, 'DIRECTION_DOWN_SOUTHWEST');
+        assert.equal(Direction.DIRECTION_DOWN_SOUTHWEST, -110, 'DIRECTION_DOWN_SOUTHWEST');
         assert.ok(Direction.DIRECTION_DOWN_SOUTHWEST instanceof Enum);
         assert.ok(Direction.DIRECTION_DOWN_SOUTHWEST instanceof Direction);
         assert.equal(Direction.DIRECTION_DOWN_SOUTHWEST.AxisValues[Axis.AXIS_X], -1);
@@ -202,7 +200,7 @@ QUnit.module("Map/Coordinates/Direction test", function() {
         assert.equal(Direction.DIRECTION_DESTINATION.AxisValues[Axis.AXIS_Z], 0);
 
         assert.equal(Direction.ONEMASK, 18, 'Masks');
-        assert.equal(Direction.ZEROMASK, 219);
+        assert.equal(Direction.ZEROMASK, new Byte(219).valueOf());
         assert.equal(Direction.XORMASK, 73);
 
         assert.ok(Array.isArray(Direction.CARDINAL_DIRECTIONS), 'CARDINAL_DIRECTIONS');
@@ -430,7 +428,11 @@ QUnit.module("Map/Coordinates/Direction test", function() {
     });
 
     QUnit.test("setVector test", function(assert) {
-        let v = {};
+        let v = {
+            x: Math.floor(Math.random() * 100),
+            y: Math.floor(Math.random() * 100),
+            z: Math.floor(Math.random() * 100),
+        };
         Direction.DIRECTION_NONE.setVector(v);
         assert.equal(v.x, 0, 'DIRECTION_NONE');
         assert.equal(v.y, 0);

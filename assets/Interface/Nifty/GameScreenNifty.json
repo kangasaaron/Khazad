@@ -1,0 +1,474 @@
+{
+   "useStyles": {
+      "_filename": "Interface/Styles/nifty-khazad-styles.xml"
+   },
+   "useControls": {
+      "_filename": "nifty-default-controls.xml"
+   },
+   "screen": {
+      "layer": [
+         {
+            "panel": [
+               {
+                  "panel": [
+                     {
+                        "control": [
+                           {
+                              "interact": {
+                                 "_onClick": "OpenMenuPopup()"
+                              },
+                              "_childLayout": "center",
+                              "_height": "100%",
+                              "_id": "button0",
+                              "_label": "Menu",
+                              "_name": "button",
+                              "_width": "50px"
+                           },
+                           {
+                              "interact": {
+                                 "_onClick": "OpenKingdomPopup()"
+                              },
+                              "_childLayout": "center",
+                              "_height": "100%",
+                              "_id": "KingdomButton",
+                              "_label": "Kingdom",
+                              "_name": "button",
+                              "_width": "60px",
+                              "_style": "disabled-button"
+                           },
+                           {
+                              "interact": {
+                                 "_onClick": "OpenStocksPopup()"
+                              },
+                              "_childLayout": "center",
+                              "_height": "100%",
+                              "_id": "StocksButton",
+                              "_label": "Stocks",
+                              "_name": "button",
+                              "_width": "50px",
+                              "_style": "disabled-button"
+                           },
+                           {
+                              "interact": {
+                                 "_onClick": "OpenPopulationPopup()"
+                              },
+                              "_childLayout": "center",
+                              "_height": "100%",
+                              "_id": "PopulationButton",
+                              "_label": "Population",
+                              "_name": "button",
+                              "_width": "70px"
+                           },
+                           {
+                              "interact": {
+                                 "_onClick": "OpenMilitaryPopup()"
+                              },
+                              "_childLayout": "center",
+                              "_height": "100%",
+                              "_id": "MilitaryButton",
+                              "_label": "Military",
+                              "_name": "button",
+                              "_width": "60px",
+                              "_style": "disabled-button"
+                           },
+                           {
+                              "interact": {
+                                 "_onClick": "OpenEventsPopup()"
+                              },
+                              "_childLayout": "center",
+                              "_height": "100%",
+                              "_id": "EventsButton",
+                              "_label": "Events",
+                              "_name": "button",
+                              "_width": "50px",
+                              "_style": "disabled-button"
+                           },
+                           {
+                              "interact": {
+                                 "_onClick": "OpenHelpPopup()"
+                              },
+                              "_childLayout": "center",
+                              "_height": "100%",
+                              "_id": "HelpButton",
+                              "_label": "Help",
+                              "_name": "button",
+                              "_width": "50px",
+                              "_style": "disabled-button"
+                           }
+                        ],
+                        "_childLayout": "horizontal",
+                        "_height": "60px",
+                        "_id": "TopLeftPanel",
+                        "_style": "nifty-panel-simple",
+                        "_width": "400px"
+                     },
+                     {
+                        "panel": [
+                           {
+                              "_childLayout": "center",
+                              "_height": "100%",
+                              "_id": "TopDummyTwo",
+                              "_width": "100%"
+                           }
+                        ],
+                        "_childLayout": "center",
+                        "_id": "TopDummyOne"
+                     },
+                     {
+                        "panel": [
+                           {
+                              "control": [
+                                 {
+                                    "interact": {
+                                       "_onClick": "Pause()"
+                                    },
+                                    "_childLayout": "center",
+                                    "_id": "Pausebutton",
+                                    "_label": "Pause",
+                                    "_name": "button",
+                                    "_width": "50px"
+                                 },
+                                 {
+                                    "interact": {
+                                       "_onClick": "SetSpeed(1)"
+                                    },
+                                    "_childLayout": "center",
+                                    "_id": "Speed1button",
+                                    "_label": "x1",
+                                    "_name": "button",
+                                    "_width": "25px"
+                                 },
+                                 {
+                                    "interact": {
+                                       "_onClick": "SetSpeed(4)"
+                                    },
+                                    "_childLayout": "center",
+                                    "_id": "Speed4button",
+                                    "_label": "x4",
+                                    "_name": "button",
+                                    "_width": "25px"
+                                 },
+                                 {
+                                    "interact": {
+                                       "_onClick": "SetSpeed(16)"
+                                    },
+                                    "_childLayout": "center",
+                                    "_id": "Speed16button",
+                                    "_label": "x16",
+                                    "_name": "button",
+                                    "_width": "25px"
+                                 },
+                                 {
+                                    "interact": {
+                                       "_onClick": "SetSpeed(64)"
+                                    },
+                                    "_childLayout": "center",
+                                    "_id": "Speed64button",
+                                    "_label": "x64",
+                                    "_name": "button",
+                                    "_width": "25px"
+                                 },
+                                 {
+                                    "interact": {
+                                       "_onClick": "SetSpeed(256)"
+                                    },
+                                    "_childLayout": "center",
+                                    "_id": "Speed256button",
+                                    "_label": "x256",
+                                    "_name": "button",
+                                    "_width": "35px"
+                                 },
+                                 {
+                                    "interact": {
+                                       "_onClick": "SetSpeed(1024)"
+                                    },
+                                    "_childLayout": "center",
+                                    "_id": "Speed1024button",
+                                    "_label": "x1024",
+                                    "_name": "button",
+                                    "_width": "45px"
+                                 },
+                                 {
+                                    "interact": {
+                                       "_onClick": "SetSpeed(4096)"
+                                    },
+                                    "_childLayout": "center",
+                                    "_id": "Speed4096button",
+                                    "_label": "x4096",
+                                    "_name": "button",
+                                    "_width": "45px"
+                                 }
+                              ],
+                              "_childLayout": "horizontal",
+                              "_height": "30px",
+                              "_id": "SpeedControlPanel"
+                           }
+                        ],
+                        "control": [
+                           {
+                              "_font": "aurulent-sans-16.fnt",
+                              "_height": "30px",
+                              "_id": "timeLabel",
+                              "_name": "label",
+                              "_text": "The Time",
+                              "_textLineHeight": "30px",
+                              "_textMinHeight": "30px",
+                              "_width": "100%"
+                           }
+                        ],
+                        "_childLayout": "vertical",
+                        "_height": "60px",
+                        "_id": "TopRightPanel",
+                        "_style": "nifty-panel-simple",
+                        "_width": "290px"
+                     }
+                  ],
+                  "_childLayout": "horizontal",
+                  "_height": "80px",
+                  "_id": "TopPanel",
+                  "_width": "100%"
+               },
+               {
+                  "control": [
+                     {
+                        "_buttonStepSize": "1.0",
+                        "_height": "100%",
+                        "_id": "DepthSlider",
+                        "_initial": "1.0",
+                        "_name": "verticalScrollbar",
+                        "_pageStepSize": "1.0",
+                        "_width": "25px",
+                        "_worldMax": "10.0",
+                        "_worldPageSize": "1.0"
+                     }
+                  ],
+                  "_align": "right",
+                  "_childLayout": "horizontal",
+                  "_id": "MiddlePanel"
+               },
+               {
+                  "panel": [
+                     {
+                        "_childLayout": "absolute",
+                        "_height": "100%",
+                        "_id": "BottomLeftPanel",
+                        "_style": "nifty-panel-simple",
+                        "_visibleToMouse": "true",
+                        "_width": "150px"
+                     },
+                     {
+                        "panel": [
+                           {
+                              "panel": [
+                                 {
+                                    "_childLayout": "absolute",
+                                    "_id": "panel18",
+                                    "_width": "100%"
+                                 },
+                                 {
+                                    "panel": [
+                                       {
+                                          "control": [
+                                             {
+                                                "interact": {
+                                                   "_onClick": "Dig()"
+                                                },
+                                                "_childLayout": "center",
+                                                "_height": "100%",
+                                                "_id": "DiGButton",
+                                                "_label": "Dig",
+                                                "_name": "button",
+                                                "_width": "40px"
+                                             },
+                                             {
+                                                "interact": {
+                                                   "_onClick": "ButtonPress()"
+                                                },
+                                                "_childLayout": "center",
+                                                "_height": "100%",
+                                                "_id": "BuildButton",
+                                                "_label": "Build",
+                                                "_name": "button",
+                                                "_width": "40px",
+                                                "_style": "disabled-button"
+                                             }
+                                          ],
+                                          "_childLayout": "horizontal",
+                                          "_height": "100%",
+                                          "_id": "BottomButtonPanel",
+                                          "_style": "nifty-panel-simple",
+                                          "_width": "200px"
+                                       }
+                                    ],
+                                    "_childLayout": "center",
+                                    "_height": "40px",
+                                    "_id": "panel23",
+                                    "_width": "100%"
+                                 }
+                              ],
+                              "_childLayout": "vertical",
+                              "_id": "panel6",
+                              "_width": "100%",
+                              "_x": "319",
+                              "_y": "86"
+                           },
+                           {
+                              "_childLayout": "absolute",
+                              "_height": "40px",
+                              "_id": "BottomMiddleBottomPanel",
+                              "_style": "nifty-panel-simple",
+                              "_width": "100%"
+                           }
+                        ],
+                        "_childLayout": "vertical",
+                        "_height": "100%",
+                        "_id": "BottomMiddlePanel"
+                     },
+                     {
+                        "panel": [
+                           {
+                              "text": {
+                                 "_text": "Pathing: ",
+                                 "_style": "nifty-label",
+                                 "_width": "165px",
+                                 "_align": "left",
+                                 "_textVAlign": "center",
+                                 "_textHAlign": "left",
+                                 "_color": "#000"
+                              },
+                              "control": [
+                                 {
+                                    "_id": "pathingCheckBox",
+                                    "_name": "checkbox",
+                                    "_checked": "false"
+                                 }
+                              ],
+                              "_childLayout": "horizontal"
+                           },
+                           {
+                              "text": {
+                                 "_text": "Lit surfaces: ",
+                                 "_style": "nifty-label",
+                                 "_width": "165px",
+                                 "_align": "left",
+                                 "_textVAlign": "center",
+                                 "_textHAlign": "left",
+                                 "_color": "#000"
+                              },
+                              "control": [
+                                 {
+                                    "_id": "litSurfacesCheckBox",
+                                    "_name": "checkbox",
+                                    "_checked": "true"
+                                 }
+                              ],
+                              "_childLayout": "horizontal"
+                           },
+                           {
+                              "text": {
+                                 "_text": "Terrain: ",
+                                 "_style": "nifty-label",
+                                 "_width": "165px",
+                                 "_align": "left",
+                                 "_textVAlign": "center",
+                                 "_textHAlign": "left",
+                                 "_color": "#000"
+                              },
+                              "control": [
+                                 {
+                                    "_id": "terrainCheckBox",
+                                    "_name": "checkbox",
+                                    "_checked": "true"
+                                 }
+                              ],
+                              "_childLayout": "horizontal"
+                           },
+                           {
+                              "text": {
+                                 "_text": "Pathfinding stats:",
+                                 "_style": "nifty-label",
+                                 "_width": "100%",
+                                 "_align": "left",
+                                 "_textVAlign": "center",
+                                 "_textHAlign": "left",
+                                 "_color": "#000"
+                              },
+                              "_childLayout": "horizontal"
+                           },
+                           {
+                              "text": {
+                                 "_text": "Expanded nodes: ",
+                                 "_style": "nifty-label",
+                                 "_height": "20px",
+                                 "_width": "115px",
+                                 "_align": "left",
+                                 "_textVAlign": "center",
+                                 "_textHAlign": "left",
+                                 "_color": "#000"
+                              },
+                              "control": [
+                                 {
+                                    "_font": "aurulent-sans-16.fnt",
+                                    "_height": "20px",
+                                    "_width": "*",
+                                    "_id": "expandedNodesLabel",
+                                    "_name": "label",
+                                    "_textVAlign": "center",
+                                    "_textHAlign": "left",
+                                    "_color": "#000"
+                                 }
+                              ],
+                              "_childLayout": "horizontal"
+                           },
+                           {
+                              "text": {
+                                 "_text": "Graph reads:",
+                                 "_style": "nifty-label",
+                                 "_height": "20px",
+                                 "_width": "115px",
+                                 "_align": "left",
+                                 "_textVAlign": "center",
+                                 "_textHAlign": "left",
+                                 "_color": "#000"
+                              },
+                              "control": [
+                                 {
+                                    "_font": "aurulent-sans-16.fnt",
+                                    "_height": "20px",
+                                    "_width": "*",
+                                    "_id": "graphReadsLabel",
+                                    "_name": "label",
+                                    "_textVAlign": "center",
+                                    "_textHAlign": "left",
+                                    "_color": "#000"
+                                 }
+                              ],
+                              "_childLayout": "horizontal"
+                           }
+                        ],
+                        "_childLayout": "vertical",
+                        "_height": "100%",
+                        "_id": "BottomRightPanel",
+                        "_style": "nifty-panel-simple",
+                        "_visibleToMouse": "true",
+                        "_width": "200px"
+                     }
+                  ],
+                  "_childLayout": "horizontal",
+                  "_height": "150px",
+                  "_id": "BottomPanel",
+                  "_width": "100%"
+               }
+            ],
+            "_childLayout": "vertical",
+            "_id": "layer0"
+         },
+         {
+            "_id": "windows",
+            "_childLayout": "absolute"
+         }
+      ],
+      "_controller": "Nifty.GameScreenController",
+      "_id": "GameScreen"
+   }
+}

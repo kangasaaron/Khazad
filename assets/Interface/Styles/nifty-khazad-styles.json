@@ -1,0 +1,71 @@
+{
+   "useStyles": [
+      {
+         "_filename": "fonts.xml"
+      },
+      {
+         "_filename": "panel/nifty-panel.xml"
+      },
+      {
+         "_filename": "button/nifty-button.xml"
+      },
+      {
+         "_filename": "Interface/Styles/button/disabled-button.xml"
+      },
+      {
+         "_filename": "label/nifty-label.xml"
+      },
+      {
+         "_filename": "textfield/nifty-textfield.xml"
+      },
+      {
+         "_filename": "dropdown/nifty-drop-down.xml"
+      },
+      {
+         "_filename": "imageselect/nifty-image-select.xml"
+      },
+      {
+         "_filename": "checkbox/nifty-checkbox.xml"
+      },
+      {
+         "_filename": "radiobutton/nifty-radiobutton.xml"
+      },
+      {
+         "_filename": "scrollbar/nifty-scrollbar-style.xml"
+      },
+      {
+         "_filename": "slider/nifty-slider-style.xml"
+      },
+      {
+         "_filename": "scrollpanel/nifty-scrollpanel-style.xml"
+      },
+      {
+         "_filename": "console/nifty-console-style.xml"
+      },
+      {
+         "_filename": "chat-control/nifty-chat-control.xml"
+      },
+      {
+         "_filename": "menu/nifty-menu-style.xml"
+      },
+      {
+         "_filename": "listbox/nifty-listbox-style.xml"
+      },
+      {
+         "_filename": "window/nifty-window.xml"
+      },
+      {
+         "_filename": "hint/nifty-hint.xml"
+      },
+      {
+         "_filename": "tabs/nifty-tabs.xml"
+      },
+      {
+         "_filename": "treebox/nifty-treebox.xml"
+      },
+      {
+         "_filename": "messagebox/nifty-messagebox.xml"
+      }
+   ],
+   "_xmlns": "http://nifty-gui.lessvoid.com/nifty-gui"
+}

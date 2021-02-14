@@ -1,12 +1,38 @@
-import { Serializable } from "../../other/Serializable.js";
+/* Copyright 2010 Kenneth 'Impaler' Ferland
+
+ This file is part of Khazad.
+
+ Khazad is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ Khazad is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with Khazad.  If not, see <http://www.gnu.org/licenses/> */
+
+import { Serializable } from "../../other.js";
+import { Types } from "../../other/Types.js";
 import { Axis } from "./Axis.js";
 import { BlockCoordinate } from "./BlockCoordinate.js";
 import { ChunkCoordinate } from "./ChunkCoordinate.js";
+import { Direction } from "./Direction.js";
 import { RegionCoordinate } from "./RegionCoordinate.js";
 import { SectorCoordinate } from "./SectorCoordinate.js";
 
-export class MapCoordinate {
-    constructor(Cell, Cube) {
+/**
+ * Consolidated all other coordinates under one object allowing full resolution
+ * of any point in the game world and proper translation across all boundries
+ * 
+ * @author Impaler
+ */
+export class MapCoordinate extends Serializable() {
+    constructor( /*ChunkCoordinate or nothing*/ Cell, /*BlockCoordinate or nothing*/ Cube) {
+        super();
         this.Region = new RegionCoordinate();
         this.Sector = new SectorCoordinate();
         if (Cell) {
@@ -27,24 +53,15 @@ export class MapCoordinate {
         }
     }
     setChunkCoordinate(Cell) { // TODO turn into setter
-        if (!Cell) {
-            throw new TypeError("MapCoordinate setChunkCoordinate should have a parameter 'Cell'");
-        }
-        if (!(Cell instanceof ChunkCoordinate)) {
-            throw new TypeError("MapCoordinate setChunkCoordinate parameter 'Cell' should be a ChunkCoordinate");
-        }
+        Types.mustBe(ChunkCoordinate, Cell);
         this.Chunk.copy(Cell);
     }
     setBlockCoordinate(Cube) { // TODO turn into setter
-        if (!Cube) {
-            throw new TypeError("MapCoordinate setBlockCoordinate should have a parameter 'Cube'");
-        }
-        if (!(Cube instanceof BlockCoordinate)) {
-            throw new TypeError("MapCoordinate setBlockCoordinate parameter 'Cube' should be a BlockCoordinate");
-        }
+        Types.mustBe(BlockCoordinate, Cube);
         this.Block.copy(Cube);
     }
     set(x, y, z) {
+        Types.mustBeAll('finiteInteger', x, y, z);
         this.Chunk.X = parseInt(x / BlockCoordinate.CHUNK_EDGE_SIZE);
         if (x < 0) {
             this.Chunk.X--;
@@ -80,9 +97,13 @@ export class MapCoordinate {
     }
 
     translate(DirectionType) {
+        Types.mustBe(Direction, DirectionType);
         return this.translateCube(DirectionType, 1);
     }
     translateCube(DirectionType, Quantity) {
+        Types.mustBe(Direction, DirectionType);
+        Types.mustBe('finiteInteger', Quantity);
+
         let Xtranslation = DirectionType.getValueonAxis(Axis.AXIS_X) * Quantity;
         let Ytranslation = DirectionType.getValueonAxis(Axis.AXIS_Y) * Quantity;
         let Ztranslation = DirectionType.getValueonAxis(Axis.AXIS_Z) * Quantity;
@@ -122,7 +143,9 @@ export class MapCoordinate {
     equals(Arg) {
         if (Arg === this)
             return true;
-        if (!(Arg instanceof MapCoordinate))
+        if (!Arg)
+            return false;
+        if (!Types.hasAll(Arg, "Chunk", "Block") || !Types.hasAll(Arg.Block, "Data", "DetailLevel"))
             return false;
         return (this.Chunk.equals(Arg.Chunk) && this.Block.Data == Arg.Block.Data && this.Block.DetailLevel.equals(Arg.Block.DetailLevel));
     }
@@ -134,6 +157,7 @@ export class MapCoordinate {
     }
 
     copy(CopyCoordinates) {
+        Types.mustHaveAll(CopyCoordinates, "Chunk", "Block", "Sector", "Region");
         this.Chunk.copy(CopyCoordinates.Chunk);
         this.Block.copy(CopyCoordinates.Block);
         this.Sector.copy(CopyCoordinates.Sector);
@@ -146,6 +170,7 @@ export class MapCoordinate {
         hash += 5 * this.Block.Data;
         return hash;
     }
+    getVector() {
+        return new THREE.Vector3(this.getX(), this.getY(), this.getZ());
+    }
 }
-
-Serializable.becomeImplementedBy(MapCoordinate);

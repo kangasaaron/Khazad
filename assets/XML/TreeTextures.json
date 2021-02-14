@@ -1,0 +1,45 @@
+{
+   "TextureSheet": {
+      "File": {
+         "_Path": "Media/Textures/Sprites/forest_tiles.png"
+      },
+      "Textures": {
+         "Texture": [
+            {
+               "Name": {
+                  "_Label": "TEXTURE_TREE_0"
+               },
+               "SheetLocation": {
+                  "_X": "64",
+                  "_Y": "0",
+                  "_Width": "32",
+                  "_Height": "32"
+               }
+            },
+            {
+               "Name": {
+                  "_Label": "TEXTURE_TREE_1"
+               },
+               "SheetLocation": {
+                  "_X": "128",
+                  "_Y": "0",
+                  "_Width": "32",
+                  "_Height": "64"
+               }
+            },
+            {
+               "Name": {
+                  "_Label": "TEXTURE_TREE_2"
+               },
+               "SheetLocation": {
+                  "_X": "192",
+                  "_Y": "0",
+                  "_Width": "32",
+                  "_Height": "64"
+               }
+            }
+         ]
+      }
+   },
+   "_xmlns": "https://github.com/ImpalerWrG/Khazad"
+}

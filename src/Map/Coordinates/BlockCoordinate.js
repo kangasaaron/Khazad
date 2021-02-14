@@ -1,24 +1,32 @@
-import { Byte } from "../../other/Integers.js";
+import { Byte, Short, Serializable } from "../../other.js";
+import { Types } from "../../other/Types.js";
 import { Axis } from "./Axis.js";
-
-export class BlockCoordinate {
+import { Direction } from "./Direction.js";
+/**
+ *
+ * @author Impaler
+ */
+export class BlockCoordinate extends Serializable() {
     constructor(...args) {
+        super();
+        this._data = 0; // Index bitpacking   0 YYYYY XXXXX ZZZZZ
         this.DetailLevel = new Byte(0);
-        this.Data = 0;
+        // this.Data = 0;
         this.Size = 0;
         this.Max = 0;
         this.Mask = 0;
         this.Shift = 0;
         if (args.length == 1) {
-            if (Number.isFinite(args[0])) {
+            if (Types.is('finiteNumber', args[0])) {
                 this.DetailLevel = new Byte(args[0]);
                 this.setDetailLevel(this.DetailLevel);
-            } else if (args[0] instanceof BlockCoordinate) {
+            } else if (Types.is(BlockCoordinate, args[0])) {
                 this.Data = args[0].Data;
                 this.DetailLevel = new Byte(args[0].DetailLevel);
                 this.setDetailLevel(this.DetailLevel);
             }
         } else if (args.length == 2) {
+            Types.mustBeAll('finiteNumber', args[0], args[1]);
             this.DetailLevel = new Byte(args[0]);
             this.Data = args[1];
             this.setDetailLevel(this.DetailLevel);
@@ -26,7 +34,14 @@ export class BlockCoordinate {
             this.setDetailLevel(this.DetailLevel);
         }
     }
+    get Data() {
+        return (new Short(this._data)).valueOf();
+    }
+    set Data(v) {
+        this._data = (new Short(v)).valueOf();
+    }
     setDetailLevel(DetailLevel) { // TODO turn into setter
+        Types.mustBe('finiteNumber', DetailLevel);
         this.DetailLevel = new Byte(DetailLevel);
         this.Shift = ((BlockCoordinate.CHUNK_DETAIL_LEVELS - DetailLevel) - 1);
         this.Size = (1 << this.Shift);
@@ -39,6 +54,8 @@ export class BlockCoordinate {
         this.Max = (Xcomponent | Ycomponent | Zcomponent);
     }
     translate(DirectionType, Length = 1) {
+        Types.mustBe(Direction, DirectionType);
+        Types.mustBe('finiteNumber', Length);
         let Xcomponent = ((this.Data >> (this.Shift * BlockCoordinate.BLOCK_BITSHIFT_X)) & this.Mask);
         let Ycomponent = ((this.Data >> (this.Shift * BlockCoordinate.BLOCK_BITSHIFT_Y)) & this.Mask);
         let Zcomponent = ((this.Data >> (this.Shift * BlockCoordinate.BLOCK_BITSHIFT_Z)) & this.Mask);
@@ -75,9 +92,12 @@ export class BlockCoordinate {
         }
     }
     setByData(Data) {
+        Types.mustBe('finiteInteger', Data);
         this.Data = Data;
     }
     setByAxisInt(AxialComponent, NewValue) {
+        Types.mustBe(Axis, AxialComponent);
+        Types.mustBe('finiteInteger', NewValue);
         let Xcomponent = ((this.Data >> (this.Shift * BlockCoordinate.BLOCK_BITSHIFT_X)) & this.Mask);
         let Ycomponent = ((this.Data >> (this.Shift * BlockCoordinate.BLOCK_BITSHIFT_Y)) & this.Mask);
         let Zcomponent = ((this.Data >> (this.Shift * BlockCoordinate.BLOCK_BITSHIFT_Z)) & this.Mask);
@@ -103,6 +123,7 @@ export class BlockCoordinate {
         this.Data = (Xcomponent | Ycomponent | Zcomponent);
     }
     setByIntIntInt(NewX, NewY, NewZ) {
+        Types.mustBeAll('finiteInteger', NewX, NewY, NewZ);
         let Xcomponent = (NewX & this.Mask);
         let Ycomponent = (NewY & this.Mask);
         let Zcomponent = (NewZ & this.Mask);
@@ -132,6 +153,7 @@ export class BlockCoordinate {
         this.Data++;
     }
     skipAlongAxis(SkippingAxis) {
+        Types.mustBe(Axis, SkippingAxis);
         let Xcomponent = ((this.Data >> (this.Shift * BlockCoordinate.BLOCK_BITSHIFT_X)) & this.Mask);
         let Ycomponent = ((this.Data >> (this.Shift * BlockCoordinate.BLOCK_BITSHIFT_Y)) & this.Mask);
         let Zcomponent = ((this.Data >> (this.Shift * BlockCoordinate.BLOCK_BITSHIFT_Z)) & this.Mask);
@@ -156,6 +178,8 @@ export class BlockCoordinate {
         return (this.Data > this.Max || this.Data < 0);
     }
     copy(ArgumentCoordinates) {
+        Types.mustHaveAll(ArgumentCoordinates, "Data", "DetailLevel");
+        Types.mustBeAll('finiteInteger', ArgumentCoordinates.Data, ArgumentCoordinates.DetailLevel);
         this.Data = ArgumentCoordinates.Data;
         this.setDetailLevel(ArgumentCoordinates.DetailLevel);
     }
@@ -163,9 +187,11 @@ export class BlockCoordinate {
         return new BlockCoordinate(this.DetailLevel, this.Data);
     }
     equals(Arg) {
+        Types.mustHaveAll(Arg, "Data", "DetailLevel");
         return (Arg.Data == this.Data && Arg.DetailLevel.equals(this.DetailLevel));
     }
     getValueonAxis(AxialComponent) {
+        Types.mustBe(Axis, AxialComponent);
         switch (AxialComponent) {
             case Axis.AXIS_X:
                 return ((this.Data >> (this.Shift * BlockCoordinate.BLOCK_BITSHIFT_X)) & this.Mask);

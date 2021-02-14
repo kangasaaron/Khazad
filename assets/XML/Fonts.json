@@ -1,0 +1,38 @@
+{
+   "Font": [
+      {
+         "Name": {
+            "_Label": "FONT_CELTIC_GARAMOND"
+         },
+         "File": {
+            "_Path": "Assets/Fonts/Celtic Garamond.ttf"
+         },
+         "Size": {
+            "_Int": "20"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FONT_MINIM"
+         },
+         "File": {
+            "_Path": "Assets/Fonts/minim.ttf"
+         },
+         "Size": {
+            "_Int": "25"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FONT_KNIGHTS_TEMPLAR"
+         },
+         "File": {
+            "_Path": "Assets/Fonts/Knights Templar.ttf"
+         },
+         "Size": {
+            "_Int": "28"
+         }
+      }
+   ],
+   "_xmlns": "https://github.com/ImpalerWrG/Khazad"
+}

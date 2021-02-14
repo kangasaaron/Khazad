@@ -1,9 +1,9 @@
-import { RegionCoordinate } from "../../../Map/Coordinates/RegionCoordinate.js";
-import { Serializable } from "../../../other/Serializable.js";
+import { RegionCoordinate } from "../../../Map.js";
+import { Serializable, Types } from "../../../other.js";
 
 QUnit.module("Map/Coordinates/RegionCoordinate test", function() {
     QUnit.test("statics test", function(assert) {
-        assert.ok(Serializable.isImplementedByClass(RegionCoordinate));
+        assert.ok(Types.isImplementedBy(Serializable, RegionCoordinate));
     });
     QUnit.test("copy test", function(assert) {
         let original = new RegionCoordinate();
@@ -23,7 +23,6 @@ QUnit.module("Map/Coordinates/RegionCoordinate test", function() {
         let rc = new RegionCoordinate();
         assert.ok(rc !== undefined);
         assert.ok(rc instanceof RegionCoordinate);
-        assert.ok(Serializable.isImplementedBy(rc));
         assert.equal(rc.X, 0);
         assert.equal(rc.Y, 0);
 

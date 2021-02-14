@@ -1,0 +1,83 @@
+{
+   "useStyles": {
+      "_filename": "nifty-default-styles.xml"
+   },
+   "useControls": {
+      "_filename": "nifty-default-controls.xml"
+   },
+   "controlDefinition": {
+      "control": [
+         {
+            "panel": {
+               "panel": {
+                  "control": [
+                     {
+                        "_name": "label",
+                        "_color": "#ffffffff",
+                        "_id": "#NameLabel",
+                        "_height": "30px",
+                        "_font": "aurulent-sans-16.fnt",
+                        "_width": "*",
+                        "_textHAlign": "left"
+                     },
+                     {
+                        "interact": {
+                           "_onClick": "moveToCitizen()"
+                        },
+                        "_childLayout": "center",
+                        "_height": "30px",
+                        "_id": "#MoveToButton",
+                        "_label": "Move To",
+                        "_name": "button",
+                        "_width": "70px"
+                     }
+                  ],
+                  "_id": "#NamePanel",
+                  "_childLayout": "horizontal"
+               },
+               "control": [
+                  {
+                     "_name": "label",
+                     "_color": "#ffffffff",
+                     "_id": "#GenderLabel",
+                     "_height": "30px",
+                     "_font": "aurulent-sans-16.fnt",
+                     "_width": "100%",
+                     "_textHAlign": "left"
+                  },
+                  {
+                     "_name": "label",
+                     "_color": "#ffffffff",
+                     "_id": "#JobLabel",
+                     "_height": "30px",
+                     "_font": "aurulent-sans-16.fnt",
+                     "_width": "100%",
+                     "_textHAlign": "left"
+                  },
+                  {
+                     "_name": "label",
+                     "_color": "#ffffffff",
+                     "_id": "#TaskLabel",
+                     "_height": "30px",
+                     "_font": "aurulent-sans-16.fnt",
+                     "_width": "100%",
+                     "_textHAlign": "left"
+                  }
+               ],
+               "_id": "#CitizenWindowPanel",
+               "_controller": "Nifty.CitizenWindowController",
+               "_childLayout": "vertical"
+            },
+            "_id": "#CitizenWindow",
+            "_name": "window",
+            "_title": "Citizen",
+            "_width": "320px",
+            "_height": "180px",
+            "_font": "aurulent-sans-16.fnt",
+            "_x": "80px",
+            "_y": "80px"
+         }
+      ],
+      "_name": "CitizenWindow"
+   }
+}

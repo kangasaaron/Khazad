@@ -1,4 +1,4 @@
-import { Utils } from "../../Core/Utils.js";
+import { Utils } from "../../Core.js";
 
 QUnit.module("Core/Utils.padLeadingZero test", function() {
     QUnit.test("test zero to 9", function(assert) {
@@ -33,7 +33,7 @@ QUnit.module("Core/Utils.padLeadingZero test", function() {
     });
 });
 
-QUnit.module("Utils.upperCasefirst", function() {
+QUnit.module("Core/Utils.upperCasefirst", function() {
     QUnit.test("test all", function(assert) {
         assert.equal(Utils.upperCaseFirst("THIS is some sandwich"), "THIS is some sandwich");
         assert.equal(Utils.upperCaseFirst("this is some sandwich"), "This is some sandwich");

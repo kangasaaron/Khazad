@@ -71,17 +71,29 @@ class Integer extends Number {
     static isNaN(value) {
         return Number.isNaN(value.valueOf());
     }
+    strictequals(other) {
+        return this.prototype == other.prototype && this.valueOf() == other.valueOf();
+    }
     equals(other) {
         return this.valueOf() == other.valueOf();
     }
-    isNotEqualTo(other) {
+    notequal(other) {
         return !this.equals(other);
     }
-    isLessThan(other) {
+    strictnotequal(other) {
+        return (this.prototype != other.prototype) || this.valueOf() != other.valueOf();
+    }
+    lessthan(other) {
         return this.valueOf() < other.valueOf();
     }
-    isGreaterThan(other) {
+    lessthanorequalto(other) {
+        return this.lessthan(other) || this.equals(other);
+    }
+    greaterthan(other) {
         return this.valueOf() < other.valueOf();
+    }
+    greaterthanorequalto(other) {
+        return this.greaterthan(other) || this.equals(other);
     }
     minus(other) {
         return this.valueOf() - other.valueOf();
@@ -96,6 +108,18 @@ class Integer extends Number {
         return Math.round(this.valueOf() / other.valueOf());
     }
 }
+Integer.prototype["==="] = Integer.prototype.strictequals;
+Integer.prototype["=="] = Integer.prototype.equals;
+Integer.prototype["!="] = Integer.prototype.notequal;
+Integer.prototype["!=="] = Integer.prototype.strictnotequal;
+Integer.prototype["<"] = Integer.prototype.lessthan;
+Integer.prototype["<="] = Integer.prototype.lessthanorequalto;
+Integer.prototype[">"] = Integer.prototype.greaterthan;
+Integer.prototype[">="] = Integer.prototype.greaterthanorequalto;
+Integer.prototype["-"] = Integer.prototype.minus;
+Integer.prototype["+"] = Integer.prototype.plus;
+Integer.prototype["*"] = Integer.prototype.times;
+Integer.prototype["/"] = Integer.prototype.dividedBy;
 
 Object.defineProperty(Integer, "EPSILON", {
     "writable": false,
@@ -216,3 +240,10 @@ export const ByteArray = Int8Array;
 export const ShortArray = Int16Array;
 export const IntArray = Int32Array;
 export const LongArray = Array;
+
+export const Integers = {
+    Byte,
+    Short,
+    Int,
+    Long
+};

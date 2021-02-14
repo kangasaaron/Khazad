@@ -1,0 +1,288 @@
+{
+   "Creature": [
+      {
+         "Name": {
+            "_Label": "CREATURE_DWARF"
+         },
+         "CreatureSize": {
+            "_label": "CREATURE_SIZE_MEDIUM"
+         },
+         "LifeSpan": {
+            "_value": "250"
+         },
+         "BasicAttributeModifiers": {
+            "AttributeModifier": [
+               {
+                  "_label": "BASIC_ATTRIBUTE_STRENGTH",
+                  "_Modifier": "0"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_DEXTERITY",
+                  "_Modifier": "0"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_FLEXIBILITY",
+                  "_Modifier": "0"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_ENDURANCE",
+                  "_Modifier": "0"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_VITALITY",
+                  "_Modifier": "2"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_REFLEXES",
+                  "_Modifier": "0"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_SPEED",
+                  "_Modifier": "0"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_LOGIC",
+                  "_Modifier": "0"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_PERCEPTION",
+                  "_Modifier": "0"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_CHARISMA",
+                  "_Modifier": "-2"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_MEMORY",
+                  "_Modifier": "0"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_JUDGMENT",
+                  "_Modifier": "0"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_WILLPOWER",
+                  "_Modifier": "0"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_INTUITION",
+                  "_Modifier": "0"
+               }
+            ]
+         },
+         "MovementModality": {
+            "MovementType": [
+               {
+                  "_label": "MOVEMENT_TYPE_WALK",
+                  "_MovementSpeedModifier": "1"
+               },
+               {
+                  "_label": "MOVEMENT_TYPE_CLIMB",
+                  "_MovementSpeedModifier": "1"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "CREATURE_HUMAN"
+         },
+         "CreatureSize": {
+            "_label": "CREATURE_SIZE_MEDIUM"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "CREATURE_ELF"
+         },
+         "CreatureSize": {
+            "_label": "CREATURE_SIZE_MEDIUM"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "CREATURE_GNOME"
+         },
+         "CreatureSize": {
+            "_label": "CREATURE_SIZE_TINY"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "CREATURE_HOBITS"
+         },
+         "CreatureSize": {
+            "_label": "CREATURE_SIZE_SMALL"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "CREATURE_GOBLIN"
+         },
+         "CreatureSize": {
+            "_label": "CREATURE_SIZE_SMALL"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "CREATURE_ORC"
+         },
+         "CreatureSize": {
+            "_label": "CREATURE_SIZE_MEDIUM"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "CREATURE_KOBOLD"
+         },
+         "CreatureSize": {
+            "_label": "CREATURE_SIZE_SMALL"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "CREATURE_GNOLL"
+         },
+         "CreatureSize": {
+            "_label": "CREATURE_SIZE_MEDIUM"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "CREATURE_OGRE"
+         },
+         "CreatureSize": {
+            "_label": "CREATURE_SIZE_LARGE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "CREATURE_MANTIS"
+         },
+         "CreatureSize": {
+            "_label": "CREATURE_SIZE_MEDIUM"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "CREATURE_SPIDERFOLK"
+         },
+         "CreatureSize": {
+            "_label": "CREATURE_SIZE_MEDIUM"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "CREATURE_SATYR"
+         },
+         "CreatureSize": {
+            "_label": "CREATURE_SIZE_MEDIUM"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "CREATURE_CENTAUR"
+         },
+         "CreatureSize": {
+            "_label": "CREATURE_SIZE_LARGE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "CREATURE_PIXIE"
+         },
+         "CreatureSize": {
+            "_label": "CREATURE_SIZE_DIMINIUTIVE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "CREATURE_SMURF"
+         },
+         "CreatureSize": {
+            "_label": "CREATURE_SIZE_DIMINIUTIVE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "CREATURE_MERFOLK"
+         },
+         "CreatureSize": {
+            "_label": "CREATURE_SIZE_MEDIUM"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "CREATURE_HYPSIL"
+         },
+         "CreatureSize": {
+            "_label": "CREATURE_SIZE_MEDIUM"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "CREATURE_MYCONID"
+         },
+         "CreatureSize": {
+            "_label": "CREATURE_SIZE_MEDIUM"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "CREATURE_ENT"
+         },
+         "CreatureSize": {
+            "_label": "CREATURE_SIZE_HUGE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "CREATURE_DRAGON"
+         },
+         "CreatureSize": {
+            "_label": "CREATURE_SIZE_COLLOSAL"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "CREATURE_BEHOLDER"
+         },
+         "CreatureSize": {
+            "_label": "CREATURE_SIZE_MEDIUM"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "CREATURE_GARGOYLES"
+         },
+         "CreatureSize": {
+            "_label": "CREATURE_SIZE_MEDIUM"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "CREATURE_MEDUSA"
+         },
+         "CreatureSize": {
+            "_label": "CREATURE_SIZE_MEDIUM"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "CREATURE_TROLL"
+         },
+         "CreatureSize": {
+            "_label": "CREATURE_SIZE_LARGE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "CREATURE_MINOTAUR"
+         },
+         "CreatureSize": {
+            "_label": "CREATURE_SIZE_LARGE"
+         }
+      }
+   ],
+   "_xmlns": "https://github.com/ImpalerWrG/Khazad"
+}

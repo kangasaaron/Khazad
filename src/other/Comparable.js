@@ -1,4 +1,3 @@
-import { Interface } from "./Serializable.js";
+import { createNewInterface } from "./interface.js";
 
-export class Comparable extends Interface {}
-Comparable.abstractFunctions = ['compareTo'];
+export const Comparable = createNewInterface("Comparable", "compareTo");

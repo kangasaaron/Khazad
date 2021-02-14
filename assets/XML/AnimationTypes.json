@@ -1,0 +1,20 @@
+{
+   "AnimationType": [
+      {
+         "Name": {
+            "_Label": "ANIMATION_TYPE_IDLE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "ANIMATION_TYPE_WALK"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "ANIMATION_TYPE_ATTACK"
+         }
+      }
+   ],
+   "_xmlns": "https://github.com/ImpalerWrG/Khazad"
+}

@@ -1,4 +1,5 @@
-import { ChunkCoordinate } from "../../../Map/Coordinates/ChunkCoordinate.js";
+import { ChunkCoordinate } from "../../../Map.js";
+import "../../../other/three.min.js";
 
 QUnit.module("Map/Coordinates/ChunkCoordinate test", function() {
     QUnit.test("constructor test", function(assert) {
@@ -90,8 +91,9 @@ QUnit.module("Map/Coordinates/ChunkCoordinate test", function() {
         assert.equal(coord.hashCode(), 16781313);
     });
 
-    QUnit.test.todo("getVector", function(assert) {
+    QUnit.test("getVector", function(assert) {
         let coord = new ChunkCoordinate(10, 11, 12);
+        assert.ok((coord.getVector()).equals(new THREE.Vector3(10 * 32, 11 * 32, 12 * 32)));
     })
 
     QUnit.test("toString test", function(assert) {

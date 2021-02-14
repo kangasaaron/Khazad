@@ -1,0 +1,157 @@
+{
+   "useStyles": {
+      "_filename": "nifty-default-styles.xml"
+   },
+   "useControls": {
+      "_filename": "nifty-default-controls.xml"
+   },
+   "screen": {
+      "layer": {
+         "panel": [
+            {
+               "control": {
+                  "_font": "aurulent-sans-16.fnt",
+                  "_height": "60px",
+                  "_id": "LoadGame",
+                  "_name": "label",
+                  "_text": "Load Game",
+                  "_textLineHeight": "30px",
+                  "_textMinHeight": "40px",
+                  "_width": "100%",
+                  "_x": "184",
+                  "_y": "54"
+               },
+               "panel": [
+                  {
+                     "panel": [
+                        {
+                           "control": {
+                              "_font": "aurulent-sans-16.fnt",
+                              "_id": "SaveGames",
+                              "_width": "90%",
+                              "_name": "listBox",
+                              "_selectionMode": "Single",
+                              "_forceSelection": "true",
+                              "_horizontal": "off",
+                              "_vertical": "on",
+                              "_displayItems": "7"
+                           },
+                           "_childLayout": "center",
+                           "_id": "SaveGamesPanel2",
+                           "_width": "50%"
+                        },
+                        {
+                           "control": {
+                              "_font": "aurulent-sans-16.fnt",
+                              "_style": "nifty-label",
+                              "_color": "#cc0",
+                              "_id": "SaveDescription",
+                              "_width": "90%",
+                              "_name": "label",
+                              "_wrap": "true",
+                              "_textHAlign": "left"
+                           },
+                           "_childLayout": "vertical",
+                           "_id": "SaveDescriptionBorderPanel",
+                           "_width": "50%",
+                           "_height": "100%",
+                           "_backgroundColor": "#333",
+                           "_padding": "2px"
+                        }
+                     ],
+                     "_childLayout": "horizontal",
+                     "_height": "160px",
+                     "_id": "SaveGamesPanel1",
+                     "_width": "100%"
+                  },
+                  {
+                     "panel": [
+                        {
+                           "control": {
+                              "interact": {
+                                 "_onClick": "CancelLoadGame()"
+                              },
+                              "_childLayout": "center",
+                              "_height": "38px",
+                              "_id": "CancelButton",
+                              "_label": "Cancel",
+                              "_name": "button",
+                              "_width": "130px"
+                           },
+                           "_childLayout": "center",
+                           "_height": "89px",
+                           "_id": "CancelButtonPanel",
+                           "_width": "25%"
+                        },
+                        {
+                           "_childLayout": "center",
+                           "_height": "89px",
+                           "_id": "EmptyPanel",
+                           "_width": "25%"
+                        },
+                        {
+                           "control": {
+                              "interact": {
+                                 "_onClick": "DeleteGame()"
+                              },
+                              "_childLayout": "center",
+                              "_height": "38px",
+                              "_id": "DeleteButton",
+                              "_label": "Delete Game",
+                              "_name": "button",
+                              "_width": "130px"
+                           },
+                           "_childLayout": "center",
+                           "_height": "89px",
+                           "_id": "DeleteButtonPanel",
+                           "_width": "25%"
+                        },
+                        {
+                           "control": {
+                              "interact": {
+                                 "_onClick": "LoadGame()"
+                              },
+                              "_childLayout": "center",
+                              "_height": "38px",
+                              "_id": "BeginButton",
+                              "_label": "Load Game",
+                              "_name": "button",
+                              "_width": "130px"
+                           },
+                           "_childLayout": "center",
+                           "_height": "89px",
+                           "_id": "BeginButtonPanel",
+                           "_width": "25%"
+                        }
+                     ],
+                     "_childLayout": "horizontal",
+                     "_height": "40px",
+                     "_id": "ButtonsPanel",
+                     "_width": "100%"
+                  }
+               ],
+               "effect": {
+                  "onEndScreen": {
+                     "_direction": "bottom",
+                     "_inherit": "true",
+                     "_length": "300",
+                     "_mode": "out",
+                     "_name": "move",
+                     "_startDelay": "0"
+                  }
+               },
+               "_align": "center",
+               "_childLayout": "vertical",
+               "_height": "300px",
+               "_id": "LoadGamePanel",
+               "_style": "nifty-panel-simple",
+               "_width": "600px"
+            }
+         ],
+         "_childLayout": "center",
+         "_id": "layer1"
+      },
+      "_controller": "Nifty.LoadGameScreenController",
+      "_id": "LoadGameScreen"
+   }
+}

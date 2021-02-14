@@ -1,48 +1,29 @@
-import { BlockCoordinate } from "../../../Map/Coordinates/BlockCoordinate.js";
-import { Direction } from "../../../Map/Coordinates/Direction.js";
-import { FaceCoordinate } from "../../../Map/Coordinates/FaceCoordinate.js";
-import { Byte } from "../../../other/Integers.js";
+import { BlockCoordinate, Direction, FaceCoordinate } from "../../../Map.js";
+import { Byte } from "../../../other.js";
 
 QUnit.module("Map/Coordinates/FaceCoordinate test", function() {
     QUnit.test("constructor test", function(assert) {
         let f = new FaceCoordinate();
         assert.ok(f instanceof FaceCoordinate);
         assert.ok(f instanceof BlockCoordinate);
-        assert.equal(f.FaceDirection, Direction.DIRECTION_DESTINATION);
+        assert.ok(f.FaceDirection == Direction.DIRECTION_DESTINATION);
         assert.equal(f.Data, 0);
         assert.ok(f.DetailLevel.equals(new Byte(0)));
 
-        f.set(10);
+        f.set(10, Direction.DIRECTION_DOWN);
         let b = new FaceCoordinate(f);
         assert.ok(b instanceof FaceCoordinate);
-        assert.equal(b.FaceDirection, f.FaceDirection);
+        assert.ok(b.FaceDirection == (f.FaceDirection));
         assert.equal(b.Data, f.Data);
         assert.ok(b.DetailLevel.equals(f.DetailLevel));
 
         let c = new FaceCoordinate(new BlockCoordinate(0, 10), Direction.DIRECTION_NORTH);
         assert.ok(c instanceof FaceCoordinate);
-        assert.equal(c.FaceDirection, Direction.DIRECTION_NORTH);
+        assert.ok(c.FaceDirection == (Direction.DIRECTION_NORTH));
         assert.equal(c.Data, 10);
         assert.ok(c.DetailLevel.equals(new Byte(0)));
     });
-    /*
 
-	public void set(FaceCoordinate ArgumentCoordinates) {
-		super.copy(ArgumentCoordinates);
-		FaceDirection = ArgumentCoordinates.FaceDirection;
-	}
-
-	public void set(short CubeIndex, Direction DirectionComponent) {
-		super.set(CubeIndex);
-		FaceDirection = (byte) DirectionComponent.ordinal();
-	}
-
-	public void set(int NewX, int NewY, int Z, Direction DirectionComponent) {
-		super.set(NewX, NewY, NewY);
-		FaceDirection = (byte) DirectionComponent.ordinal();
-	}
-
-    */
     QUnit.test('set tests', function(assert) {
         let b = new FaceCoordinate(new BlockCoordinate(10, 10), Direction.DIRECTION_DOWN),
             c = new FaceCoordinate(new BlockCoordinate(0, 5), Direction.DIRECTION_EAST);
@@ -66,7 +47,7 @@ QUnit.module("Map/Coordinates/FaceCoordinate test", function() {
 
     QUnit.test('getCoordinates', function(assert) {
         let b = new FaceCoordinate();
-        let a = Symbol('FaceCoordinateBlockIndex');
+        let a = Math.floor(Math.random() * 127 * 127);
         b.Data = a;
 
         assert.equal(b.getCoordinates(), a);

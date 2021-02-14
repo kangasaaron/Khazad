@@ -1,0 +1,33 @@
+{
+   "ScreenResolution": {
+      "_X": "1000",
+      "_Y": "750",
+      "_Full": "0"
+   },
+   "GameCaption": {
+      "_Caption": "An XML Caption"
+   },
+   "MapSize": {
+      "_X": "12",
+      "_Y": "12",
+      "_Z": "8"
+   },
+   "Zoom": {
+      "_Min": "1",
+      "_Start": "100",
+      "_Max": "200"
+   },
+   "InterfaceSpeed": {
+      "_Orbit": "100",
+      "_Tilt": "20",
+      "_Slide": "100",
+      "_Zoom": "100"
+   },
+   "MapLoading": {
+      "_Path": "Saves/Phoenix Fort.map"
+   },
+   "MapSaving": {
+      "_Path": "Saves/KhazadMap.map"
+   },
+   "_xmlns": "https://github.com/ImpalerWrG/Khazad"
+}

@@ -1,0 +1,83 @@
+{
+   "useStyles": {
+      "_filename": "nifty-default-styles.xml"
+   },
+   "useControls": {
+      "_filename": "nifty-default-controls.xml"
+   },
+   "popup": {
+      "interact": {
+         "_onClick": "CloseMenuPopup()",
+         "_onSecondaryClick": "CloseMenuPopup()",
+         "_onTertiaryClick": "CloseMenuPopup()"
+      },
+      "panel": [
+         {
+            "panel": [
+               {
+                  "control": {
+                     "interact": {
+                        "_onClick": "SaveGame()"
+                     },
+                     "_childLayout": "center",
+                     "_height": "50px",
+                     "_id": "Savebutton",
+                     "_label": "Save Game",
+                     "_name": "button",
+                     "_width": "150px"
+                  },
+                  "_align": "center",
+                  "_childLayout": "center",
+                  "_height": "100px",
+                  "_id": "QuitPanel",
+                  "_width": "100%"
+               },
+               {
+                  "control": {
+                     "interact": {
+                        "_onClick": "Abandon()"
+                     },
+                     "_childLayout": "center",
+                     "_height": "50px",
+                     "_id": "Abandonbutton",
+                     "_label": "Abandon Game",
+                     "_name": "button",
+                     "_width": "150px"
+                  },
+                  "_align": "center",
+                  "_childLayout": "center",
+                  "_height": "100px",
+                  "_width": "100%"
+               },
+               {
+                  "control": {
+                     "interact": {
+                        "_onClick": "Quit()"
+                     },
+                     "_childLayout": "center",
+                     "_height": "50px",
+                     "_id": "Quitbutton",
+                     "_label": "Quit to Desktop",
+                     "_name": "button",
+                     "_width": "150px"
+                  },
+                  "_align": "center",
+                  "_childLayout": "center",
+                  "_height": "100px",
+                  "_width": "100%"
+               }
+            ],
+            "_align": "center",
+            "_childLayout": "vertical",
+            "_height": "300px",
+            "_id": "MenuPanel",
+            "_style": "nifty-panel-simple",
+            "_width": "200px"
+         }
+      ],
+      "_backgroundColor": "#000a",
+      "_childLayout": "center",
+      "_controller": "Nifty.MenuPopupController",
+      "_id": "MenuPopup"
+   }
+}

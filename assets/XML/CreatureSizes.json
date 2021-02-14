@@ -1,0 +1,301 @@
+{
+   "CreatureSize": [
+      {
+         "Name": {
+            "_Label": "CREATURE_SIZE_DIMINIUTIVE"
+         },
+         "BasicAttributeModifiers": {
+            "AttributeModifier": [
+               {
+                  "_label": "BASIC_ATTRIBUTE_STRENGTH",
+                  "_Modifier": "-1"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_DEXTERITY",
+                  "_Modifier": "5"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_FLEXIBILITY",
+                  "_Modifier": "5"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_ENDURANCE",
+                  "_Modifier": "1"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_VITALITY",
+                  "_Modifier": "-1"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_REFLEXES",
+                  "_Modifier": "4"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_SPEED",
+                  "_Modifier": "1"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "CREATURE_SIZE_TINY"
+         },
+         "BasicAttributeModifiers": {
+            "AttributeModifier": [
+               {
+                  "_label": "BASIC_ATTRIBUTE_STRENGTH",
+                  "_Modifier": "0"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_DEXTERITY",
+                  "_Modifier": "4"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_FLEXIBILITY",
+                  "_Modifier": "4"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_ENDURANCE",
+                  "_Modifier": "1"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_VITALITY",
+                  "_Modifier": "0"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_REFLEXES",
+                  "_Modifier": "4"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_SPEED",
+                  "_Modifier": "1"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "CREATURE_SIZE_SMALL"
+         },
+         "BasicAttributeModifiers": {
+            "AttributeModifier": [
+               {
+                  "_label": "BASIC_ATTRIBUTE_STRENGTH",
+                  "_Modifier": "1"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_DEXTERITY",
+                  "_Modifier": "3"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_FLEXIBILITY",
+                  "_Modifier": "3"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_ENDURANCE",
+                  "_Modifier": "2"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_VITALITY",
+                  "_Modifier": "1"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_REFLEXES",
+                  "_Modifier": "3"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_SPEED",
+                  "_Modifier": "2"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "CREATURE_SIZE_MEDIUM"
+         },
+         "BasicAttributeModifiers": {
+            "AttributeModifier": [
+               {
+                  "_label": "BASIC_ATTRIBUTE_STRENGTH",
+                  "_Modifier": "2"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_DEXTERITY",
+                  "_Modifier": "2"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_FLEXIBILITY",
+                  "_Modifier": "2"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_ENDURANCE",
+                  "_Modifier": "2"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_VITALITY",
+                  "_Modifier": "2"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_REFLEXES",
+                  "_Modifier": "2"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_SPEED",
+                  "_Modifier": "2"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "CREATURE_SIZE_LARGE"
+         },
+         "BasicAttributeModifiers": {
+            "AttributeModifier": [
+               {
+                  "_label": "BASIC_ATTRIBUTE_STRENGTH",
+                  "_Modifier": "3"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_DEXTERITY",
+                  "_Modifier": "1"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_FLEXIBILITY",
+                  "_Modifier": "1"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_ENDURANCE",
+                  "_Modifier": "3"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_VITALITY",
+                  "_Modifier": "3"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_REFLEXES",
+                  "_Modifier": "1"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_SPEED",
+                  "_Modifier": "2"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "CREATURE_SIZE_HUGE"
+         },
+         "BasicAttributeModifiers": {
+            "AttributeModifier": [
+               {
+                  "_label": "BASIC_ATTRIBUTE_STRENGTH",
+                  "_Modifier": "4"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_DEXTERITY",
+                  "_Modifier": "1"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_FLEXIBILITY",
+                  "_Modifier": "1"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_ENDURANCE",
+                  "_Modifier": "3"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_VITALITY",
+                  "_Modifier": "4"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_REFLEXES",
+                  "_Modifier": "0"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_SPEED",
+                  "_Modifier": "3"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "CREATURE_SIZE_GARGANTUAN"
+         },
+         "BasicAttributeModifiers": {
+            "AttributeModifier": [
+               {
+                  "_label": "BASIC_ATTRIBUTE_STRENGTH",
+                  "_Modifier": "5"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_DEXTERITY",
+                  "_Modifier": "0"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_FLEXIBILITY",
+                  "_Modifier": "0"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_ENDURANCE",
+                  "_Modifier": "4"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_VITALITY",
+                  "_Modifier": "5"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_REFLEXES",
+                  "_Modifier": "-1"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_SPEED",
+                  "_Modifier": "4"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "CREATURE_SIZE_COLLOSAL"
+         },
+         "BasicAttributeModifiers": {
+            "AttributeModifier": [
+               {
+                  "_label": "BASIC_ATTRIBUTE_STRENGTH",
+                  "_Modifier": "6"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_DEXTERITY",
+                  "_Modifier": "-1"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_FLEXIBILITY",
+                  "_Modifier": "-1"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_ENDURANCE",
+                  "_Modifier": "5"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_VITALITY",
+                  "_Modifier": "6"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_REFLEXES",
+                  "_Modifier": "-1"
+               },
+               {
+                  "_label": "BASIC_ATTRIBUTE_SPEED",
+                  "_Modifier": "5"
+               }
+            ]
+         }
+      }
+   ],
+   "_xmlns": "https://github.com/ImpalerWrG/Khazad"
+}

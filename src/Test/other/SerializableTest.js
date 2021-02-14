@@ -1,17 +1,16 @@
-import { Serializable } from "../../other/Serializable.js";
+import { Serializable, Types } from "../../other.js";
 
 QUnit.module("other/Serializable test", function() {
-    let a = new Serializable();
+    let serializableClass = Serializable();
+    let a = new serializableClass();
     QUnit.test("test that abstract methods exist", function(assert) {
-        assert.ok(a.writeObject !== null && a.writeObject !== undefined);
-        assert.ok(a.readObject !== null && a.readObject !== undefined);
-        assert.ok(a.readObjectNoData !== null && a.readObjectNoData !== undefined);
+        assert.equal(Serializable.isInterface, true);
+        assert.equal(serializableClass.isInterface, true);
+        Types.testCanAll(assert, a, "writeObject", "readObject", "readObjectNoData");
 
-        assert.ok(typeof a.writeObject == "function");
-        assert.ok(typeof a.readObject == "function");
-        assert.ok(typeof a.readObjectNoData == "function");
-
-        assert.ok(Serializable.serialVersionUID !== null && Serializable.serialVersionUID !== undefined);
+        assert.ok(serializableClass.serialVersionUID !== null && serializableClass.serialVersionUID !== undefined);
+        assert.ok("Mixins" in serializableClass);
+        assert.ok("Serializable" in serializableClass.Mixins);
     });
     QUnit.test("test that abstract methods throw", function(assert) {
         assert.throws(function() {

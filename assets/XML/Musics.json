@@ -1,0 +1,45 @@
+{
+   "Music": [
+      {
+         "Name": {
+            "_Label": "MUSIC_THE_FALL_OF_ARCANA"
+         },
+         "File": {
+            "_Path": "Sounds/Music/The Fall of Arcana.ogg"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MUSIC_STEPPING_STONES"
+         },
+         "File": {
+            "_Path": "Sounds/Music/Stepping Stones.ogg"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MUSIC_AROUND_THE_MOUNTAIN"
+         },
+         "File": {
+            "_Path": "Sounds/Music/Around the Mountain.ogg"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MUSIC_DARK_AMBIENCE"
+         },
+         "File": {
+            "_Path": "Sounds/Music/Dark Ambience.ogg"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MUSIC_SECOND_ORGAN"
+         },
+         "File": {
+            "_Path": "Sounds/Music/Second Organ.ogg"
+         }
+      }
+   ],
+   "_xmlns": "https://github.com/ImpalerWrG/Khazad"
+}

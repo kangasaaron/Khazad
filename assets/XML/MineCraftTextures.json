@@ -1,0 +1,74 @@
+{
+   "TextureGrid": {
+      "TextureSize": {
+         "_Height": "32",
+         "_Width": "32"
+      },
+      "GridSize": {
+         "_Height": "16",
+         "_Width": "16"
+      },
+      "File": {
+         "_Path": "Textures/terrain-BW.png"
+      },
+      "Textures": {
+         "Texture": [
+            {
+               "Name": {
+                  "_Label": "TEXTURE_DIRT_1"
+               },
+               "GridLocation": {
+                  "_X": "2",
+                  "_Y": "15"
+               }
+            },
+            {
+               "Name": {
+                  "_Label": "TEXTURE_IGNIOUS_2"
+               },
+               "GridLocation": {
+                  "_X": "1",
+                  "_Y": "14"
+               }
+            },
+            {
+               "Name": {
+                  "_Label": "TEXTURE_GENERIC_ROCK"
+               },
+               "GridLocation": {
+                  "_X": "0",
+                  "_Y": "15"
+               }
+            },
+            {
+               "Name": {
+                  "_Label": "TEXTURE_ROCK_2"
+               },
+               "GridLocation": {
+                  "_X": "1",
+                  "_Y": "15"
+               }
+            },
+            {
+               "Name": {
+                  "_Label": "TEXTURE_GRASS_5"
+               },
+               "GridLocation": {
+                  "_X": "0",
+                  "_Y": "6"
+               }
+            },
+            {
+               "Name": {
+                  "_Label": "TEXTURE_SAND_2"
+               },
+               "GridLocation": {
+                  "_X": "2",
+                  "_Y": "14"
+               }
+            }
+         ]
+      }
+   },
+   "_xmlns": "https://github.com/ImpalerWrG/Khazad"
+}

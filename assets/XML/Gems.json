@@ -1,0 +1,2597 @@
+{
+   "MaterialClass": {
+      "Name": {
+         "_Label": "MATERIALCLASS_GEM_STONE"
+      },
+      "DefaultMaterial": {
+         "_label": "MATERIAL_VEIN_STONE"
+      },
+      "DefaultSurfaceTextures": {
+         "SurfaceTexture": [
+            {
+               "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+               "_Texturelabel": "TEXTURE_ROUGH_GEMS"
+            },
+            {
+               "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+               "_Texturelabel": "TEXTURE_ROUGH_GEMS"
+            },
+            {
+               "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+               "_Texturelabel": "TEXTURE_ROUGH_GEMS"
+            },
+            {
+               "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+               "_Texturelabel": "TEXTURE_ROUGH_GEMS"
+            },
+            {
+               "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+               "_Texturelabel": "TEXTURE_ROUGH_GEMS"
+            },
+            {
+               "_SurfaceTypelabel": "SURFACETYPE_SMOOTH_WALL",
+               "_Texturelabel": "TEXTURE_SMOOTH"
+            },
+            {
+               "_SurfaceTypelabel": "SURFACETYPE_SMOOTH_FLOOR",
+               "_Texturelabel": "TEXTURE_SMOOTH"
+            },
+            {
+               "_SurfaceTypelabel": "SURFACETYPE_PEBBLES",
+               "_Texturelabel": "TEXTURE_PEBBLES"
+            },
+            {
+               "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_WALL",
+               "_Texturelabel": "TEXTURE_BRICK"
+            },
+            {
+               "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_FLOOR",
+               "_Texturelabel": "TEXTURE_TILES"
+            }
+         ]
+      }
+   },
+   "Material": [
+      {
+         "Name": {
+            "_Label": "MATERIAL_ONYX"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_MORION"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SCHORL"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_LACE_AGATE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLUE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_BLUE JADE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLUE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_LAPIS LAZULI"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLUE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_PRASE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_DARK_GREEN"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_PRASE OPAL"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_DARK_GREEN"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_BLOODSTONE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_MAROON"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_MOSS AGATE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_DARK_GREEN"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_MOSS OPAL"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_DARK_GREEN"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_VARISCITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_DARK_GREEN"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_CHRYSOPRASE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_CHRYSOCOLLA"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_AQUA"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SARD"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_MAROON"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_CARNELIAN"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_MAROON"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_BANDED AGATE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_MAROON"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SARDONYX"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_MAROON"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_CHERRY OPAL"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_RED"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_LAVENDAR JADE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_LAVENDAR"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_PINK JADE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_PINK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_TUBE AGATE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_FIRE AGATE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_ORANGE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_PLUME AGATE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_BROWN JASPER"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_PICTURE JASPER"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SMOKY QUARTZ"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_WAX OPAL"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_WOOD OPAL"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_AMBER OPAL"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_GOLD OPAL"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_YELLOW"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_CITRINE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_ORANGE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_YELLOW JASPER"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_YELLOW"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_TIGEREYE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_YELLOW"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_TIGER IRON"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_YELLOW"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SUNSTONE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_YELLOW"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_RESIN OPAL"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_YELLOW"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_PYRITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_YELLOW"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_TOURMALINE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_GRAY CHALCEDONY"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_DENDRITIC AGATE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SHELL OPAL"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_BONE OPAL"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_WHITE CHALCEDONY"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_FORTIFICATION AGATE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_MILK QUARTZ"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_MOONSTONE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_WHITE JADE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_JASPER OPAL"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_PINEAPPLE OPAL"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_ONYX OPAL"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_MILK OPAL"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_PIPE OPAL"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_AVENTURINE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_GREEN"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_TURQUOISE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_AQUA"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_QUARTZ_ROSE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_PINK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_CRYSTAL_ROCK"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_BLACK ZIRCON"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_BLACK PYROPE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_MELANITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_INDIGO TOURMALINE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_NAVY_BLUE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_BLUE GARNET"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLUE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_TSAVORITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_GREEN"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_GREEN TOURMALINE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_GREEN"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_DEMANTOID"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_GREEN"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_GREEN ZIRCON"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_GREEN"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_GREEN JADE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_LIME"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_HELIODOR"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_LIME"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_PERIDOT"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_LIME"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_RED ZIRCON"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_MAROON"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_RED TOURMALINE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_MAROON"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_RED PYROPE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_MAROON"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_ALMANDINE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_MAROON"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_RED GROSSULAR"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_MAROON"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_PINK TOURMALINE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_PINK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_RED BERYL"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_RED"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_FIRE OPAL"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_RED"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_RHODOLITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_PURPLE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SPINEL_PURPLE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_PURPLE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_ALEXANDRITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_MAGENTA"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_TANZANITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_MAGENTA"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_MORGANITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_MAGENTA"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_VIOLET SPESSARTINE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_MAGENTA"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_PINK GARNET"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_PINK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_KUNZITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_MAGENTA"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_CINNAMON GROSSULAR"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_HONEY YELLOW BERYL"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_JELLY OPAL"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_BROWN ZIRCON"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_YELLOW ZIRCON"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_GOLDEN BERYL"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_YELLOW"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_YELLOW SPESSARTINE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_YELLOW"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_TOPAZ"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_YELLOW"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_TOPAZOLITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_YELLOW"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_YELLOW GROSSULAR"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_YELLOW"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_RUBICELLE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_YELLOW"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_CLEAR GARNET"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_GOSHENITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_CAT'S EYE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_CLEAR ZIRCON"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_AMETHYST"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_MAGENTA"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_AQUAMARINE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_AQUA"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SPINEL_RED"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_RED"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_CHRYSOBERYL"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_LIME"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_OPAL_PFIRE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_RED"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_OPAL_REDFLASH"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_RED"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_OPAL_BLACK"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_OPAL_WHITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_OPAL_CRYSTAL"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_OPAL_CLARO"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLUE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_OPAL_LEVIN"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_YELLOW"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_OPAL_HARLEQUIN"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_OPAL_PINFIRE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_OPAL_BANDFIRE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_DIAMOND_LY"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_DIAMOND_FY"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_EMERALD"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_GREEN"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_RUBY"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_RED"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SAPPHIRE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLUE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_DIAMOND_CLEAR"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_DIAMOND_RED"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_RED"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_DIAMOND_GREEN"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_GREEN"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_DIAMOND_BLUE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLUE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_DIAMOND_YELLOW"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_YELLOW"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_DIAMOND_BLACK"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SAPPHIRE_STAR"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLUE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_RUBY_STAR"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GEM_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_RED"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         }
+      }
+   ],
+   "_xmlns": "https://github.com/ImpalerWrG/Khazad"
+}

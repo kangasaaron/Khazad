@@ -1,10 +1,10 @@
 import { SectorCoordinate } from "../../../Map/Coordinates/SectorCoordinate.js";
-import { Serializable } from "../../../other/Serializable.js";
+import { Serializable, Types } from "../../../other.js";
 
 QUnit.module("Map/Coordinates/SectorCoordinate test", function() {
 
     QUnit.test("statics tesT", function(assert) {
-        assert.ok(Serializable.isImplementedByClass(SectorCoordinate));
+        assert.ok(Types.isImplementedBy(Serializable, SectorCoordinate));
     });
 
     QUnit.test("constructor test", function(assert) {
@@ -15,7 +15,6 @@ QUnit.module("Map/Coordinates/SectorCoordinate test", function() {
         let rc = new SectorCoordinate(0, 1);
         assert.ok(rc !== undefined);
         assert.ok(rc instanceof SectorCoordinate);
-        assert.ok(Serializable.isImplementedBy(rc));
         assert.equal(rc.X, 0);
         assert.equal(rc.Y, 1);
     });

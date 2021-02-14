@@ -1,14 +1,13 @@
-import { DataBase } from "../../Data/DataBase.js";
-import { Serializable } from "../../other/Serializable.js";
+import { DataBase } from "../../Data.js";
+import { Serializable, Types } from "../../other.js";
 
 QUnit.module("Data/DataBase class test", function() {
     QUnit.test("statics", function(assert) {
-        assert.ok(Serializable.isImplementedByClass(DataBase));
+        assert.ok(Types.isImplementedBy(Serializable, DataBase));
     });
 
     QUnit.test("constructor", function(assert) {
         let a = new DataBase();
-        assert.ok(Serializable.isImplementedBy(a));
         assert.ok(a !== undefined && a !== null);
     });
     QUnit.test("Name", function(assert) {
@@ -19,15 +18,21 @@ QUnit.module("Data/DataBase class test", function() {
         let a = new DataBase();
         assert.ok(a.readObject !== null && a.readObject !== undefined);
         assert.ok(a.postProcessing !== null && a.postProcessing !== undefined);
-        assert.ok(a.loadData !== null && a.loadData !== undefined);
         assert.throws(function() {
             a.readObject();
         }, ReferenceError);
         assert.throws(function() {
             a.postProcessing();
         }, ReferenceError);
+    });
+    QUnit.test("loadData", function(assert) {
+        let a = new DataBase();
         assert.throws(function() {
             a.loadData();
-        }, ReferenceError);
+        }, TypeError);
+        assert.throws(function() {
+            a.loadData({});
+        }, TypeError);
+
     });
 });

@@ -1,0 +1,712 @@
+{
+   "MaterialClass": {
+      "Name": {
+         "_Label": "MATERIALCLASS_SOIL"
+      },
+      "DefaultMaterial": {
+         "_label": "MATERIAL_SOIL"
+      },
+      "PlantGrowth": {
+         "_growthfactor": "100"
+      },
+      "DefaultSurfaceTextures": {
+         "SurfaceTexture": [
+            {
+               "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+               "_Texturelabel": "TEXTURE_GROUND"
+            },
+            {
+               "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+               "_Texturelabel": "TEXTURE_GROUND"
+            },
+            {
+               "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+               "_Texturelabel": "TEXTURE_GROUND"
+            },
+            {
+               "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+               "_Texturelabel": "TEXTURE_GROUND"
+            },
+            {
+               "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+               "_Texturelabel": "TEXTURE_GROUND"
+            }
+         ]
+      }
+   },
+   "Material": [
+      {
+         "Name": {
+            "_Label": "MATERIAL_SOIL"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_SOIL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "BorderColor": {
+            "_label": "COLOR_DARK_BROWN"
+         },
+         "ColorMode": {
+            "_mode": "overlay"
+         },
+         "PlantGrowth": {
+            "_growthfactor": "100"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_DIRT_1"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_DIRT_1"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SAND_TAN"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_SOIL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "BorderColor": {
+            "_label": "COLOR_TAN"
+         },
+         "ColorMode": {
+            "_mode": "overlay"
+         },
+         "PlantGrowth": {
+            "_growthfactor": "50"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_SAND"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_SAND"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_SAND"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_SAND"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_SAND"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SAND_YELLOW"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_SOIL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_KHAKI"
+         },
+         "BorderColor": {
+            "_label": "COLOR_YELLOW"
+         },
+         "ColorMode": {
+            "_mode": "overlay"
+         },
+         "PlantGrowth": {
+            "_growthfactor": "50"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_SAND"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_SAND"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_SAND"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_SAND"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_SAND"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SAND_WHITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_SOIL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "BorderColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "ColorMode": {
+            "_mode": "overlay"
+         },
+         "PlantGrowth": {
+            "_growthfactor": "50"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_SAND"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_SAND"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_SAND"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_SAND"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_SAND"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SAND_RED"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_SOIL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_BLOOD_RED"
+         },
+         "BorderColor": {
+            "_label": "COLOR_RED"
+         },
+         "ColorMode": {
+            "_mode": "overlay"
+         },
+         "PlantGrowth": {
+            "_growthfactor": "50"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_SAND"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_SAND"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_SAND"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_SAND"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_SAND"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SAND_BLACK"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_SOIL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "overlay"
+         },
+         "PlantGrowth": {
+            "_growthfactor": "50"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_SAND"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_SAND"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_SAND"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_SAND"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_SAND"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_CLAY"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_SOIL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_RED"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "BorderColor": {
+            "_label": "COLOR_TAN"
+         },
+         "PlantGrowth": {
+            "_growthfactor": "80"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_CLAY"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SILTY_CLAY"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_SOIL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_RED"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "BorderColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "PlantGrowth": {
+            "_growthfactor": "90"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_CLAY"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SANDY_CLAY"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_SOIL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_MAROON"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "PlantGrowth": {
+            "_growthfactor": "90"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_CLAY"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_CLAY_LOAM"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_SOIL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_YELLOW"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "PlantGrowth": {
+            "_growthfactor": "100"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_CLAY"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SANDY_CLAY_LOAM"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_SOIL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_YELLOW"
+         },
+         "BorderColor": {
+            "_label": "COLOR_YELLOW"
+         },
+         "PlantGrowth": {
+            "_growthfactor": "100"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_DIRT"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SILTY_CLAY_LOAM"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_SOIL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_YELLOW"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_LEATHER"
+         },
+         "BorderColor": {
+            "_label": "COLOR_LEATHER"
+         },
+         "PlantGrowth": {
+            "_growthfactor": "100"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_DIRT"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_LOAM"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_SOIL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_LEATHER"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "PlantGrowth": {
+            "_growthfactor": "100"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_DIRT"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SANDY_LOAM"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_SOIL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_ORANGE"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "PlantGrowth": {
+            "_growthfactor": "100"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_DIRT"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SILT_LOAM"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_SOIL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_YELLOW"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_DARK_ORANGE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_DARK_ORANGE"
+         },
+         "PlantGrowth": {
+            "_growthfactor": "100"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_DIRT"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_LOAMY_SAND"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_SOIL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_YELLOW"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "PlantGrowth": {
+            "_growthfactor": "100"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_DIRT"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SILT"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_SOIL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "PlantGrowth": {
+            "_growthfactor": "100"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_DIRT"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_PEAT"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_SOIL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_FOREST_GREEN"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "PlantGrowth": {
+            "_growthfactor": "100"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_DIRT"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_PELAGIC_CLAY"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_SOIL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "PlantGrowth": {
+            "_growthfactor": "80"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_CLAY"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_CALCAREOUS_OOZE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_SOIL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "BorderColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "PlantGrowth": {
+            "_growthfactor": "50"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_CLAY"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SILICEOUS_OOZE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_SOIL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "BorderColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "PlantGrowth": {
+            "_growthfactor": "50"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_CLAY"
+               }
+            ]
+         }
+      }
+   ],
+   "_xmlns": "https://github.com/ImpalerWrG/Khazad"
+}

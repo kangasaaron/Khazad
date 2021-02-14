@@ -1,0 +1,42 @@
+import { Types } from "../../Data/Types.js";
+import { AnimationGroupData } from "../../Data/Types/AnimationGroupData.js";
+import { AnimationTypeData } from "../../Data/Types/AnimationTypeData.js";
+import { BasicAttributeData } from "../../Data/Types/BasicAttributeData.js";
+import { ColorData } from "../../Data/Types/ColorData.js";
+import { CreatureData } from "../../Data/Types/CreatureData.js";
+import { CreatureSizeData } from "../../Data/Types/CreatureSizeData.js";
+import { FontData } from "../../Data/Types/FontData.js";
+import { FurnitureData } from "../../Data/Types/FurnitureData.js";
+import { GivenNameGroupData } from "../../Data/Types/GivenNameGroupData.js";
+import { MaterialClassData } from "../../Data/Types/MaterialClassData.js";
+import { MaterialData } from "../../Data/Types/MaterialData.js";
+import { ModelData } from "../../Data/Types/ModelData.js";
+import { MusicData } from "../../Data/Types/MusicData.js";
+import { SurfaceTypeData } from "../../Data/Types/SurfaceTypeData.js";
+import { TextureData } from "../../Data/Types/TextureData.js";
+import { TextureGridData } from "../../Data/Types/TextureGridData.js";
+import { TextureSheetData } from "../../Data/Types/TextureSheetData.js";
+import { TreeData } from "../../Data/Types/TreeData.js";
+
+QUnit.module('Data/Types package', function() {
+    QUnit.test("all stuff in the right spot", function(assert) {
+        assert.equal(Types.AnimationGroupData, AnimationGroupData);
+        assert.equal(Types.AnimationTypeData, AnimationTypeData);
+        assert.equal(Types.BasicAttributeData, BasicAttributeData);
+        assert.equal(Types.ColorData, ColorData);
+        assert.equal(Types.CreatureData, CreatureData);
+        assert.equal(Types.CreatureSizeData, CreatureSizeData);
+        assert.equal(Types.FontData, FontData);
+        assert.equal(Types.FurnitureData, FurnitureData);
+        assert.equal(Types.GivenNameGroupData, GivenNameGroupData);
+        assert.equal(Types.MaterialClassData, MaterialClassData);
+        assert.equal(Types.MaterialData, MaterialData);
+        assert.equal(Types.ModelData, ModelData);
+        assert.equal(Types.MusicData, MusicData);
+        assert.equal(Types.SurfaceTypeData, SurfaceTypeData);
+        assert.equal(Types.TextureData, TextureData);
+        assert.equal(Types.TextureGridData, TextureGridData);
+        assert.equal(Types.TextureSheetData, TextureSheetData);
+        assert.equal(Types.TreeData, TreeData);
+    });
+});

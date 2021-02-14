@@ -1,0 +1,85 @@
+{
+   "useStyles": {
+      "_filename": "nifty-default-styles.xml"
+   },
+   "useControls": {
+      "_filename": "nifty-default-controls.xml"
+   },
+   "popup": {
+      "interact": {
+         "_onClick": "CloseErrorPopup()",
+         "_onSecondaryClick": "CloseErrorPopup()",
+         "_onTertiaryClick": "CloseErrorPopup()"
+      },
+      "panel": [
+         {
+            "panel": [
+               {
+                  "panel": [
+                     {
+                        "control": [
+                           {
+                              "_name": "label",
+                              "_color": "#cc0000ff",
+                              "_id": "ErrorTitleLabel",
+                              "_text": "Error title goes here",
+                              "_height": "30px",
+                              "_font": "aurulent-sans-16.fnt",
+                              "_width": "100%"
+                           },
+                           {
+                              "_font": "aurulent-sans-16.fnt",
+                              "_height": "30px",
+                              "_id": "ErrorMessageLabel",
+                              "_name": "label",
+                              "_text": "Error message goes here",
+                              "_textLineHeight": "30px",
+                              "_textMinHeight": "30px",
+                              "_width": "100%",
+                              "_wrap": "true"
+                           }
+                        ],
+                        "_align": "center",
+                        "_childLayout": "vertical",
+                        "_height": "90%",
+                        "_width": "100%"
+                     },
+                     {
+                        "control": [
+                           {
+                              "interact": {
+                                 "_onClick": "CloseErrorPopup()"
+                              },
+                              "_childLayout": "center",
+                              "_height": "20px",
+                              "_label": "Done",
+                              "_name": "button",
+                              "_width": "100%",
+                              "_id": "CloseErrorPopupButton"
+                           }
+                        ],
+                        "_align": "center",
+                        "_childLayout": "vertical",
+                        "_height": "100%",
+                        "_width": "100%"
+                     }
+                  ],
+                  "_align": "center",
+                  "_childLayout": "vertical",
+                  "_height": "100%",
+                  "_width": "100%"
+               }
+            ],
+            "_align": "center",
+            "_childLayout": "vertical",
+            "_height": "200px",
+            "_style": "nifty-panel-simple",
+            "_width": "600px"
+         }
+      ],
+      "_backgroundColor": "#000a",
+      "_childLayout": "center",
+      "_controller": "Nifty.ErrorPopupController",
+      "_id": "ErrorPopup"
+   }
+}

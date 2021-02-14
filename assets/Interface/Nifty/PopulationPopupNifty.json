@@ -1,0 +1,120 @@
+{
+   "useStyles": {
+      "_filename": "nifty-default-styles.xml"
+   },
+   "useControls": {
+      "_filename": "nifty-default-controls.xml"
+   },
+   "style": {
+      "attributes": {
+         "_width": "0px",
+         "_height": "0px"
+      },
+      "_id": "nonBrokenScrollPanel#bottom-right"
+   },
+   "popup": {
+      "interact": {
+         "_onClick": "ClosePopulationPopup()",
+         "_onSecondaryClick": "ClosePopulationPopup()",
+         "_onTertiaryClick": "ClosePopulationPopup()"
+      },
+      "panel": [
+         {
+            "panel": [
+               {
+                  "control": [
+                     {
+                        "_name": "label",
+                        "_color": "#cc0000ff",
+                        "_id": "IdleCitizensLabel",
+                        "_height": "30px",
+                        "_font": "aurulent-sans-16.fnt",
+                        "_width": "561px"
+                     }
+                  ],
+                  "_align": "center",
+                  "_childLayout": "horizontal",
+                  "_height": "30px",
+                  "_id": "IdleCitizensPanel",
+                  "_width": "100%"
+               },
+               {
+                  "control": [
+                     {
+                        "_name": "label",
+                        "_color": "#cc0000ff",
+                        "_id": "NameLabel",
+                        "_text": "Name",
+                        "_height": "30px",
+                        "_font": "aurulent-sans-16.fnt",
+                        "_width": "187px"
+                     },
+                     {
+                        "_name": "label",
+                        "_color": "#cc0000ff",
+                        "_id": "JobLabel",
+                        "_text": "Current Job",
+                        "_height": "30px",
+                        "_font": "aurulent-sans-16.fnt",
+                        "_width": "187px"
+                     },
+                     {
+                        "_name": "label",
+                        "_color": "#cc0000ff",
+                        "_id": "TaskLabel",
+                        "_text": "Current Task",
+                        "_height": "30px",
+                        "_font": "aurulent-sans-16.fnt",
+                        "_width": "187px"
+                     }
+                  ],
+                  "_align": "center",
+                  "_childLayout": "horizontal",
+                  "_height": "30px",
+                  "_id": "CitizenTableHeader",
+                  "_width": "100%"
+               }
+            ],
+            "control": [
+               {
+                  "panel": [
+                     {
+                        "_align": "center",
+                        "_childLayout": "vertical",
+                        "_width": "100%",
+                        "_id": "CitizenTableBody"
+                     }
+                  ],
+                  "_id": "CitizenScrollPanel",
+                  "_style": "nonBrokenScrollPanel",
+                  "_name": "scrollPanel",
+                  "_horizontal": "false",
+                  "_height": "*",
+                  "_width": "100%"
+               },
+               {
+                  "interact": {
+                     "_onClick": "ClosePopulationPopup()"
+                  },
+                  "_childLayout": "center",
+                  "_label": "Done",
+                  "_name": "button",
+                  "_width": "100%",
+                  "_height": "30px",
+                  "_id": "ClosePopulationPopupButton"
+               }
+            ],
+            "_align": "center",
+            "_childLayout": "vertical",
+            "_height": "80%",
+            "_id": "CitizenPanel",
+            "_style": "nifty-panel-simple",
+            "_width": "600px"
+         }
+      ],
+      "_backgroundColor": "#000a",
+      "_childLayout": "center",
+      "_controller": "Nifty.PopulationPopupController",
+      "_id": "PopulationPopup"
+   }
+}

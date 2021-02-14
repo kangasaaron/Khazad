@@ -1,19 +1,42 @@
-export class ChunkCoordinate {
+/* Copyright 2010 Kenneth 'Impaler' Ferland
+
+ This file is part of Khazad.
+
+ Khazad is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ Khazad is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with Khazad.  If not, see <http://www.gnu.org/licenses/> */
+
+import { BlockCoordinate } from "./BlockCoordinate.js";
+import "../../other/three.min.js";
+import { Types } from "../../other/Types.js";
+import { Serializable } from "../../other/Serializable.js";
+
+/**
+ * Used to refrence Cells in HashMaps by relative position, X and Y values are 16
+ * times the true Map Coordinate, Z values are equal.
+ *
+ * @author Impaler
+ */
+export class ChunkCoordinate extends Serializable() {
     constructor(X = 0, Y = 0, Z = 0) {
-        if (!Number.isFinite(X)) throw new TypeError("ChunkCoordinate constructor parameter X is not a number");
-        if (!Number.isFinite(Y)) throw new TypeError("ChunkCoordinate constructor parameter X is not a number");
-        if (!Number.isFinite(Z)) throw new TypeError("ChunkCoordinate constructor parameter X is not a number");
+        Types.mustBeAll('finiteInteger', X, Y, Z);
+        super();
         this.X = X;
         this.Y = Y;
         this.Z = Z;
     }
     copy(ArgumentCoordinate) {
-        if (!("X" in ArgumentCoordinate))
-            throw new TypeError("ChunkCoordinate.copy argument needs an X");
-        if (!("Y" in ArgumentCoordinate))
-            throw new TypeError("ChunkCoordinate.copy argument needs an Y");
-        if (!("Z" in ArgumentCoordinate))
-            throw new TypeError("ChunkCoordinate.copy argument needs an Z");
+        Types.mustHaveAll(ArgumentCoordinate, 'X', 'Y', 'Z');
+        Types.mustBeAll('finiteInteger', ArgumentCoordinate.X, ArgumentCoordinate.Y, ArgumentCoordinate.Z);
         this.X = ArgumentCoordinate.X;
         this.Y = ArgumentCoordinate.Y;
         this.Z = ArgumentCoordinate.Z;
@@ -24,11 +47,9 @@ export class ChunkCoordinate {
         return result;
     }
     equals(ArgumentCoordinate) {
-        if (!("X" in ArgumentCoordinate))
+        if (!Types.hasAll(ArgumentCoordinate, 'X', 'Y', 'Z'))
             return false;
-        if (!("Y" in ArgumentCoordinate))
-            return false;
-        if (!("Z" in ArgumentCoordinate))
+        if (!Types.are('finiteInteger', ArgumentCoordinate.X, ArgumentCoordinate.Y, ArgumentCoordinate.Z))
             return false;
         return this.X == ArgumentCoordinate.X &&
             this.Y == ArgumentCoordinate.Y &&
@@ -47,5 +68,19 @@ export class ChunkCoordinate {
     }
     toString() {
         return `X ${this.X} Y ${this.Y} Z ${this.Z}`;
+    }
+    getVector() { // TODO turn into getter
+        let x = (this.X * BlockCoordinate.CHUNK_EDGE_SIZE);
+        let y = (this.Y * BlockCoordinate.CHUNK_EDGE_SIZE);
+        let z = (this.Z * BlockCoordinate.CHUNK_EDGE_SIZE);
+
+        if (x < 0)
+            x++;
+        if (y < 0)
+            y++;
+        if (z < 0)
+            z++;
+
+        return new THREE.Vector3(x, y, z);
     }
 }

@@ -1,0 +1,707 @@
+{
+   "GivenNameGroup": [
+      {
+         "Name": {
+            "_Label": "GIVEN_NAMEGROUP_TOLKEINESQUE"
+         },
+         "GivenNamePrefixes": {
+            "GivenNamePrefix": [
+               {
+                  "_text": "N",
+                  "_translation": ""
+               },
+               {
+                  "_text": "D",
+                  "_translation": ""
+               },
+               {
+                  "_text": "R",
+                  "_translation": ""
+               },
+               {
+                  "_text": "T",
+                  "_translation": ""
+               },
+               {
+                  "_text": "B",
+                  "_translation": ""
+               },
+               {
+                  "_text": "V",
+                  "_translation": ""
+               },
+               {
+                  "_text": "Ur",
+                  "_translation": ""
+               },
+               {
+                  "_text": "Dw",
+                  "_translation": ""
+               },
+               {
+                  "_text": "K",
+                  "_translation": ""
+               },
+               {
+                  "_text": "Thr",
+                  "_translation": ""
+               },
+               {
+                  "_text": "Th",
+                  "_translation": ""
+               },
+               {
+                  "_text": "G",
+                  "_translation": ""
+               },
+               {
+                  "_text": "Gl",
+                  "_translation": ""
+               },
+               {
+                  "_text": "Gr",
+                  "_translation": ""
+               },
+               {
+                  "_text": "Fr",
+                  "_translation": ""
+               },
+               {
+                  "_text": "F",
+                  "_translation": ""
+               },
+               {
+                  "_text": "",
+                  "_translation": ""
+               },
+               {
+                  "_text": "Kh",
+                  "_translation": ""
+               },
+               {
+                  "_text": "M",
+                  "_translation": ""
+               },
+               {
+                  "_text": "Kr",
+                  "_translation": ""
+               },
+               {
+                  "_text": "L",
+                  "_translation": ""
+               },
+               {
+                  "_text": "S",
+                  "_translation": ""
+               },
+               {
+                  "_text": "Dr",
+                  "_translation": ""
+               }
+            ],
+            "_gender": "GENDER_MALE"
+         },
+         "GivenNameSuffixes": {
+            "GivenNameSuffix": [
+               {
+                  "_text": "ori",
+                  "_translation": ""
+               },
+               {
+                  "_text": "oin",
+                  "_translation": ""
+               },
+               {
+                  "_text": "ili",
+                  "_translation": ""
+               },
+               {
+                  "_text": "alin",
+                  "_translation": ""
+               },
+               {
+                  "_text": "orin",
+                  "_translation": ""
+               },
+               {
+                  "_text": "imli",
+                  "_translation": ""
+               },
+               {
+                  "_text": "ormur",
+                  "_translation": ""
+               },
+               {
+                  "_text": "ombur",
+                  "_translation": ""
+               },
+               {
+                  "_text": "urin",
+                  "_translation": ""
+               },
+               {
+                  "_text": "ain",
+                  "_translation": ""
+               },
+               {
+                  "_text": "rain",
+                  "_translation": ""
+               },
+               {
+                  "_text": "loin",
+                  "_translation": ""
+               },
+               {
+                  "_text": "erin",
+                  "_translation": ""
+               },
+               {
+                  "_text": "Arin",
+                  "_translation": ""
+               },
+               {
+                  "_text": "undin",
+                  "_translation": ""
+               },
+               {
+                  "_text": "walin",
+                  "_translation": ""
+               },
+               {
+                  "_text": "or",
+                  "_translation": ""
+               },
+               {
+                  "_text": "is",
+                  "_translation": ""
+               },
+               {
+                  "_text": "elgar",
+                  "_translation": ""
+               },
+               {
+                  "_text": "im",
+                  "_translation": ""
+               },
+               {
+                  "_text": "ibum",
+                  "_translation": ""
+               },
+               {
+                  "_text": "uri",
+                  "_translation": ""
+               },
+               {
+                  "_text": "innar",
+                  "_translation": ""
+               },
+               {
+                  "_text": "en",
+                  "_translation": ""
+               },
+               {
+                  "_text": "elor",
+                  "_translation": ""
+               },
+               {
+                  "_text": "indri",
+                  "_translation": ""
+               },
+               {
+                  "_text": "avor",
+                  "_translation": ""
+               },
+               {
+                  "_text": "ulin",
+                  "_translation": ""
+               },
+               {
+                  "_text": "uin",
+                  "_translation": ""
+               },
+               {
+                  "_text": "ar",
+                  "_translation": ""
+               },
+               {
+                  "_text": "ofur",
+                  "_translation": ""
+               },
+               {
+                  "_text": "ury",
+                  "_translation": ""
+               },
+               {
+                  "_text": "egan",
+                  "_translation": ""
+               },
+               {
+                  "_text": "ufur",
+                  "_translation": ""
+               },
+               {
+                  "_text": "omli",
+                  "_translation": ""
+               },
+               {
+                  "_text": "isil",
+                  "_translation": ""
+               },
+               {
+                  "_text": "oiran",
+                  "_translation": ""
+               },
+               {
+                  "_text": "iran",
+                  "_translation": ""
+               },
+               {
+                  "_text": "ilain,",
+                  "_translation": ""
+               },
+               {
+                  "_text": "agon",
+                  "_translation": ""
+               },
+               {
+                  "_text": "unbur",
+                  "_translation": ""
+               },
+               {
+                  "_text": "unri",
+                  "_translation": ""
+               },
+               {
+                  "_text": "ofdin",
+                  "_translation": ""
+               },
+               {
+                  "_text": "unain",
+                  "_translation": ""
+               },
+               {
+                  "_text": "aror",
+                  "_translation": ""
+               },
+               {
+                  "_text": "ibur",
+                  "_translation": ""
+               },
+               {
+                  "_text": "ilni",
+                  "_translation": ""
+               },
+               {
+                  "_text": "uil",
+                  "_translation": ""
+               },
+               {
+                  "_text": "olin",
+                  "_translation": ""
+               },
+               {
+                  "_text": "ilin",
+                  "_translation": ""
+               },
+               {
+                  "_text": "imir",
+                  "_translation": ""
+               },
+               {
+                  "_text": "uran",
+                  "_translation": ""
+               },
+               {
+                  "_text": "arnar",
+                  "_translation": ""
+               },
+               {
+                  "_text": "ilnar",
+                  "_translation": ""
+               },
+               {
+                  "_text": "ir",
+                  "_translation": ""
+               },
+               {
+                  "_text": "alvar",
+                  "_translation": ""
+               },
+               {
+                  "_text": "alkral",
+                  "_translation": ""
+               },
+               {
+                  "_text": "algrim",
+                  "_translation": ""
+               },
+               {
+                  "_text": "alli",
+                  "_translation": ""
+               },
+               {
+                  "_text": "estril",
+                  "_translation": ""
+               }
+            ],
+            "_gender": "GENDER_MALE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "GIVEN_NAMEGROUP_TOLKEINESQUE"
+         },
+         "GivenNamePrefixes": {
+            "GivenNamePrefix": [
+               {
+                  "_text": "N",
+                  "_translation": ""
+               },
+               {
+                  "_text": "D",
+                  "_translation": ""
+               },
+               {
+                  "_text": "R",
+                  "_translation": ""
+               },
+               {
+                  "_text": "T",
+                  "_translation": ""
+               },
+               {
+                  "_text": "B",
+                  "_translation": ""
+               },
+               {
+                  "_text": "V",
+                  "_translation": ""
+               },
+               {
+                  "_text": "Ur",
+                  "_translation": ""
+               },
+               {
+                  "_text": "Dw",
+                  "_translation": ""
+               },
+               {
+                  "_text": "K",
+                  "_translation": ""
+               },
+               {
+                  "_text": "Thr",
+                  "_translation": ""
+               },
+               {
+                  "_text": "Th",
+                  "_translation": ""
+               },
+               {
+                  "_text": "G",
+                  "_translation": ""
+               },
+               {
+                  "_text": "Gl",
+                  "_translation": ""
+               },
+               {
+                  "_text": "Gr",
+                  "_translation": ""
+               },
+               {
+                  "_text": "Fr",
+                  "_translation": ""
+               },
+               {
+                  "_text": "F",
+                  "_translation": ""
+               },
+               {
+                  "_text": "",
+                  "_translation": ""
+               },
+               {
+                  "_text": "Kh",
+                  "_translation": ""
+               },
+               {
+                  "_text": "M",
+                  "_translation": ""
+               },
+               {
+                  "_text": "Kr",
+                  "_translation": ""
+               },
+               {
+                  "_text": "L",
+                  "_translation": ""
+               },
+               {
+                  "_text": "S",
+                  "_translation": ""
+               },
+               {
+                  "_text": "Dr",
+                  "_translation": ""
+               },
+               {
+                  "_text": "X",
+                  "_translation": ""
+               }
+            ],
+            "_gender": "GENDER_FEMALE"
+         },
+         "GivenNameSuffixes": {
+            "GivenNameSuffix": [
+               {
+                  "_text": "ori",
+                  "_translation": ""
+               },
+               {
+                  "_text": "oina",
+                  "_translation": ""
+               },
+               {
+                  "_text": "ilis",
+                  "_translation": ""
+               },
+               {
+                  "_text": "alina",
+                  "_translation": ""
+               },
+               {
+                  "_text": "orin",
+                  "_translation": ""
+               },
+               {
+                  "_text": "imlis",
+                  "_translation": ""
+               },
+               {
+                  "_text": "ormura",
+                  "_translation": ""
+               },
+               {
+                  "_text": "ombura",
+                  "_translation": ""
+               },
+               {
+                  "_text": "urina",
+                  "_translation": ""
+               },
+               {
+                  "_text": "aina",
+                  "_translation": ""
+               },
+               {
+                  "_text": "raina",
+                  "_translation": ""
+               },
+               {
+                  "_text": "loina",
+                  "_translation": ""
+               },
+               {
+                  "_text": "erina",
+                  "_translation": ""
+               },
+               {
+                  "_text": "Arina",
+                  "_translation": ""
+               },
+               {
+                  "_text": "undina",
+                  "_translation": ""
+               },
+               {
+                  "_text": "walina",
+                  "_translation": ""
+               },
+               {
+                  "_text": "ora",
+                  "_translation": ""
+               },
+               {
+                  "_text": "is",
+                  "_translation": ""
+               },
+               {
+                  "_text": "elgara",
+                  "_translation": ""
+               },
+               {
+                  "_text": "ima",
+                  "_translation": ""
+               },
+               {
+                  "_text": "ibuma",
+                  "_translation": ""
+               },
+               {
+                  "_text": "uris",
+                  "_translation": ""
+               },
+               {
+                  "_text": "innara",
+                  "_translation": ""
+               },
+               {
+                  "_text": "ena",
+                  "_translation": ""
+               },
+               {
+                  "_text": "elora",
+                  "_translation": ""
+               },
+               {
+                  "_text": "indris",
+                  "_translation": ""
+               },
+               {
+                  "_text": "avora",
+                  "_translation": ""
+               },
+               {
+                  "_text": "ulina",
+                  "_translation": ""
+               },
+               {
+                  "_text": "uina",
+                  "_translation": ""
+               },
+               {
+                  "_text": "ara",
+                  "_translation": ""
+               },
+               {
+                  "_text": "ofura",
+                  "_translation": ""
+               },
+               {
+                  "_text": "ury",
+                  "_translation": ""
+               },
+               {
+                  "_text": "egana",
+                  "_translation": ""
+               },
+               {
+                  "_text": "ufura",
+                  "_translation": ""
+               },
+               {
+                  "_text": "omlis",
+                  "_translation": ""
+               },
+               {
+                  "_text": "isila",
+                  "_translation": ""
+               },
+               {
+                  "_text": "oirana",
+                  "_translation": ""
+               },
+               {
+                  "_text": "irana",
+                  "_translation": ""
+               },
+               {
+                  "_text": "ilaina,",
+                  "_translation": ""
+               },
+               {
+                  "_text": "agona",
+                  "_translation": ""
+               },
+               {
+                  "_text": "unbura",
+                  "_translation": ""
+               },
+               {
+                  "_text": "unris",
+                  "_translation": ""
+               },
+               {
+                  "_text": "ofdina",
+                  "_translation": ""
+               },
+               {
+                  "_text": "unaina",
+                  "_translation": ""
+               },
+               {
+                  "_text": "arora",
+                  "_translation": ""
+               },
+               {
+                  "_text": "ibura",
+                  "_translation": ""
+               },
+               {
+                  "_text": "ilnis",
+                  "_translation": ""
+               },
+               {
+                  "_text": "uila",
+                  "_translation": ""
+               },
+               {
+                  "_text": "olina",
+                  "_translation": ""
+               },
+               {
+                  "_text": "ilina",
+                  "_translation": ""
+               },
+               {
+                  "_text": "imira",
+                  "_translation": ""
+               },
+               {
+                  "_text": "urana",
+                  "_translation": ""
+               },
+               {
+                  "_text": "arnara",
+                  "_translation": ""
+               },
+               {
+                  "_text": "ilnara",
+                  "_translation": ""
+               },
+               {
+                  "_text": "ira",
+                  "_translation": ""
+               },
+               {
+                  "_text": "alvara",
+                  "_translation": ""
+               },
+               {
+                  "_text": "alkrala",
+                  "_translation": ""
+               },
+               {
+                  "_text": "algrima",
+                  "_translation": ""
+               },
+               {
+                  "_text": "allis",
+                  "_translation": ""
+               },
+               {
+                  "_text": "estrila",
+                  "_translation": ""
+               },
+               {
+                  "_text": "iris",
+                  "_translation": ""
+               }
+            ],
+            "_gender": "GENDER_FEMALE"
+         }
+      }
+   ],
+   "_xmlns": "https://github.com/ImpalerWrG/Khazad"
+}

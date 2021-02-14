@@ -1,0 +1,165 @@
+{
+   "useStyles": {
+      "_filename": "nifty-default-styles.xml"
+   },
+   "useControls": {
+      "_filename": "nifty-default-controls.xml"
+   },
+   "popup": {
+      "interact": {
+         "_onClick": "CloseTutorialPopup()",
+         "_onSecondaryClick": "CloseTutorialPopup()",
+         "_onTertiaryClick": "CloseTutorialPopup()"
+      },
+      "panel": [
+         {
+            "panel": [
+               {
+                  "panel": [
+                     {
+                        "control": [
+                           {
+                              "_name": "label",
+                              "_id": "GLabel1",
+                              "_color": "#cc0000ff",
+                              "_text": "Zoom:  mouse-wheel up/down",
+                              "_height": "30px",
+                              "_font": "aurulent-sans-16.fnt",
+                              "_width": "100%"
+                           },
+                           {
+                              "_name": "label",
+                              "_id": "GLabel2",
+                              "_color": "#cc0000ff",
+                              "_text": "Tilt Camera:  hold mouse-wheel down, mouse up/down",
+                              "_height": "30px",
+                              "_font": "aurulent-sans-16.fnt",
+                              "_width": "100%"
+                           },
+                           {
+                              "_name": "label",
+                              "_id": "GLabel3",
+                              "_color": "#cc0000ff",
+                              "_text": "Rotate Camera: hold mouse-wheel down, mouse right/left",
+                              "_height": "30px",
+                              "_font": "aurulent-sans-16.fnt",
+                              "_width": "100%"
+                           },
+                           {
+                              "_name": "label",
+                              "_id": "GLabel5",
+                              "_color": "#cc0000ff",
+                              "_text": "Pan Camera:  hold right mouse button down, mouse up/down/right/left",
+                              "_height": "30px",
+                              "_font": "aurulent-sans-16.fnt",
+                              "_width": "100%"
+                           },
+                           {
+                              "_name": "label",
+                              "_id": "GLabel6",
+                              "_color": "#cc0000ff",
+                              "_text": "Slice Terrain:  scroll bar on right edge of screen",
+                              "_height": "30px",
+                              "_font": "aurulent-sans-16.fnt",
+                              "_width": "100%"
+                           },
+                           {
+                              "_name": "label",
+                              "_id": "GLabel7",
+                              "_color": "#cc0000ff",
+                              "_text": "Toggle Terrain rendering: T",
+                              "_height": "30px",
+                              "_font": "aurulent-sans-16.fnt",
+                              "_width": "100%"
+                           },
+                           {
+                              "_name": "label",
+                              "_id": "GLabel8",
+                              "_color": "#cc0000ff",
+                              "_text": "Toggle Path grid rendering: P",
+                              "_height": "30px",
+                              "_font": "aurulent-sans-16.fnt",
+                              "_width": "100%"
+                           },
+                           {
+                              "_name": "label",
+                              "_id": "GLabel9",
+                              "_color": "#cc0000ff",
+                              "_text": "Set time rate:  button bar top right of screen",
+                              "_height": "30px",
+                              "_font": "aurulent-sans-16.fnt",
+                              "_width": "100%"
+                           },
+                           {
+                              "_name": "label",
+                              "_id": "GLabel99",
+                              "_color": "#cc0000ff",
+                              "_text": "ranges from 1x (real time) to 4096 (~6 months game time per real hour)",
+                              "_height": "30px",
+                              "_font": "aurulent-sans-16.fnt",
+                              "_width": "100%"
+                           },
+                           {
+                              "_name": "label",
+                              "_id": "GLabel10",
+                              "_color": "#cc0000ff",
+                              "_text": "Pause: Space bar",
+                              "_height": "30px",
+                              "_font": "aurulent-sans-16.fnt",
+                              "_width": "100%"
+                           },
+                           {
+                              "_name": "label",
+                              "_id": "GLabel4",
+                              "_color": "#cc0000ff",
+                              "_text": "Dig:  Allows drag-selection of a box shape that will be dug out by Dwarves, WARNING: Very Buggy",
+                              "_height": "30px",
+                              "_font": "aurulent-sans-16.fnt",
+                              "_width": "100%"
+                           }
+                        ],
+                        "_align": "center",
+                        "_childLayout": "vertical",
+                        "_height": "90%",
+                        "_width": "100%"
+                     },
+                     {
+                        "control": [
+                           {
+                              "interact": {
+                                 "_onClick": "CloseTutorialPopup()"
+                              },
+                              "_childLayout": "center",
+                              "_height": "10%",
+                              "_id": "Quitbutton",
+                              "_label": "Done",
+                              "_name": "button",
+                              "_width": "100%"
+                           }
+                        ],
+                        "_align": "center",
+                        "_childLayout": "vertical",
+                        "_height": "100%",
+                        "_width": "100%"
+                     }
+                  ],
+                  "_align": "center",
+                  "_childLayout": "vertical",
+                  "_height": "100%",
+                  "_width": "100%"
+               }
+            ],
+            "_align": "center",
+            "_childLayout": "vertical",
+            "_height": "500px",
+            "_id": "MenuPanel",
+            "_style": "nifty-panel-simple",
+            "_width": "600px"
+         }
+      ],
+      "_backgroundColor": "#000a",
+      "_childLayout": "center",
+      "_controller": "Nifty.TutorialPopupController",
+      "_id": "TutorialPopup"
+   }
+}

@@ -1,0 +1,362 @@
+{
+   "Texture": [
+      {
+         "Name": {
+            "_Label": "TEXTURE_DEFAULT"
+         },
+         "File": {
+            "_Path": "Textures/nehe.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_STONE_1"
+         },
+         "File": {
+            "_Path": "Textures/stone1.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_STONE_2"
+         },
+         "File": {
+            "_Path": "Textures/stone2.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_STONE_3"
+         },
+         "File": {
+            "_Path": "Textures/stone3.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_STONE_4"
+         },
+         "File": {
+            "_Path": "Textures/stone4.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_PEBBLES"
+         },
+         "File": {
+            "_Path": "Textures/pebble.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_DIRT"
+         },
+         "File": {
+            "_Path": "Textures/Dirt.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_GROUND"
+         },
+         "File": {
+            "_Path": "Textures/ground.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_CLAY"
+         },
+         "File": {
+            "_Path": "Textures/Clay1.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_BRICK"
+         },
+         "File": {
+            "_Path": "Textures/Brick1.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_BRICK2"
+         },
+         "File": {
+            "_Path": "Textures/Brick2.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_AIR"
+         },
+         "File": {
+            "_Path": "Textures/Air.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_SAND"
+         },
+         "File": {
+            "_Path": "Textures/Sand.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_BARK"
+         },
+         "File": {
+            "_Path": "Textures/Bark.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_MATT"
+         },
+         "File": {
+            "_Path": "Textures/Matt.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_ICE"
+         },
+         "File": {
+            "_Path": "Textures/Ice.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_SNOW"
+         },
+         "File": {
+            "_Path": "Textures/Snow.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_PIT"
+         },
+         "File": {
+            "_Path": "Textures/Pit.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_ROUGH"
+         },
+         "File": {
+            "_Path": "Textures/Rough.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_SMOOTH"
+         },
+         "File": {
+            "_Path": "Textures/Smooth.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_LIQUID"
+         },
+         "File": {
+            "_Path": "Textures/Liquid.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_TILES"
+         },
+         "File": {
+            "_Path": "Textures/Tile.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_VEINS"
+         },
+         "File": {
+            "_Path": "Textures/Veins.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_CRYSTALLINE"
+         },
+         "File": {
+            "_Path": "Textures/crystallic.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_SWIRLY"
+         },
+         "File": {
+            "_Path": "Textures/Swirly.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_BANDED"
+         },
+         "File": {
+            "_Path": "Textures/Banded.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_LAYERED"
+         },
+         "File": {
+            "_Path": "Textures/Layers.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_FOLIATED"
+         },
+         "File": {
+            "_Path": "Textures/Foliated.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_CARBONATE"
+         },
+         "File": {
+            "_Path": "Textures/Carbonate.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_CUBIC"
+         },
+         "File": {
+            "_Path": "Textures/Cubic.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_IGNEOUS_INTRUSIVE"
+         },
+         "File": {
+            "_Path": "Textures/Igneous_Intrusive.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_IGNEOUS_EXTRUSIVE"
+         },
+         "File": {
+            "_Path": "Textures/Igneous_Extrusive.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_DRIFTWOOD"
+         },
+         "File": {
+            "_Path": "Textures/driftwood.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_ASHES"
+         },
+         "File": {
+            "_Path": "Textures/ashes.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_WOOD_WALL"
+         },
+         "File": {
+            "_Path": "Textures/wood_side.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_WOOD_FLOOR"
+         },
+         "File": {
+            "_Path": "Textures/wood_floor.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_ROUGH_GEMS"
+         },
+         "File": {
+            "_Path": "Textures/Gems.png"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TEXTURE_KHAZAD_LOGO"
+         },
+         "File": {
+            "_Path": "Textures/KhazadLogo.png"
+         }
+      }
+   ],
+   "TextureGrid": {
+      "TextureSize": {
+         "_Height": "64",
+         "_Width": "64"
+      },
+      "GridSize": {
+         "_Height": "9",
+         "_Width": "7"
+      },
+      "File": {
+         "_Path": "Textures/grass.png"
+      },
+      "Textures": {
+         "Texture": [
+            {
+               "Name": {
+                  "_Label": "TEXTURE_GRASS_1"
+               },
+               "GridLocation": {
+                  "_X": "0",
+                  "_Y": "0"
+               }
+            },
+            {
+               "Name": {
+                  "_Label": "TEXTURE_GRASS_2"
+               },
+               "GridLocation": {
+                  "_X": "0",
+                  "_Y": "1"
+               }
+            },
+            {
+               "Name": {
+                  "_Label": "TEXTURE_GRASS_3"
+               },
+               "GridLocation": {
+                  "_X": "1",
+                  "_Y": "0"
+               }
+            },
+            {
+               "Name": {
+                  "_Label": "TEXTURE_GRASS_4"
+               },
+               "GridLocation": {
+                  "_X": "1",
+                  "_Y": "1"
+               }
+            }
+         ]
+      }
+   },
+   "_xmlns": "https://github.com/ImpalerWrG/Khazad"
+}

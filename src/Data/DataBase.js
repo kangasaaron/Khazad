@@ -15,21 +15,26 @@
  You should have received a copy of the GNU General Public License
  along with Khazad.  If not, see <http://www.gnu.org/licenses/> */
 
-import { Serializable } from "../other/Serializable.js";
-import { addAbstractFunction } from "../other/Shims.js";
+import { Serializable, addPropertyToClass } from "../other.js";
+import { Types } from "../other/Types.js";
+import { DataLibrary } from "./DataLibrary.js";
 
 /**
  *
  * @author Impaler
  */
 
-export class DataBase {
+export class DataBase extends Serializable() {
     constructor() {
+        super();
         this.Name = null;
+    }
+    loadData(Element, Library) {
+        Types.mustBe("object", Element);
+        Types.mustBe(DataLibrary, Library)
+        let Name = Element.getElementsByTagName("Name")[0];
+        Library.indexEntry(Name.getAttribute("Label"), this);
     }
 }
 
-addAbstractFunction(DataBase, "postProcessing");
-addAbstractFunction(DataBase, "loadData");
-Serializable.becomeImplementedBy(DataBase);
-DataBase.serialVersionUID = 1;
+addPropertyToClass(DataBase, "DataBaes", "postProcessing");

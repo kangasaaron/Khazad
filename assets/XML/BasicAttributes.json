@@ -1,0 +1,117 @@
+{
+   "BasicAttribute": [
+      {
+         "Name": {
+            "_Label": "BASIC_ATTRIBUTE_STRENGTH"
+         },
+         "Type": {
+            "_label": "ATTRIBUTE_TYPE_PHYSICAL"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "BASIC_ATTRIBUTE_DEXTERITY"
+         },
+         "Type": {
+            "_label": "ATTRIBUTE_TYPE_PHYSICAL"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "BASIC_ATTRIBUTE_FLEXIBILITY"
+         },
+         "Type": {
+            "_label": "ATTRIBUTE_TYPE_PHYSICAL"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "BASIC_ATTRIBUTE_ENDURANCE"
+         },
+         "Type": {
+            "_label": "ATTRIBUTE_TYPE_PHYSICAL"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "BASIC_ATTRIBUTE_VITALITY"
+         },
+         "Type": {
+            "_label": "ATTRIBUTE_TYPE_PHYSICAL"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "BASIC_ATTRIBUTE_REFLEXES"
+         },
+         "Type": {
+            "_label": "ATTRIBUTE_TYPE_PHYSICAL"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "BASIC_ATTRIBUTE_SPEED"
+         },
+         "Type": {
+            "_label": "ATTRIBUTE_TYPE_PHYSICAL"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "BASIC_ATTRIBUTE_LOGIC"
+         },
+         "Type": {
+            "_label": "ATTRIBUTE_TYPE_MENTAL"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "BASIC_ATTRIBUTE_PERCEPTION"
+         },
+         "Type": {
+            "_label": "ATTRIBUTE_TYPE_MENTAL"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "BASIC_ATTRIBUTE_CHARISMA"
+         },
+         "Type": {
+            "_label": "ATTRIBUTE_TYPE_MENTAL"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "BASIC_ATTRIBUTE_MEMORY"
+         },
+         "Type": {
+            "_label": "ATTRIBUTE_TYPE_MENTAL"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "BASIC_ATTRIBUTE_JUDGMENT"
+         },
+         "Type": {
+            "_label": "ATTRIBUTE_TYPE_MENTAL"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "BASIC_ATTRIBUTE_WILLPOWER"
+         },
+         "Type": {
+            "_label": "ATTRIBUTE_TYPE_MENTAL"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "BASIC_ATTRIBUTE_INTUITION"
+         },
+         "Type": {
+            "_label": "ATTRIBUTE_TYPE_MENTAL"
+         }
+      }
+   ],
+   "_xmlns": "https://github.com/ImpalerWrG/Khazad"
+}

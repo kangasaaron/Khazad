@@ -1,0 +1,75 @@
+{
+   "File": [
+      {
+         "_Path": "XML/Colors.xml"
+      },
+      {
+         "_Path": "XML/Textures.xml"
+      },
+      {
+         "_Path": "XML/Models.xml"
+      },
+      {
+         "_Path": "XML/Fonts.xml"
+      },
+      {
+         "_Path": "XML/Materials.xml"
+      },
+      {
+         "_Path": "XML/MaterialClasses.xml"
+      },
+      {
+         "_Path": "XML/SurfaceTypes.xml"
+      },
+      {
+         "_Path": "XML/Trees.xml"
+      },
+      {
+         "_Path": "XML/Furnitures.xml"
+      },
+      {
+         "_Path": "XML/Ores.xml"
+      },
+      {
+         "_Path": "XML/Minerals.xml"
+      },
+      {
+         "_Path": "XML/Stones.xml"
+      },
+      {
+         "_Path": "XML/Gems.xml"
+      },
+      {
+         "_Path": "XML/GivenNames.xml"
+      },
+      {
+         "_Path": "XML/Soils.xml"
+      },
+      {
+         "_Path": "XML/Metals.xml"
+      },
+      {
+         "_Path": "XML/Creatures.xml"
+      },
+      {
+         "_Path": "XML/AnimationTypes.xml"
+      },
+      {
+         "_Path": "XML/TreeTextures.xml"
+      },
+      {
+         "_Path": "XML/MineCraftTextures.xml"
+      },
+      {
+         "_Path": "XML/BasicAttributes.xml"
+      },
+      {
+         "_Path": "XML/CreatureSizes.xml"
+      },
+      {
+         "_Path": "XML/Musics.xml"
+      }
+   ],
+   "_xmlns": "https://github.com/ImpalerWrG/Khazad",
+   "__text": "/"
+}

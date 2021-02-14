@@ -1,0 +1,52 @@
+{
+   "style": [
+      {
+         "attributes": {
+            "_backgroundImage": "Interface/Styles/button/disabledButton.png",
+            "_imageMode": "sprite-resize:100,23,0,2,96,2,2,2,96,2,19,2,96,2,2",
+            "_paddingLeft": "7px",
+            "_paddingRight": "7px",
+            "_width": "100px",
+            "_height": "23px",
+            "_childLayout": "center",
+            "_visibleToMouse": "false"
+         },
+         "effect": {
+            "onFocus": {
+               "_name": "imageOverlay",
+               "_filename": "Interface/Styles/button/disabledButton.png",
+               "_imageMode": "sprite-resize:100,23,1,2,96,2,2,2,96,2,19,2,96,2,2",
+               "_post": "true"
+            },
+            "onEnabled": {
+               "_name": "renderQuad",
+               "_startColor": "#2228",
+               "_endColor": "#2220",
+               "_post": "true",
+               "_length": "150"
+            },
+            "onDisabled": {
+               "_name": "renderQuad",
+               "_startColor": "#2220",
+               "_endColor": "#2228",
+               "_post": "true",
+               "_length": "150"
+            }
+         },
+         "_id": "disabled-button#panel"
+      },
+      {
+         "attributes": {
+            "_align": "center",
+            "_valign": "center",
+            "_textHAlign": "center",
+            "_textVAlign": "center",
+            "_visibleToMouse": "false",
+            "_color": "#999"
+         },
+         "_id": "disabled-button#text",
+         "_base": "button-font"
+      }
+   ],
+   "_xmlns": "http://nifty-gui.lessvoid.com/nifty-gui"
+}

@@ -1,0 +1,365 @@
+{
+   "Furniture": [
+      {
+         "Name": {
+            "_Label": "FURNITURE_ARMOR_STAND"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_BED"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_CHAIR"
+         },
+         "Model": {
+            "_label": "MODEL_CHAIR"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_BURIAL_RECEPTICAL"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_DOOR"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_FLOODGATE"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_HATCH"
+         },
+         "Model": {
+            "_label": "MODEL_HATCH"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_WALL_GRATE"
+         },
+         "Model": {
+            "_label": "MODEL_WALL_GRATE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_FLOOR_GRATE"
+         },
+         "Model": {
+            "_label": "MODEL_FLOOR_GRATE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_WALL_BARS"
+         },
+         "Model": {
+            "_label": "MODEL_WALL_BARS"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_FLOOR_BARS"
+         },
+         "Model": {
+            "_label": "MODEL_FLOOR_BARS"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_CABINET"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_CONTAINER"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_FARM_PLOT"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_WEAPON_RACK"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_STATUE"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_TABLE"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_PAVED_ROAD"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_BRIDGE"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_WELL"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_SIEGE_ENGINE"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_CATAPULT"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_BALLISTA"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_FURNACE"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_GLASS_WINDOW"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_GEM_WINDOW"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_TRADE_DEPOT"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_MECHANISM"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_LEVER"
+         },
+         "Model": {
+            "_label": "MODEL_LEVER"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_PRESSURE_PLATE"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_CAGE_TRAP"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_STONE_FALL_TRAP"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_WEAPON_TRAP"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_SPIKE_TRAP"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_ANIMAL_TRAP"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_SCREW_PUMP"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_WATER_WHEEL"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_WINDMILL"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_GEAR_ASSEMBLY"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_HORIZONTAL_AXLE"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_VERTICAL_AXLE"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_SUPPORT"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_CAGE"
+         },
+         "Model": {
+            "_label": "MODEL_CAGE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_ARCHERY_TARGET"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "FURNITURE_RESTRAINT"
+         },
+         "Model": {
+            "_label": "NONE"
+         }
+      }
+   ],
+   "_xmlns": "https://github.com/ImpalerWrG/Khazad"
+}

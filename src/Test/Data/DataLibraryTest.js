@@ -1,9 +1,11 @@
-import { DataLibrary } from "../../Data/DataLibrary.js";
-import { Serializable } from "../../other/Serializable.js";
+import { DataLibrary, DataBase, DataManager } from "../../Data.js";
+import { Serializable, Types } from "../../other.js";
+
+class FakeDataBase extends DataBase {}
 
 QUnit.module("Data/DataLibrary test", function() {
     QUnit.test("statics", function(assert) {
-        assert.ok(Serializable.isImplementedByClass(DataLibrary));
+        assert.ok(Types.isImplementedBy(Serializable, DataLibrary));
     });
 
     QUnit.test("constructor test", function(assert) {
@@ -11,13 +13,12 @@ QUnit.module("Data/DataLibrary test", function() {
             let dl = new DataLibrary();
         });
         assert.throws(function() {
-            let dl = new DataLibrary("hey");
+            let dl = new DataLibrary(new FakeDataBase());
         });
-        let p1 = Symbol('Parameter 1'),
-            p2 = Symbol('Parameter 2');
+        let p1 = FakeDataBase,
+            p2 = new DataManager();
         let dl = new DataLibrary(p1, p2);
         assert.ok(dl instanceof DataLibrary);
-        assert.ok(Serializable.isImplementedBy(dl));
         assert.ok(dl !== undefined);
         assert.equal(dl.DataClass, p1);
         assert.equal(dl.Data, p2);
@@ -33,7 +34,7 @@ QUnit.module("Data/DataLibrary test", function() {
             }
         }
 
-        let dl = new DataLibrary("hey", "you"),
+        let dl = new DataLibrary(FakeDataBase, new DataManager()),
             e1 = new entry(),
             e2 = new entry();
         dl.Entries.push(e1);
@@ -46,7 +47,7 @@ QUnit.module("Data/DataLibrary test", function() {
     });
 
     QUnit.test("getEntries test", function(assert) {
-        let dl = new DataLibrary(0, 0);
+        let dl = new DataLibrary(FakeDataBase, new DataManager());
         let h = Symbol("hello");
         dl.Entries = h;
         assert.equal(dl.getEntries(), h);
@@ -61,7 +62,7 @@ QUnit.module("Data/DataLibrary test", function() {
                 this._addLabel.push({ Name, NewEntry });
             }
         }
-        let dl = new DataLibrary(0, 0),
+        let dl = new DataLibrary(FakeDataBase, new DataManager()),
             param = Symbol("IndexEntry"),
             dat = new Data();
         dl.Data = dat;
@@ -78,15 +79,16 @@ QUnit.module("Data/DataLibrary test", function() {
     QUnit.test("loadElement test", function(assert) {
         let _loadData_calls = [];
         let _constructor_calls = [];
-        class DataClass {
+        class DataClass extends FakeDataBase {
             constructor(...args) {
+                super();
                 _constructor_calls.push(args);
             }
             loadData() {
                 throw new ReferenceError('throws ReferenceError');
             }
         }
-        let dl = new DataLibrary(DataClass, "hey"),
+        let dl = new DataLibrary(DataClass, new DataManager()),
             xmlEntry = Symbol('XMLEntry');
 
         dl.loadElement(xmlEntry);

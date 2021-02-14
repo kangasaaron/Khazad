@@ -1,0 +1,682 @@
+{
+   "MaterialClass": {
+      "Name": {
+         "_Label": "MATERIALCLASS_VEIN_STONE"
+      },
+      "DefaultMaterial": {
+         "_label": "MATERIAL_VEIN_STONE"
+      },
+      "DefaultSurfaceTextures": {
+         "SurfaceTexture": [
+            {
+               "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+               "_Texturelabel": "TEXTURE_ROUGH"
+            },
+            {
+               "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+               "_Texturelabel": "TEXTURE_STONE_1"
+            },
+            {
+               "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+               "_Texturelabel": "TEXTURE_STONE_2"
+            },
+            {
+               "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+               "_Texturelabel": "TEXTURE_STONE_3"
+            },
+            {
+               "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+               "_Texturelabel": "TEXTURE_STONE_4"
+            },
+            {
+               "_SurfaceTypelabel": "SURFACETYPE_SMOOTH_WALL",
+               "_Texturelabel": "TEXTURE_SMOOTH"
+            },
+            {
+               "_SurfaceTypelabel": "SURFACETYPE_SMOOTH_FLOOR",
+               "_Texturelabel": "TEXTURE_SMOOTH"
+            },
+            {
+               "_SurfaceTypelabel": "SURFACETYPE_PEBBLES",
+               "_Texturelabel": "TEXTURE_PEBBLES"
+            },
+            {
+               "_SurfaceTypelabel": "SURFACETYPE_BOULDER",
+               "_Texturelabel": "TEXTURE_BOULDER"
+            },
+            {
+               "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_WALL",
+               "_Texturelabel": "TEXTURE_BRICK"
+            },
+            {
+               "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_FLOOR",
+               "_Texturelabel": "TEXTURE_TILES"
+            }
+         ]
+      }
+   },
+   "Material": [
+      {
+         "Name": {
+            "_Label": "MATERIAL_VEIN_STONE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "ColorMode": {
+            "_mode": "overlay"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_MATT"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_HEMATITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_LIMONITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_GARNIERITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_GREEN"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_GOLD_NUGGETS"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_YELLOW"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SILVER_NUGGETS"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_COPPER_NUGGETS"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_MALACHITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREEN"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_FOREST_GREEN"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_SWIRLY"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_SWIRLY"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_SWIRLY"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_SWIRLY"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_SWIRLY"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_GALENA"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SPHALERITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_CASSITERITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_COAL_BITUMINOUS"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_LIGNITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_PLATINUM_NUGGETS"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_CINNABAR"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_RED"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_COBALTITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLUE"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_TETRAHEDRITE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_HORN_SILVER"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEIN_STONE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_VEINS"
+               }
+            ]
+         }
+      }
+   ],
+   "_xmlns": "https://github.com/ImpalerWrG/Khazad"
+}

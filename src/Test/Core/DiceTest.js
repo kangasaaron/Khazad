@@ -1,16 +1,14 @@
-import { Dice } from "../../Core/Dice.js";
-import { Long } from "../../other/Integers.js";
-import { Serializable } from "../../other/Serializable.js";
+import { Dice } from "../../Core.js";
+import { Long, Serializable, Types } from "../../other.js";
 
 QUnit.module("Core/Dice class test", function() {
     let d = new Dice();
 
     QUnit.test('test statics', function(assert) {
-        assert.ok(Serializable.isImplementedByClass(Dice));
+        assert.ok(Types.isImplementedBy(Serializable, Dice));
     });
 
     QUnit.test("test constructor", function(assert) {
-        assert.ok(Serializable.isImplementedBy(d));
         assert.equal(typeof d.Generator, "function");
         assert.equal(d.uses, 0);
     });

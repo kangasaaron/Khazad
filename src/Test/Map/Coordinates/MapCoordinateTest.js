@@ -1,20 +1,14 @@
-import { BlockCoordinate } from "../../../Map/Coordinates/BlockCoordinate.js";
-import { ChunkCoordinate } from "../../../Map/Coordinates/ChunkCoordinate.js";
-import { Direction } from "../../../Map/Coordinates/Direction.js";
-import { MapCoordinate } from "../../../Map/Coordinates/MapCoordinate.js";
-import { RegionCoordinate } from "../../../Map/Coordinates/RegionCoordinate.js";
-import { SectorCoordinate } from "../../../Map/Coordinates/SectorCoordinate.js";
-import { Serializable } from "../../../other/Serializable.js";
+import { BlockCoordinate, ChunkCoordinate, Direction, MapCoordinate, SectorCoordinate, RegionCoordinate } from "../../../Map.js";
+import { Serializable, Types } from "../../../other.js";
 
 QUnit.module("Map/Coordinates/MapCoordinate test", function() {
 
     QUnit.test("statics test", function(assert) {
-        assert.ok(Serializable.isImplementedByClass(MapCoordinate));
+        assert.ok(Types.isImplementedBy(Serializable, MapCoordinate));
     });
 
     QUnit.test("constructor test", function(assert) {
         let m = new MapCoordinate();
-        assert.ok(Serializable.isImplementedBy(m));
         assert.ok(m !== null);
         assert.ok(m instanceof MapCoordinate);
         assert.ok(m.Region instanceof RegionCoordinate);
@@ -94,8 +88,10 @@ QUnit.module("Map/Coordinates/MapCoordinate test", function() {
         assert.equal(m.getZ(), 5);
     });
 
-    QUnit.test.todo("getVector test", function(assert) {
-
+    QUnit.test("getVector test", function(assert) {
+        let a = new MapCoordinate();
+        a.set(3, 4, 5);
+        assert.ok((a.getVector()).equals(new THREE.Vector3(3, 4, 5)));
     });
     QUnit.test("translate test", function(assert) {
         let a = new MapCoordinate();

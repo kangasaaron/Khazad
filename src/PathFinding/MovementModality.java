@@ -35,7 +35,6 @@ public class MovementModality implements Serializable {
 	private static final long serialVersionUID = 1;
 
 	public enum MovementType {
-
 		MOVEMENT_TYPE_WALK,
 		MOVEMENT_TYPE_WHEEL,
 		MOVEMENT_TYPE_CLIMB,

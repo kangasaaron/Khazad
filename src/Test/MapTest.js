@@ -1,0 +1,40 @@
+import { Map } from "../Map.js";
+import { BlockShape } from "../Map/BlockShape.js";
+import { Chunk } from "../Map/Chunk.js"; 
+import { Coordinates } from "../Map/Coordinates.js";
+import { FaceShape } from "../Map/FaceShape.js";
+import { Face } from "../Map/Face.js"; 
+import { GameMap } from "../Map/GameMap.js";
+import { Sector } from "../Map/Sector.js"; 
+import { TileBuilder } from "../Map/TileBuilder.js"; 
+import { Zone } from "../Map/Zone.js"; 
+
+QUnit.module('Map package', function() {
+    QUnit.test("all stuff in the right spot", function(assert) {
+        assert.equal(Map.BlockShape, BlockShape);
+        assert.equal(Map.Chunk, Chunk); 
+        assert.equal(Map.Coordinates, Coordinates);
+        assert.equal(Map.Coordinates.Axis, Coordinates.Axis);
+        assert.equal(Map.Coordinates.BlockCoordinate, Coordinates.BlockCoordinate);
+        assert.equal(Map.Coordinates.ChunkCoordinate, Coordinates.ChunkCoordinate);
+        assert.equal(Map.Coordinates.Direction, Coordinates.Direction);
+        assert.equal(Map.Coordinates.FaceCoordinate, Coordinates.FaceCoordinate);
+        assert.equal(Map.Coordinates.MapCoordinate, Coordinates.MapCoordinate);
+        assert.equal(Map.Coordinates.RegionCoordinate, Coordinates.RegionCoordinate);
+        assert.equal(Map.Coordinates.SectorCoordinate, Coordinates.SectorCoordinate);
+        assert.equal(Map.Axis, Coordinates.Axis);
+        assert.equal(Map.BlockCoordinate, Coordinates.BlockCoordinate);
+        assert.equal(Map.ChunkCoordinate, Coordinates.ChunkCoordinate);
+        assert.equal(Map.Direction, Coordinates.Direction);
+        assert.equal(Map.FaceCoordinate, Coordinates.FaceCoordinate);
+        assert.equal(Map.MapCoordinate, Coordinates.MapCoordinate);
+        assert.equal(Map.RegionCoordinate, Coordinates.RegionCoordinate);
+        assert.equal(Map.SectorCoordinate, Coordinates.SectorCoordinate);
+        assert.equal(Map.FaceShape, FaceShape);
+        assert.equal(Map.Face, Face); 
+        assert.equal(Map.GameMap, GameMap);
+        assert.equal(Map.Sector, Sector); 
+        assert.equal(Map.TileBuilder, TileBuilder); 
+        assert.equal(Map.Zone, Zone); 
+    });
+});

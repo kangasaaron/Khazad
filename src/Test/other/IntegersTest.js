@@ -1,4 +1,4 @@
-import { Byte, Short, Int, Long } from "../../other/Integers.js";
+import { Byte, Short, Int, Long } from "../../other.js";
 
 QUnit.module("other/Integers Byte test", function() {
     QUnit.test("statics test", function(assert) {

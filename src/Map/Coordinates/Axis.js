@@ -15,8 +15,15 @@
  You should have received a copy of the GNU General Public License
  along with Khazad.  If not, see <http://www.gnu.org/licenses/> */
 
-import { defineEnum } from "../../other/Shims.js";
+import { defineEnum } from "../../other.js";
 
+/**
+ * Extreamly simple Axis system used to build the rest of the Map system
+ *
+ * @author Impaler
+ */
 export const Axis = defineEnum("Axis",
-    "AXIS_Z", "AXIS_Y", "AXIS_X"
+    "AXIS_Z", // Vertical
+    "AXIS_Y", // North/South
+    "AXIS_X" // East/West
 );

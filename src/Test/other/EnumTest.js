@@ -1,4 +1,4 @@
-import { defineEnum, Enum } from "../../other/Shims.js";
+import { defineEnum, Enum } from "../../other.js";
 
 QUnit.module('other/Enum test', function() {
     let Colors = defineEnum('Colors',
@@ -22,10 +22,25 @@ QUnit.module('other/Enum test', function() {
                 assert.ok(color = Colors.Blue);
             counter++;
         }
+        for (let color of Colors.keys) {
+            if (counter == 0)
+                assert.ok(color == "Red", 'can iterate through keys');
+            else if (counter == 1)
+                assert.ok(color == "Green");
+            else if (counter == 2)
+                assert.ok(color = "Blue");
+            counter++;
+        }
 
-        assert.ok(Colors.Red == 0, 'enum values evalutate to their automatically set number values');
+        assert.ok(Colors.Red == 0, 'enum values evaluate to their automatically set number values');
         assert.ok(Colors.Green == 1);
         assert.ok(Colors.Blue == 2);
+        assert.ok(Colors.Red.ordinal == 0, 'enum values have ordinals automatically set');
+        assert.ok(Colors.Green.ordinal == 1);
+        assert.ok(Colors.Blue.ordinal == 2);
+        assert.ok(Colors.Red.hashCode() == 0, 'enum values have hashCode()');
+        assert.ok(Colors.Green.hashCode() == 1);
+        assert.ok(Colors.Blue.hashCode() == 2);
         assert.ok(Colors.Red.name == "Red", "enum values know their own name");
         assert.ok(Colors.Green.name == "Green");
         assert.ok(Colors.Blue.name == "Blue");
@@ -69,5 +84,10 @@ QUnit.module('other/Enum test', function() {
         assert.ok(testEnum.b == 1);
         assert.ok(testEnum.c == 0);
         assert.ok(testEnum.d == 1);
+
+        assert.ok(testEnum.a.ordinal == 0);
+        assert.ok(testEnum.b.ordinal == 1);
+        assert.ok(testEnum.c.ordinal == 2);
+        assert.ok(testEnum.d.ordinal == 3);
     });
 });

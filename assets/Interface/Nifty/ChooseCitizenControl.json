@@ -1,0 +1,55 @@
+{
+   "useStyles": {
+      "_filename": "nifty-default-styles.xml"
+   },
+   "useControls": {
+      "_filename": "nifty-default-controls.xml"
+   },
+   "controlDefinition": {
+      "panel": {
+         "control": [
+            {
+               "interact": {
+                  "_onClick": "openCitizen()"
+               },
+               "_childLayout": "center",
+               "_height": "100%",
+               "_id": "#CitizenButton",
+               "_label": "Name",
+               "_name": "button",
+               "_width": "33%"
+            },
+            {
+               "interact": {
+                  "_onClick": "openJob()"
+               },
+               "_childLayout": "center",
+               "_height": "100%",
+               "_id": "#JobButton",
+               "_label": "Job",
+               "_name": "button",
+               "_width": "33%"
+            },
+            {
+               "interact": {
+                  "_onClick": "openTask()"
+               },
+               "_childLayout": "center",
+               "_height": "100%",
+               "_id": "#TaskButton",
+               "_label": "Task",
+               "_name": "button",
+               "_width": "33%"
+            }
+         ],
+         "_id": "#ChooseCitizenPanel",
+         "_align": "center",
+         "_valign": "center",
+         "_width": "100%",
+         "_height": "30px",
+         "_childLayout": "horizontal"
+      },
+      "_name": "ChooseCitizenControl",
+      "_controller": "Nifty.ChooseCitizenControlController"
+   }
+}

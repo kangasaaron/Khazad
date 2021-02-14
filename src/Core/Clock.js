@@ -1,6 +1,4 @@
-import { Serializable } from '../other/Serializable.js';
-import { Long, LongArray } from "../other/Integers.js";
-
+import { Serializable, Long } from '../other.js';
 /**
  *
  * @author Impaler
@@ -23,8 +21,9 @@ const calculateAverage = function calculateAverage() {
     this.AverageTime = Total / this.SampleSize;
 }
 
-export class Clock {
-    constructor(SamplingSize) {
+export class Clock extends Serializable() {
+    constructor(SamplingSize = 0) {
+        super();
         this.started = false;
         this.paused = false;
         this.CPUClock = Date;
@@ -34,7 +33,6 @@ export class Clock {
         this.PausedTime = new Long(0);
         this.AverageTime = 0;
         this.SamplingPause = new Long(0);
-        SamplingSize = SamplingSize || 0;
         this.setSampleSize(SamplingSize);
     }
     start() {
@@ -91,7 +89,7 @@ export class Clock {
 
     setSampleSize(Size) { // TODO turn into setter
         this.SampleSize = Size;
-        if (!this.SampleSize) {
+        if (!Number.isFinite(this.SampleSize) || !this.SampleSize) {
             this.SampleSize = 1;
         }
         this.resetAccumulationVector();
@@ -117,6 +115,3 @@ export class Clock {
         return clonedClock;
     }
 }
-
-Serializable.becomeImplementedBy(Clock);
-Clock.serialVersionUID = BigInt(1);

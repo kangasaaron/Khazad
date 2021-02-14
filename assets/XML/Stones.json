@@ -1,0 +1,1079 @@
+{
+   "MaterialClass": [
+      {
+         "Name": {
+            "_Label": "MATERIALCLASS_FEATURE_STONE"
+         },
+         "DefaultSurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_STONE_1"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_STONE_2"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_STONE_3"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_STONE_4"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_SMOOTH_WALL",
+                  "_Texturelabel": "TEXTURE_SMOOTH"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_SMOOTH_FLOOR",
+                  "_Texturelabel": "TEXTURE_SMOOTH"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_PEBBLES",
+                  "_Texturelabel": "TEXTURE_PEBBLES"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_BOULDER",
+                  "_Texturelabel": "TEXTURE_BOULDER"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_WALL",
+                  "_Texturelabel": "TEXTURE_BRICK"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_FLOOR",
+                  "_Texturelabel": "TEXTURE_TILES"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIALCLASS_LAVA_STONE"
+         },
+         "DefaultMaterial": {
+            "_label": "MATERIAL_OBSIDIAN"
+         },
+         "DefaultSurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_STONE_1"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_STONE_2"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_STONE_3"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_STONE_4"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_SMOOTH_WALL",
+                  "_Texturelabel": "TEXTURE_SMOOTH"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_SMOOTH_FLOOR",
+                  "_Texturelabel": "TEXTURE_SMOOTH"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_PEBBLES",
+                  "_Texturelabel": "TEXTURE_PEBBLES"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_BOULDER",
+                  "_Texturelabel": "TEXTURE_BOULDER"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_WALL",
+                  "_Texturelabel": "TEXTURE_BRICK"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_FLOOR",
+                  "_Texturelabel": "TEXTURE_TILES"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIALCLASS_LAYER_STONE"
+         },
+         "DefaultMaterial": {
+            "_label": "MATERIAL_LAYER_STONE"
+         },
+         "DefaultSurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_STONE_1"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_STONE_2"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_STONE_3"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_STONE_4"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_SMOOTH_WALL",
+                  "_Texturelabel": "TEXTURE_SMOOTH"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_SMOOTH_FLOOR",
+                  "_Texturelabel": "TEXTURE_SMOOTH"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_PEBBLES",
+                  "_Texturelabel": "TEXTURE_PEBBLES"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_BOULDER",
+                  "_Texturelabel": "TEXTURE_BOULDER"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_WALL",
+                  "_Texturelabel": "TEXTURE_BRICK"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_FLOOR",
+                  "_Texturelabel": "TEXTURE_TILES"
+               }
+            ]
+         }
+      }
+   ],
+   "Material": [
+      {
+         "Name": {
+            "_Label": "MATERIAL_FEATURE_STONE"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_FEATURE_STONE"
+            }
+         ],
+         "PrimaryColor": {
+            "_label": "COLOR_PINK"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_GREEN"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_OBSIDIAN"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_LAVA_STONE"
+            }
+         ],
+         "PrimaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_LIGHT_GREY"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_LAYER_STONE"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_LAYER_STONE"
+            }
+         ],
+         "PrimaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_STONE_1"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_STONE_2"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_STONE_3"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_STONE_4"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SANDSTONE"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_LAYER_STONE"
+            }
+         ],
+         "ColorMode": {
+            "_mode": "overlay"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_TAN"
+         },
+         "BorderColor": {
+            "_label": "COLOR_TAN"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_SAND_2"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SILTSTONE"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_LAYER_STONE"
+            }
+         ],
+         "PrimaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_LAYERED"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_MUDSTONE"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_LAYER_STONE"
+            }
+         ],
+         "PrimaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "BorderColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_LAYERED"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SHALE"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_LAYER_STONE"
+            }
+         ],
+         "PrimaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "BorderColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_LAYERED"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_CLAYSTONE"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_LAYER_STONE"
+            }
+         ],
+         "PrimaryColor": {
+            "_label": "COLOR_TAN"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "BorderColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_LAYERED"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_ROCK_SALT"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_LAYER_STONE"
+            }
+         ],
+         "PrimaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_CUBIC"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_LIMESTONE"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_LAYER_STONE"
+            }
+         ],
+         "PrimaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_LIGHT_GREY"
+         },
+         "BorderColor": {
+            "_label": "COLOR_LIGHT_GREY"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_CARBONATE"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_CONGLOMERATE"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_LAYER_STONE"
+            }
+         ],
+         "PrimaryColor": {
+            "_label": "COLOR_DARK_ORANGE"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_LIGHT_GREY"
+         },
+         "BorderColor": {
+            "_label": "COLOR_LIGHT_GREY"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_PEBBLES"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_DOLOMITE"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_LAYER_STONE"
+            }
+         ],
+         "PrimaryColor": {
+            "_label": "COLOR_LIGHT_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "BorderColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_CARBONATE"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_FLINT"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_LAYER_STONE"
+            }
+         ],
+         "PrimaryColor": {
+            "_label": "COLOR_LIGHT_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "BorderColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_DIRT"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_CHERT"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_LAYER_STONE"
+            }
+         ],
+         "PrimaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_LIGHT_GREY"
+         },
+         "BorderColor": {
+            "_label": "COLOR_LIGHT_GREY"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_DIRT"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_CHALK"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_LAYER_STONE"
+            }
+         ],
+         "PrimaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "BorderColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_CARBONATE"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_GRANITE"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_LAYER_STONE"
+            }
+         ],
+         "PrimaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "BorderColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_GENERIC_ROCK"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_GENERIC_ROCK"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_GENERIC_ROCK"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_GENERIC_ROCK"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_GENERIC_ROCK"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_DIORITE"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_LAYER_STONE"
+            }
+         ],
+         "PrimaryColor": {
+            "_label": "COLOR_LIGHT_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "BorderColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_IGNEOUS_INTRUSIVE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_IGNEOUS_INTRUSIVE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_IGNEOUS_INTRUSIVE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_IGNEOUS_INTRUSIVE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_IGNEOUS_INTRUSIVE"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_GABBRO"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_LAYER_STONE"
+            }
+         ],
+         "PrimaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "ColorMode": {
+            "_mode": "overlay"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "BorderColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_IGNEOUS_INTRUSIVE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_IGNEOUS_INTRUSIVE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_IGNEOUS_INTRUSIVE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_IGNEOUS_INTRUSIVE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_IGNEOUS_INTRUSIVE"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_RHYOLITE"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_LAYER_STONE"
+            }
+         ],
+         "PrimaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "BorderColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_IGNEOUS_EXTRUSIVE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_IGNEOUS_EXTRUSIVE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_IGNEOUS_EXTRUSIVE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_IGNEOUS_EXTRUSIVE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_IGNEOUS_EXTRUSIVE"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_BASALT"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_LAYER_STONE"
+            }
+         ],
+         "PrimaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "BorderColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_IGNEOUS_EXTRUSIVE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_IGNEOUS_EXTRUSIVE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_IGNEOUS_EXTRUSIVE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_IGNEOUS_EXTRUSIVE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_IGNEOUS_EXTRUSIVE"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_ANDESITE"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_LAYER_STONE"
+            }
+         ],
+         "PrimaryColor": {
+            "_label": "COLOR_LIGHT_GREY"
+         },
+         "ColorMode": {
+            "_mode": "overlay"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_IGNEOUS_EXTRUSIVE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_IGNEOUS_EXTRUSIVE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_IGNEOUS_EXTRUSIVE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_IGNEOUS_EXTRUSIVE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_IGNEOUS_EXTRUSIVE"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_FELSITE"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_LAYER_STONE"
+            }
+         ],
+         "PrimaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_LIGHT_GREY"
+         },
+         "ColorMode": {
+            "_mode": "overlay"
+         },
+         "BorderColor": {
+            "_label": "COLOR_LIGHT_GREY"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_IGNEOUS_EXTRUSIVE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_IGNEOUS_EXTRUSIVE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_IGNEOUS_EXTRUSIVE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_IGNEOUS_EXTRUSIVE"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_IGNEOUS_EXTRUSIVE"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_OBSIDIAN"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_LAYER_STONE"
+            }
+         ],
+         "PrimaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_QUARTZITE"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_LAYER_STONE"
+            }
+         ],
+         "PrimaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "BorderColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_DIRT"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SLATE"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_LAYER_STONE"
+            }
+         ],
+         "PrimaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_NAVY_BLUE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_NAVY_BLUE"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_LAYERED"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_PHYLLITE"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_LAYER_STONE"
+            }
+         ],
+         "PrimaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "BorderColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_LAYERED"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SCHIST"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_LAYER_STONE"
+            }
+         ],
+         "PrimaryColor": {
+            "_label": "COLOR_TAN"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "BorderColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_FOLIATED"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_GNEISS"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_LAYER_STONE"
+            }
+         ],
+         "ColorMode": {
+            "_mode": "overlay"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_LIGHT_GREY"
+         },
+         "BorderColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_FOLIATED"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_MARBLE"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_LAYER_STONE"
+            }
+         ],
+         "PrimaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_CARBONATE"
+               }
+            ]
+         }
+      }
+   ],
+   "_xmlns": "https://github.com/ImpalerWrG/Khazad"
+}

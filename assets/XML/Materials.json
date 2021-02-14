@@ -1,0 +1,636 @@
+{
+   "Material": [
+      {
+         "Name": {
+            "_Label": "MATERIAL_UNINITIALIZED"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_EXOTIC"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_BLUE"
+         },
+         "ColorMode": {
+            "_mode": "keepimage"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_DEFAULT"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_DEFAULT"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_DEFAULT"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_DEFAULT"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_DEFAULT"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_SMOOTH_WALL",
+                  "_Texturelabel": "TEXTURE_DEFAULT"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_SMOOTH_FLOOR",
+                  "_Texturelabel": "TEXTURE_DEFAULT"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_PEBBLES",
+                  "_Texturelabel": "TEXTURE_DEFAULT"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_BOULDER",
+                  "_Texturelabel": "TEXTURE_DEFAULT"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_WALL",
+                  "_Texturelabel": "TEXTURE_DEFAULT"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_FLOOR",
+                  "_Texturelabel": "TEXTURE_DEFAULT"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_BUILDING"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_EXOTIC"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_YELLOW"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "ColorMode": {
+            "_mode": "keepimage"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_WALL",
+                  "_Texturelabel": "TEXTURE_DEFAULT"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_FLOOR",
+                  "_Texturelabel": "TEXTURE_DEFAULT"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_ASHES"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_ASHES"
+         },
+         "ColorMode": {
+            "_mode": "keepimage"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_ASHES"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_ASHES"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_ASHES"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_ASHES"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_WATER"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_EXOTIC"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_TEAL"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_LIQUID",
+                  "_Texturelabel": "TEXTURE_LIQUID"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_EMPTYSPACE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_EXOTIC"
+         },
+         "Texture": {
+            "_label": "TEXTURE_AIR"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_DRIFTWOOD"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_EXOTIC"
+         },
+         "ColorMode": {
+            "_mode": "keepimage"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_DRIFTWOOD"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_LAVA"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_EXOTIC"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_RED"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_YELLOW"
+         },
+         "ColorMode": {
+            "_mode": "gradientmap"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_LIQUID",
+                  "_Texturelabel": "TEXTURE_LIQUID"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_MUD"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_SOIL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_DIRT"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_FARM"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_SOIL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_DARK_BROWN"
+         },
+         "ColorMode": {
+            "_mode": "overlay"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_GROUND"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_DARK_GRASS"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEGATATION"
+         },
+         "PrimaryColor": {
+            "_label": "GRASS_DARK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_FOREST_GREEN"
+         },
+         "ColorMode": {
+            "_mode": "overlay"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_GRASS_5"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_GRASS_5"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_GRASS_2"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_GRASS_3"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_GRASS_4"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_BRIGHT_GRASS"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEGATATION"
+         },
+         "PrimaryColor": {
+            "_label": "GRASS_BRIGHT"
+         },
+         "BorderColor": {
+            "_label": "COLOR_DARK_GREEN"
+         },
+         "ColorMode": {
+            "_mode": "overlay"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_GRASS_5"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_GRASS_5"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_GRASS_2"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_GRASS_3"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_GRASS_4"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_DEAD_GRASS"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEGATATION"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_DARK_BROWN"
+         },
+         "ColorMode": {
+            "_mode": "overlay"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_GRASS_1"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_GRASS_2"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_GRASS_3"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_GRASS_4"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_DRY_GRASS"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEGATATION"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_KHAKI"
+         },
+         "ColorMode": {
+            "_mode": "overlay"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_GRASS_1"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_GRASS_2"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_GRASS_3"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_GRASS_4"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_UNDERGROWTH"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_VEGATATION"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_KHAKI"
+         },
+         "ColorMode": {
+            "_mode": "overlay"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_GRASS_1"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_GRASS_2"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_GRASS_3"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_GRASS_4"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_RIVER_PEBBLES"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_EXOTIC"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_PEBBLES"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_PEBBLES"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_PEBBLES"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_PEBBLES"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_STREAM_PEBBLES"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_EXOTIC"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "ColorMode": {
+            "_mode": "overlay"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_PEBBLES"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_PEBBLES"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_PEBBLES"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_PEBBLES"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SNOW"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_EXOTIC"
+         },
+         "ColorMode": {
+            "_mode": "keepimage"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_SNOW"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_SNOW"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_SNOW"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_SNOW"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_SNOW"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_SMOOTH_WALL",
+                  "_Texturelabel": "TEXTURE_SNOW"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_SMOOTH_FLOOR",
+                  "_Texturelabel": "TEXTURE_SNOW"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_PEBBLES",
+                  "_Texturelabel": "TEXTURE_SNOW"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_BOULDER",
+                  "_Texturelabel": "TEXTURE_SNOW"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_ICE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_ICE"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_NAVY_BLUE"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_PIT"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_EXOTIC"
+         },
+         "Texture": {
+            "_label": "TEXTURE_PIT"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "BorderColor": {
+            "_label": "COLOR_SILVER"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_GREEN_GLASS"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_GREEN_GLASS"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREEN"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_CLEAR_GLASS"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_CLEAR_GLASS"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_LIGHT_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_CRYSTAL_GLASS"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_CRYSTAL_GLASS"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_LIGHT_GREY"
+         }
+      }
+   ],
+   "_xmlns": "https://github.com/ImpalerWrG/Khazad"
+}

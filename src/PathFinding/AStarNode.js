@@ -15,10 +15,9 @@
  You should have received a copy of the GNU General Public License
  along with Khazad.  If not, see <http://www.gnu.org/licenses/> */
 
-import { Direction } from "../Map/Coordinates/Direction.js";
-import { MapCoordinate } from "../Map/Coordinates/MapCoordinate.js";
-import { Comparable } from "../other/Comparable.js";
-import { Serializable } from "../other/Serializable.js";
+import { Direction, MapCoordinate } from "../Map.js";
+import { Serializable, Comparable } from "../other.js";
+import { Types } from "../other/Types.js";
 
 /**
  * A simple Node used by the AStar pathing class, it holds data placed in it
@@ -29,8 +28,9 @@ import { Serializable } from "../other/Serializable.js";
  * @author Impaler
  */
 
-export class AStarNode {
+export class AStarNode extends Comparable(Serializable()) {
     constructor() {
+        super();
         // Cumulative distance used to judge Path
         this.TotalCost = 0.0;
         // Where this node is 
@@ -53,9 +53,13 @@ export class AStarNode {
         this.TotalCost = this.PathLengthFromStart + this.MinimumCostToGoal;
     }
     compareTo(TargetNode) {
+        Types.mustHave(TargetNode, "TotalCost");
+        Types.mustBe("finiteNumber", TargetNode.TotalCost);
         if (this.TotalCost < TargetNode.TotalCost) {
             return -1;
         } else if (this.TotalCost === TargetNode.TotalCost) {
+            Types.mustHave(TargetNode, "TieBreakerValue");
+            Types.mustBe("finiteNumber", TargetNode.TieBreakerValue);
             if (this.TieBreakerValue < TargetNode.TieBreakerValue) {
                 return -1;
             } else {
@@ -65,11 +69,10 @@ export class AStarNode {
         return 1;
     }
     equals(other) {
+        Types.mustHave(other, "LocationCoordinates");
         return this.LocationCoordinates.equals(other.LocationCoordinates);
     }
     getCoordinates() { // TODO turn into getter
         return this.LocationCoordinates;
     }
 }
-Comparable.becomeImplementedBy(AStarNode);
-Serializable.becomeImplementedBy(AStarNode);

@@ -1,0 +1,515 @@
+{
+   "MaterialClass": [
+      {
+         "Name": {
+            "_Label": "MATERIALCLASS_VEGATATION"
+         },
+         "DefaultMaterial": {
+            "_label": "MATERIAL_UNINITIALIZED"
+         },
+         "DefaultSurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_ROUGH"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_1",
+                  "_Texturelabel": "TEXTURE_STONE_1"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_2",
+                  "_Texturelabel": "TEXTURE_STONE_2"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_3",
+                  "_Texturelabel": "TEXTURE_STONE_3"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_FLOOR_4",
+                  "_Texturelabel": "TEXTURE_STONE_4"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIALCLASS_WOOD"
+         },
+         "DefaultMaterial": {
+            "_label": "MATERIAL_GENERIC_WOOD"
+         },
+         "DefaultSurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_WALL",
+                  "_Texturelabel": "TEXTURE_WOOD_WALL"
+               },
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_FLOOR",
+                  "_Texturelabel": "TEXTURE_WOOD_FLOOR"
+               }
+            ]
+         }
+      }
+   ],
+   "Material": [
+      {
+         "Name": {
+            "_Label": "MATERIAL_GENERIC_WOOD"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_WOOD"
+            }
+         ],
+         "PrimaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "ColorMode": {
+            "_mode": "overlay"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_WOOD_FLOOR"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SAGUARO_WOOD"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_VEGATATION"
+            }
+         ],
+         "ColorMode": {
+            "_mode": "keepimage"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_SAGUARO"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_OAK_BARK"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_VEGATATION"
+            }
+         ],
+         "ColorMode": {
+            "_mode": "keepimage"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_OAK_TRUNK"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_OAK_LEAVES"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_VEGATATION"
+            }
+         ],
+         "ColorMode": {
+            "_mode": "keepimage"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_OAK_LEAVES"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_MAPLE_TRUNK"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_VEGATATION"
+            }
+         ],
+         "ColorMode": {
+            "_mode": "keepimage"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_MAPLE_TRUNK"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_MAPLE_LEAVES"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_VEGATATION"
+            }
+         ],
+         "ColorMode": {
+            "_mode": "keepimage"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_MAPLE_LEAVES"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_BIRCH_TRUNK"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_VEGATATION"
+            }
+         ],
+         "ColorMode": {
+            "_mode": "keepimage"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_BIRCH_TRUNK"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_BIRCH_LEAVES"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_VEGATATION"
+            }
+         ],
+         "ColorMode": {
+            "_mode": "keepimage"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_BIRCH_LEAVES"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_CHESTNUT_TRUNK"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_VEGATATION"
+            }
+         ],
+         "ColorMode": {
+            "_mode": "keepimage"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_CHESTNUT_TRUNK"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_CHESTNUT_LEAVES"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_VEGATATION"
+            }
+         ],
+         "ColorMode": {
+            "_mode": "keepimage"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_CHESTNUT_LEAVES"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_PALM_TRUNK"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_VEGATATION"
+            }
+         ],
+         "ColorMode": {
+            "_mode": "keepimage"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_PALM_TRUNK"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_PALM_LEAVES"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_VEGATATION"
+            }
+         ],
+         "ColorMode": {
+            "_mode": "keepimage"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_PALM_LEAVES"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_PINE_TRUNK"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_VEGATATION"
+            }
+         ],
+         "ColorMode": {
+            "_mode": "keepimage"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_PINE_TRUNK"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_PINE_LEAVES"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_VEGATATION"
+            }
+         ],
+         "ColorMode": {
+            "_mode": "keepimage"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_PINE_LEAVES"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_LARCH_TRUNK"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_VEGATATION"
+            }
+         ],
+         "ColorMode": {
+            "_mode": "keepimage"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_LARCH_TRUNK"
+               }
+            ]
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_LARCH_LEAVES"
+         },
+         "MaterialClass": [
+            {
+               "_label": "MATERIALCLASS_VEGATATION"
+            }
+         ],
+         "ColorMode": {
+            "_mode": "keepimage"
+         },
+         "SurfaceTextures": {
+            "SurfaceTexture": [
+               {
+                  "_SurfaceTypelabel": "SURFACETYPE_ROUGH_WALL",
+                  "_Texturelabel": "TEXTURE_LARCH_LEAVES"
+               }
+            ]
+         }
+      }
+   ],
+   "Tree": [
+      {
+         "Name": {
+            "_Label": "TREE_SAGUARO"
+         },
+         "Model": {
+            "_label": "MODEL_SAGUARO"
+         },
+         "Trunk": {
+            "_material": "MATERIAL_SAGUARO_WOOD"
+         },
+         "Leaves": {
+            "_material": "MATERIAL_SAGUARO_LEAVES"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TREE_OAK"
+         },
+         "Model": {
+            "_label": "MODEL_OAK"
+         },
+         "Trunk": {
+            "_material": "MATERIAL_OAK_TRUNK"
+         },
+         "Leaves": {
+            "_material": "MATERIAL_OAK_LEAVES"
+         },
+         "Texture": {
+            "_Texturelabel": "TEXTURE_TREE_0"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TREE_MAPLE"
+         },
+         "Model": {
+            "_label": "MODEL_MAPLE"
+         },
+         "Trunk": {
+            "_material": "MATERIAL_MAPLE_TRUNK"
+         },
+         "Leaves": {
+            "_material": "MATERIAL_MAPLE_LEAVES"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TREE_BIRCH"
+         },
+         "Model": {
+            "_label": "MODEL_BIRCH"
+         },
+         "Trunk": {
+            "_material": "MATERIAL_BIRCH_TRUNK"
+         },
+         "Leaves": {
+            "_material": "MATERIAL_BIRCH_LEAVES"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TREE_CHESTNUT"
+         },
+         "Model": {
+            "_label": "MODEL_CHESTNUT"
+         },
+         "Trunk": {
+            "_material": "MATERIAL_CHESTNUT_TRUNK"
+         },
+         "Leaves": {
+            "_material": "MATERIAL_CHESTNUT_LEAVES"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TREE_PALM"
+         },
+         "Model": {
+            "_label": "MODEL_PALM"
+         },
+         "Trunk": {
+            "_material": "MATERIAL_PALM_TRUNK"
+         },
+         "Leaves": {
+            "_material": "MATERIAL_PALM_LEAVES"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TREE_PINE"
+         },
+         "Model": {
+            "_label": "MODEL_PINE"
+         },
+         "Trunk": {
+            "_material": "MATERIAL_PINE_TRUNK"
+         },
+         "Leaves": {
+            "_material": "MATERIAL_PINE_LEAVES"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "TREE_LARCH"
+         },
+         "Model": {
+            "_label": "MODEL_LARCH"
+         },
+         "Trunk": {
+            "_material": "MATERIAL_LARCH_TRUNK"
+         },
+         "Leaves": {
+            "_material": "MATERIAL_LARCH_LEAVES"
+         }
+      }
+   ],
+   "_xmlns": "https://github.com/ImpalerWrG/Khazad"
+}

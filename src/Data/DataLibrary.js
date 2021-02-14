@@ -19,15 +19,17 @@
  *
  * @author Impaler
  */
-import { Serializable } from "../other/Serializable.js";
+import { Serializable } from "../other.js";
+import { Types } from "../other/Types.js";
+import { DataBase } from "./DataBase.js";
+import { DataManager } from "./DataManager.js";
 
-class DataLibrary {
+export class DataLibrary extends Serializable(Object) {
     constructor(Class, Parent) {
+        super();
+        Types.mustBeExtendedBy(DataBase, Class);
+        Types.mustBe(DataManager, Parent);
         this.Entries = [];
-        if (Class === undefined || Class === null)
-            throw new TypeError("DataLibrary constructor parameter 1 cannot be null or undefined");
-        if (Parent === undefined || Parent === null)
-            throw new TypeError("DataLibrary constructor parameter 2 cannot be null or undefined");
         this.DataClass = Class;
         this.Data = Parent;
     }
@@ -64,7 +66,3 @@ class DataLibrary {
         return this.Entries;
     }
 }
-Serializable.becomeImplementedBy(DataLibrary);
-DataLibrary.serialVersionUID = 1;
-
-export { DataLibrary };

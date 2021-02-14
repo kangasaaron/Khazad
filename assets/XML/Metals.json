@@ -1,0 +1,545 @@
+{
+   "MaterialClass": {
+      "Name": {
+         "_Label": "MATERIALCLASS_METAL"
+      },
+      "DefaultMaterial": {
+         "_label": "MATERIAL_IRON"
+      },
+      "DefaultSurfaceTextures": {
+         "SurfaceTexture": [
+            {
+               "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_WALL",
+               "_Texturelabel": "TEXTURE_MATT"
+            },
+            {
+               "_SurfaceTypelabel": "SURFACETYPE_CONSTRUCTED_FLOOR",
+               "_Texturelabel": "TEXTURE_MATT"
+            }
+         ]
+      }
+   },
+   "Material": [
+      {
+         "Name": {
+            "_Label": "MATERIAL_IRON"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_METAL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_DARK_GREY"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "MatGloss": {
+            "_label": "IRON"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_GOLD"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_METAL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_YELLOW"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BROWN"
+         },
+         "MatGloss": {
+            "_label": "GOLD"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_SILVER"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_METAL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_GREY"
+         },
+         "MatGloss": {
+            "_label": "SILVER"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_COPPER"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_METAL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_COPPER"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "MatGloss": {
+            "_label": "COPPER"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_NICKEL"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_METAL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "MatGloss": {
+            "_label": "NICKEL"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_ZINC"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_METAL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "MatGloss": {
+            "_label": "ZINC"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_BRONZE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_METAL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_COPPER"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "MatGloss": {
+            "_label": "BRONZE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_BRASS"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_METAL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_COPPER"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "MatGloss": {
+            "_label": "BRASS"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_STEEL"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_METAL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "MatGloss": {
+            "_label": "STEEL"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_PIG_IRON"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_METAL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_NAVY_BLUE"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "MatGloss": {
+            "_label": "PIG_IRON"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_PLATINUM"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_METAL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "MatGloss": {
+            "_label": "PLATINUM"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_ELECTRUM"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_METAL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_YELLOW"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "MatGloss": {
+            "_label": "ELECTRUM"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_TIN"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_METAL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "MatGloss": {
+            "_label": "TIN"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_PEWTER_FINE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_METAL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "MatGloss": {
+            "_label": "PEWTER_FINE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_PEWTER_TRIFLE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_METAL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_LIGHT_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "MatGloss": {
+            "_label": "PEWTER_TRIFLE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_PEWTER_LAY"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_METAL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "MatGloss": {
+            "_label": "PEWTER_LAY"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_LEAD"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_METAL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_GREY"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "MatGloss": {
+            "_label": "LEAD"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_ALUMINUM"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_METAL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "MatGloss": {
+            "_label": "ALUMINUM"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_NICKEL_SILVER"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_METAL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "MatGloss": {
+            "_label": "NICKEL_SILVER"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_BILLON"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_METAL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_COPPER"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "MatGloss": {
+            "_label": "BILLON"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_STERLING_SILVER"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_METAL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_SILVER"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "MatGloss": {
+            "_label": "STERLING_SILVER"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_BLACK_BRONZE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_METAL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_PURPLE"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "MatGloss": {
+            "_label": "BLACK_BRONZE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_ROSE_GOLD"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_METAL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_PINK"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "MatGloss": {
+            "_label": "ROSE_GOLD"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_BISMUTH"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_METAL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_WHITE"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "MatGloss": {
+            "_label": "BISMUTH"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_BISMUTH_BRONZE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_METAL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_COPPER"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "MatGloss": {
+            "_label": "BISMUTH_BRONZE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "MATERIAL_ADAMANTINE"
+         },
+         "MaterialClass": {
+            "_label": "MATERIALCLASS_METAL"
+         },
+         "PrimaryColor": {
+            "_label": "COLOR_AQUA"
+         },
+         "SecondaryColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "BorderColor": {
+            "_label": "COLOR_BLACK"
+         },
+         "MatGloss": {
+            "_label": "ADAMANTINE"
+         }
+      }
+   ],
+   "_xmlns": "https://github.com/ImpalerWrG/Khazad"
+}

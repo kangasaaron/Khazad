@@ -1,6 +1,4 @@
-import { Axis } from "../../../Map/Coordinates/Axis.js";
-import { BlockCoordinate } from "../../../Map/Coordinates/BlockCoordinate.js";
-import { Direction } from "../../../Map/Coordinates/Direction.js";
+import { Axis, BlockCoordinate, Direction } from "../../../Map.js";
 import { Mock } from "../../MockClass.js";
 
 QUnit.module("Map/Coordinates/BlockCoordinate", function() {
@@ -182,7 +180,7 @@ QUnit.module("Map/Coordinates/BlockCoordinate", function() {
 
     QUnit.test("getBlockIndex test", function(assert) {
         let b = new BlockCoordinate(),
-            newValue = Symbol('New Value');
+            newValue = Math.floor(Math.random() * 127);
         b.Data = newValue;
         assert.equal(b.getBlockIndex(), newValue);
     });

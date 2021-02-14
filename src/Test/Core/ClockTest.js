@@ -1,12 +1,11 @@
-import { Clock } from "../../Core/Clock.js";
-import { Serializable } from "../../other/Serializable.js";
+import { Clock } from "../../Core.js";
+import { Serializable, Types, Long } from "../../other.js";
 import { Mock } from "../MockClass.js"
-import { Long } from "../../other/Integers.js";
 
 QUnit.module("Core/Clock test", function() {
     QUnit.test("statics test", function(assert) {
-        assert.ok(Clock.serialVersionUID !== null);
-        assert.ok(Serializable.isImplementedByClass(Clock));
+        assert.equal(Clock.serialVersionUID, 1);
+        assert.ok(Types.isImplementedBy(Serializable, Clock));
     });
 
     function testThatCIsAsExpected(assert, c, expected) {

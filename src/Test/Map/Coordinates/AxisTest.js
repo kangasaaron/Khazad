@@ -1,4 +1,4 @@
-import { Axis } from "../../../Map/Coordinates/Axis.js";
+import { Axis } from "../../../Map.js";
 
 QUnit.module("Map/Coordinates/Axis Enum test", function() {
     QUnit.test("Axis enum is correct", function(assert) {

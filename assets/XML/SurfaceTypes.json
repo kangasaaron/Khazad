@@ -1,0 +1,101 @@
+{
+   "SurfaceType": [
+      {
+         "Name": {
+            "_Label": "SURFACETYPE_ROUGH_WALL"
+         },
+         "TextureUsed": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "SURFACETYPE_ROUGH_FLOOR_1"
+         },
+         "TextureUsed": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "SURFACETYPE_ROUGH_FLOOR_2"
+         },
+         "TextureUsed": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "SURFACETYPE_ROUGH_FLOOR_3"
+         },
+         "TextureUsed": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "SURFACETYPE_ROUGH_FLOOR_4"
+         },
+         "TextureUsed": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "SURFACETYPE_SMOOTH_WALL"
+         },
+         "TextureUsed": {
+            "_label": "TEXTURE_SMOOTH"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "SURFACETYPE_SMOOTH_FLOOR"
+         },
+         "TextureUsed": {
+            "_label": "TEXTURE_TILES"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "SURFACETYPE_PEBBLES"
+         },
+         "TextureUsed": {
+            "_label": "TEXTURE_PEBBLES"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "SURFACETYPE_BOULDER"
+         },
+         "TextureUsed": {
+            "_label": "TEXTURE_BOULDER"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "SURFACETYPE_LIQUID"
+         },
+         "TextureUsed": {
+            "_label": "TEXTURE_LIQUID"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "SURFACETYPE_CONSTRUCTED_WALL"
+         },
+         "TextureUsed": {
+            "_label": "NONE"
+         }
+      },
+      {
+         "Name": {
+            "_Label": "SURFACETYPE_CONSTRUCTED_FLOOR"
+         },
+         "TextureUsed": {
+            "_label": "NONE"
+         }
+      }
+   ],
+   "_xmlns": "https://github.com/ImpalerWrG/Khazad"
+}

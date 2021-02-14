@@ -1,0 +1,173 @@
+{
+   "useStyles": {
+      "_filename": "nifty-default-styles.xml"
+   },
+   "useControls": {
+      "_filename": "nifty-default-controls.xml"
+   },
+   "screen": {
+      "layer": {
+         "panel": [
+            {
+               "control": [
+                  {
+                     "_font": "aurulent-sans-16.fnt",
+                     "_height": "60px",
+                     "_id": "label0",
+                     "_name": "label",
+                     "_text": "New Game Setup",
+                     "_textLineHeight": "30px",
+                     "_textMinHeight": "40px",
+                     "_width": "100%",
+                     "_x": "184",
+                     "_y": "54"
+                  }
+               ],
+               "panel": [
+                  {
+                     "control": [
+                        {
+                           "_font": "aurulent-sans-16.fnt",
+                           "_height": "100%",
+                           "_name": "label",
+                           "_text": "Kingdom name",
+                           "_valign": "center",
+                           "_width": "25%"
+                        },
+                        {
+                           "_height": "100%",
+                           "_id": "KingdomNameTextField",
+                           "_name": "textfield",
+                           "_width": "285px",
+                           "_maxLength": "50"
+                        }
+                     ],
+                     "_childLayout": "horizontal",
+                     "_height": "40px",
+                     "_padding": "5px",
+                     "_width": "100%"
+                  },
+                  {
+                     "control": [
+                        {
+                           "_font": "aurulent-sans-16.fnt",
+                           "_height": "100%",
+                           "_id": "label6",
+                           "_name": "label",
+                           "_text": "Seed",
+                           "_valign": "center",
+                           "_width": "25%"
+                        },
+                        {
+                           "_height": "100%",
+                           "_id": "SeedTextField",
+                           "_name": "textfield",
+                           "_width": "285px",
+                           "_maxLength": "50"
+                        }
+                     ],
+                     "_childLayout": "horizontal",
+                     "_height": "40px",
+                     "_padding": "5px",
+                     "_width": "100%"
+                  },
+                  {
+                     "control": [
+                        {
+                           "_font": "aurulent-sans-16.fnt",
+                           "_height": "50px",
+                           "_id": "label5",
+                           "_name": "label",
+                           "_text": "Size X",
+                           "_width": "50%",
+                           "_x": "0",
+                           "_y": "5"
+                        },
+                        {
+                           "_font": "aurulent-sans-16.fnt",
+                           "_height": "50px",
+                           "_id": "label3",
+                           "_name": "label",
+                           "_text": "Size Y",
+                           "_width": "50%",
+                           "_x": "253",
+                           "_y": "2"
+                        }
+                     ],
+                     "_childLayout": "horizontal",
+                     "_height": "80px",
+                     "_id": "panel11",
+                     "_width": "100%"
+                  },
+                  {
+                     "panel": [
+                        {
+                           "control": [
+                              {
+                                 "interact": {
+                                    "_onClick": "CancelSetup()"
+                                 },
+                                 "_childLayout": "center",
+                                 "_height": "38px",
+                                 "_id": "CancelButton",
+                                 "_label": "Cancel",
+                                 "_name": "button",
+                                 "_width": "130px"
+                              }
+                           ],
+                           "_childLayout": "center",
+                           "_height": "89px",
+                           "_id": "panel0",
+                           "_width": "50%"
+                        },
+                        {
+                           "control": [
+                              {
+                                 "interact": {
+                                    "_onClick": "BeginGame()"
+                                 },
+                                 "_childLayout": "center",
+                                 "_height": "38px",
+                                 "_id": "BeginButton",
+                                 "_label": "Begin Game",
+                                 "_name": "button",
+                                 "_width": "130px"
+                              }
+                           ],
+                           "_childLayout": "center",
+                           "_height": "89px",
+                           "_id": "panel2",
+                           "_width": "50%"
+                        }
+                     ],
+                     "_childLayout": "horizontal",
+                     "_height": "40px",
+                     "_id": "panel12",
+                     "_width": "100%"
+                  }
+               ],
+               "effect": {
+                  "onEndScreen": {
+                     "_direction": "bottom",
+                     "_inherit": "true",
+                     "_length": "300",
+                     "_mode": "out",
+                     "_name": "move",
+                     "_startDelay": "0"
+                  }
+               },
+               "_align": "center",
+               "_childLayout": "vertical",
+               "_height": "300px",
+               "_id": "MainSetupPanel",
+               "_style": "nifty-panel-simple",
+               "_width": "400px"
+            }
+         ],
+         "_childLayout": "center",
+         "_id": "SetupLayer"
+      },
+      "_controller": "Nifty.SetupScreenController",
+      "_id": "SetupScreen"
+   }
+}
