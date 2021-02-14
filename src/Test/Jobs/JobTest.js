@@ -42,7 +42,7 @@ QUnit.module("Job/Job test", function() {
         assert.equal(a.Paused, false);
         assert.ok(a.Priority.equals(0));
         assert.equal(a.Name, "");
-        assert.equal(a.WorkersOnBrek, 0);
+        assert.equal(a.WorkersOnBreak, 0);
         assert.equal(a.Manager, null);
     });
 

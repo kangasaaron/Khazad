@@ -24,16 +24,17 @@ import { Types } from "../other/Types.js";
  */
 
 export class VolumeSelection {
+    OriginLocation = new MapCoordinate();
+    TerminalLocation = new MapCoordinate();
+    // Used by Rendering
+    Dirty = true;
+
     constructor(SelectionOrigin = new MapCoordinate(), SelectionTerminus = new MapCoordinate()) {
         Types.mustBeAll(MapCoordinate, SelectionOrigin, SelectionTerminus);
-        this.OriginLocation = new MapCoordinate();
-        this.TerminalLocation = new MapCoordinate();
-        // Used by Rendering
-        this.Dirty = true;
         if (SelectionOrigin && SelectionTerminus)
             this.setSize(SelectionOrigin, SelectionTerminus);
     }
-    setSize(SelectionOrigin, SelectionTerminus) { // TODO turn into actual setter
+    setSize(SelectionOrigin, SelectionTerminus) {
         Types.mustBeAll(MapCoordinate, SelectionOrigin, SelectionTerminus);
         let maxX = Math.max(SelectionTerminus.getX(), SelectionOrigin.getX());
         let maxY = Math.max(SelectionTerminus.getY(), SelectionOrigin.getY());

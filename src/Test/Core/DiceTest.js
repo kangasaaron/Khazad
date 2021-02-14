@@ -3,14 +3,15 @@ import { Long, Serializable, Types } from "../../other.js";
 
 QUnit.module("Core/Dice class test", function() {
     let d = new Dice();
+    d.seed = 0;
 
     QUnit.test('test statics', function(assert) {
         assert.ok(Types.isImplementedBy(Serializable, Dice));
     });
 
     QUnit.test("test constructor", function(assert) {
-        assert.equal(typeof d.Generator, "function");
-        assert.equal(d.uses, 0);
+        assert.equal(typeof d._Generator, 'function');
+        assert.equal(d._uses, 0);
     });
 
     QUnit.test("test rollInt", function(assert) {
@@ -40,8 +41,8 @@ QUnit.module("Core/Dice class test", function() {
     });
 
     QUnit.test("seed", function(assert) {
-        let generator = d.Generator;
-        d.seed(new Long(2000));
-        assert.ok(generator !== d.Generator);
+        let generator = d._Generator;
+        d.seed = new Long(2000);
+        assert.ok(generator !== d._Generator);
     });
 });

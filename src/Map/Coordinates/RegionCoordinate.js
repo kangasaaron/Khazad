@@ -25,15 +25,21 @@ import { Types } from "../../other/Types.js";
  */
 
 export class RegionCoordinate extends Serializable() {
+    X = 0;
+    Y = 0;
+
     constructor() {
         super();
-        this.X = 0;
-        this.Y = 0;
     }
     copy(ArgumentCoordinates) {
         Types.mustHaveAll(ArgumentCoordinates, 'X', 'Y');
         Types.mustBeAll('finiteInteger', ArgumentCoordinates.X, ArgumentCoordinates.Y);
         this.X = ArgumentCoordinates.X;
         this.Y = ArgumentCoordinates.Y;
+    }
+    equals(that) {
+        if (this === that)
+            return true;
+        return this.X == that.X && this.Y == that.Y;
     }
 }

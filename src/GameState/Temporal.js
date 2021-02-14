@@ -15,10 +15,7 @@
  You should have received a copy of the GNU General Public License
  along with Khazad.  If not, see <http://www.gnu.org/licenses/> */
 
-import { Serializable } from "../other.js";
-import {} from "../other/Serializable.js";
-import { Types } from "../other/Types.js";
-
+import { Serializable, Types, Comparable } from "../other.js";
 /**
  * Base class for all objects that respond to time, all implementations need to
  * return the future time tick that they wish to recive a future wake call on as
@@ -30,12 +27,13 @@ import { Types } from "../other/Types.js";
  * @author Impaler
  */
 
-export class Temporal extends Serializable() {
+export class Temporal extends Comparable(Serializable()) {
+    ID = 0;
+    WakeTick = 1;
+
     constructor() {
         super();
         // The future time for wake to be called
-        this.ID = 0;
-        this.WakeTick = 1;
     }
     compareTo(Target) {
         if (!Types.has(Target, "WakeTick"))

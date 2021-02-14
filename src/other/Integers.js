@@ -71,41 +71,41 @@ class Integer extends Number {
     static isNaN(value) {
         return Number.isNaN(value.valueOf());
     }
-    strictequals(other) {
-        return this.prototype == other.prototype && this.valueOf() == other.valueOf();
+    strictequals(that) {
+        return this.prototype == that.prototype && this.valueOf() == that.valueOf();
     }
-    equals(other) {
-        return this.valueOf() == other.valueOf();
+    equals(that) {
+        return this.valueOf() == that.valueOf();
     }
-    notequal(other) {
-        return !this.equals(other);
+    notequal(that) {
+        return !this.equals(that);
     }
-    strictnotequal(other) {
-        return (this.prototype != other.prototype) || this.valueOf() != other.valueOf();
+    strictnotequal(that) {
+        return (this.prototype != that.prototype) || this.valueOf() != that.valueOf();
     }
-    lessthan(other) {
-        return this.valueOf() < other.valueOf();
+    lessthan(that) {
+        return this.valueOf() < that.valueOf();
     }
-    lessthanorequalto(other) {
-        return this.lessthan(other) || this.equals(other);
+    lessthanorequalto(that) {
+        return this.lessthan(that) || this.equals(that);
     }
-    greaterthan(other) {
-        return this.valueOf() < other.valueOf();
+    greaterthan(that) {
+        return this.valueOf() < that.valueOf();
     }
-    greaterthanorequalto(other) {
-        return this.greaterthan(other) || this.equals(other);
+    greaterthanorequalto(that) {
+        return this.greaterthan(that) || this.equals(that);
     }
-    minus(other) {
-        return this.valueOf() - other.valueOf();
+    minus(that) {
+        return this.valueOf() - that.valueOf();
     }
-    plus(other) {
-        return this.valueOf() + other.valueOf();
+    plus(that) {
+        return this.valueOf() + that.valueOf();
     }
-    times(other) {
-        return this.valueOf() * other.valueOf();
+    times(that) {
+        return this.valueOf() * that.valueOf();
     }
-    dividedBy(other) {
-        return Math.round(this.valueOf() / other.valueOf());
+    dividedBy(that) {
+        return Math.round(this.valueOf() / that.valueOf());
     }
 }
 Integer.prototype["==="] = Integer.prototype.strictequals;

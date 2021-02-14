@@ -31,13 +31,15 @@ class JobManager {
  */
 
 export class Settlement extends Serializable() {
+    Citizens = [];
+    JobSystem = null;
+
     constructor() {
         super();
         // Settlment data, wealth, honor, diplomatic status etc
-        this.Citizens = [];
         this.JobSystem = new JobManager();
     }
-    getJobManager() { // TODO change this into a getter
+    get jobManager() {
         return this.JobSystem;
     }
     addCitizen(NewCitizen) {

@@ -25,13 +25,15 @@ import { Serializable } from "../other.js";
  * @author Impaler
  */
 export class Weather extends Serializable(Temporal) {
+
+    Suncolor = new THREE.Color(0xffffff);
+    Sun = new THREE.DirectionalLight(this.Suncolor.clone().multiplyScalar(0.6));
+    SunVec = new THREE.Vector3();
+    Rotation = new THREE.Quaternion();
+
     constructor() {
         super();
-        this.Suncolor = new THREE.Color(0xffffff);
-        this.Sun = new THREE.DirectionalLight(this.Suncolor.clone().multiplyScalar(0.6));
-        this.SunVec = new THREE.Vector3();
-        this.Rotation = new THREE.Quaternion();
-        this.Rotation.setFromAxisAngle(new THREE.Vector3(0, 1, 0), 0.25 * Math.PI / 180)
+        this.Rotation.setFromAxisAngle(new THREE.Vector3(0, 1, 0), 0.25 * Math.PI / 180);
     }
 
     wake(CurrentTick) {

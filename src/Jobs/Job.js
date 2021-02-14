@@ -26,16 +26,17 @@ import { Pawn } from "../GameState.js";
  */
 
 export class Job extends Serializable() {
+    Workers = [];
+    Type = null;
+    Class = null;
+    Paused = false;
+    Priority = new Byte(0);
+    Name = "";
+    WorkersOnBreak = 0;
+    Manager = null;
+
     constructor() {
         super();
-        this.Workers = [];
-        this.Type = null;
-        this.Class = null;
-        this.Paused = false;
-        this.Priority = new Byte(0);
-        this.Name = "";
-        this.WorkersOnBrek = 0;
-        this.Manager = null;
     }
     newTask(parent, newType, location) {
         Types.mustBe(Job, parent);

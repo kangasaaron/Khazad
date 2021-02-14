@@ -40,7 +40,7 @@ export class Zone extends Serializable() {
         for (let Selection of Volumes) {
             this.addSelection(Selection);
         }
-        this.ID = ID;
+        this._ID = ID;
         this.Dirty = true;
         // Object.freeze(this);
     }
@@ -67,11 +67,11 @@ export class Zone extends Serializable() {
         }
         this.Dirty = true;
     }
-    getZoneMap() { // TODO change into real getter
+    get zoneMap() { // TODO change into real getter
         return this.ZoneMap;
     }
-    getID() { //TODO change into real getter
-        return this.ID;
+    get ID() { //TODO change into real getter
+        return this._ID;
     }
     readObject(ois) {
         // default deserialization
@@ -84,7 +84,7 @@ export class Zone extends Serializable() {
             return true;
         if (!(this instanceof Zone))
             return false;
-        if (this.ID !== that.ID)
+        if (this._ID !== that._ID)
             return false;
         if (this.ZoneMap.size !== that.ZoneMap.size)
             return false;

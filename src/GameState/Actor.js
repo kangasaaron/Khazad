@@ -30,17 +30,20 @@ import { MapCoordinate } from "../Map/Coordinates.js";
  */
 
 export class Actor extends Serializable(Temporal) {
+    ID = 0;
+    // The location for gameplay logic purposes
+    LocationCoordinates = null;
+    // Used by Rendering
+    Dirty = true;
+    Hidden = false;
+    Visible = false;
+
     constructor(id, SpawnLocation) {
         Types.mustBe('finiteNumber', id);
         Types.mustBe(MapCoordinate, SpawnLocation);
         super();
         this.ID = id;
-        // The location for gameplay logic purposes
         this.LocationCoordinates = SpawnLocation;
-        // Used by Rendering
-        this.Dirty = true;
-        this.Hidden = false;
-        this.Visible = false;
     }
     setLocation(NewPosition) { // TODO change to setter
         Types.mustBe(MapCoordinate, NewPosition);

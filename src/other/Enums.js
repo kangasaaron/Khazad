@@ -3,27 +3,15 @@ import { Serializable } from "./Serializable.js";
 export class Enum extends Serializable(Number) {
     constructor(value, name) {
         super(value);
-        Object.defineProperty(this, 'name', {
-            "writable": false,
-            "configurable": false,
-            "enumerable": true,
-            "value": name
-        });
-        Object.defineProperty(this, 'value', {
-            "writable": false,
-            "configurable": false,
-            "enumerable": true,
-            "value": value
-        });
-        Object.defineProperty(this, 'description', {
-            "writable": false,
-            "configurable": false,
-            "enumerable": true,
-            "value": Object.getPrototypeOf(this).constructor.name + '.' + name
-        });
+        this.name = name;
+        this.value = value;
+        this.description = Object.getPrototypeOf(this).constructor.name + '.' + name;
     }
     hashCode() {
         return this.ordinal;
+    }
+    equals(that) {
+        return this.valueOf() == that.valueOf();
     }
 
     [Symbol.toPrimitive](hint) {

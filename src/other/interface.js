@@ -29,6 +29,9 @@ class descriptorBuilder {
         else
             this.property = { name: property };
     }
+    get kind() {
+        return this.property.kind;
+    }
     get enumerable() {
         return this.property.enumerable || true;
     }
@@ -71,6 +74,9 @@ class varBuilder extends descriptorBuilder {
     get writable() {
         return this.property.writable || false;
     }
+    get kind() {
+        return this.property.kind || "variable";
+    }
     getDescriptor() {
         let result = super.getDescriptor();
         result.value = this.value;
@@ -88,6 +94,9 @@ class functionBuilder extends varBuilder {
             return this.property.functionBody;
         return abstractFunctionBody(this.className, this.type, this.propertyName);
     }
+    get kind() {
+        return "function";
+    }
 }
 
 class accessorbuilder extends descriptorBuilder {
@@ -98,6 +107,9 @@ class accessorbuilder extends descriptorBuilder {
         if (this.setter)
             result.set = this.setter;
         return result;
+    }
+    get kind() {
+        return this.property.kind;
     }
     get getter() {
         if (this.property.getter)
@@ -143,10 +155,12 @@ export function createNewInterface(name, ...members) {
         Object.defineProperty(klass, 'name', { writable: true, configurable: false, enumerable: false, value: name });
         Object.defineProperty(klass.prototype, 'name', { writable: true, configurable: false, enumerable: false, value: name });
         Object.defineProperty(klass.prototype.constructor, 'name', { writable: true, configurable: false, enumerable: false, value: name });
+
+        addPropertiesToClass(klass, name, ...members);
+
         klass.Mixins = klass.Mixins || {};
         klass.Mixins[name] = klass;
         klass.isInterface = true;
-        addPropertiesToClass(klass, name, ...members);
 
         return klass;
     }

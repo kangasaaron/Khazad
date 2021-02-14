@@ -29,19 +29,20 @@ import { Types } from "../other/Types.js";
  */
 
 export class AStarNode extends Comparable(Serializable()) {
+    // Cumulative distance used to judge Path
+    TotalCost = 0.0;
+    // Where this node is 
+    LocationCoordinates = new MapCoordinate();
+    // Recorded Path data used to judge this node
+    PathLengthFromStart = 0.0;
+    MinimumCostToGoal = 0.0;
+    TieBreakerValue = 0.0;
+    // Data about our Parent
+    Parent = null;
+    ParentDirection = Direction.DIRECTION_NONE;
+
     constructor() {
         super();
-        // Cumulative distance used to judge Path
-        this.TotalCost = 0.0;
-        // Where this node is 
-        this.LocationCoordinates = new MapCoordinate();
-        // Recorded Path data used to judge this node
-        this.PathLengthFromStart = 0.0;
-        this.MinimumCostToGoal = 0.0;
-        this.TieBreakerValue = 0.0;
-        // Data about our Parent
-        this.Parent = null;
-        this.ParentDirection = Direction.DIRECTION_NONE;
     }
     set(TargetCoordinates, ParentNode, SourceDirection, DistanceFromStart, MinimumCost, TieBreaker) {
         this.Parent = ParentNode;

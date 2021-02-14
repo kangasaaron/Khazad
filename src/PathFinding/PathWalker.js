@@ -25,38 +25,12 @@ import { createNewInterface } from "../other.js";
  *
  * @author Impaler
  */
-// export const PathWalker = function PathWalker(Base) {
-//     let PathWalker = class PathWalker extends AbstractClass(Base) {
-//         nextCoordinate() {
-//             this.abstractFunction("PathWalker", "nextCoordinate");
-//         }
-//         nextDirection() {
-//             this.abstractFunction("PathWalker", "nextDirection");
-//         }
-//         peekCoordinate() {
-//             this.abstractFunction("PathWalker", "peekCoordinate");
-//         }
-//         peekDirection() {
-//             this.abstractFunction("PathWalker", "peekDirection");
-//         }
-//         getCurrentStep() {
-//             this.abstractFunction("PathWalker", "getCurrentStep");
-//         }
-//         reset() {
-//             this.abstractFunction("PathWalker", "reset");
-//         }
-//     };
-//     PathWalker.isInterface = true;
-//     return PathWalker;
-// }
-// PathWalker.isInterface = true;
 
 export const PathWalker = createNewInterface(
     "PathWalker",
     "nextCoordinate",
     "nextDirection",
     "peekCoordinate",
-    "peekDirection",
-    "getCurrentStep",
+    "peekDirection", { name: "currentStep", kind: "getter" },
     "reset"
 );

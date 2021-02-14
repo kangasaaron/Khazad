@@ -16,7 +16,7 @@
  along with Khazad.  If not, see <http://www.gnu.org/licenses/> */
 
 import { BlockShape } from "../Map.js";
-import { Serializable } from "../other.js";
+import { Byte, Serializable, Short } from "../other.js";
 import { Direction } from "./Coordinates.js";
 
 /**
@@ -25,20 +25,24 @@ import { Direction } from "./Coordinates.js";
  * @author Impaler
  */
 export class FaceShape extends Serializable() {
+    SourceBlockData = new Short(0);
+    AdjacentBlockData = new Short(0);
+    FaceDirection = new Byte(0);
+
     constructor(SourceShapeType, AdjacentShapeType, DirectionType) {
         super();
         this.SourceBlockData = (SourceShapeType && SourceShapeType.Data) ? SourceShapeType.Data : BlockShape.EMPTY_CUBE_DATA;
         this.AdjacentBlockData = (AdjacentShapeType && AdjacentShapeType.Data) ? AdjacentShapeType.Data : BlockShape.EMPTY_CUBE_DATA;
         this.FaceDirection = DirectionType || Direction.DIRECTION_DESTINATION;
     }
-    equals(ArgumentShape) {
+    equals(that) {
         let AdjacentEqual = false,
             SourceEqual = false,
             FaceEqual = false;
-        if (ArgumentShape) {
-            AdjacentEqual = this.AdjacentBlockData.equals(ArgumentShape.AdjacentBlockData);
-            SourceEqual = this.SourceBlockData.equals(ArgumentShape.SourceBlockData);
-            FaceEqual = this.FaceDirection === ArgumentShape.FaceDirection;
+        if (that) {
+            AdjacentEqual = this.AdjacentBlockData.equals(that.AdjacentBlockData);
+            SourceEqual = this.SourceBlockData.equals(that.SourceBlockData);
+            FaceEqual = this.FaceDirection === that.FaceDirection;
         } else {
             AdjacentEqual = this.AdjacentBlockData.equals(BlockShape.EMPTY_CUBE_DATA);
             SourceEqual = this.SourceBlockData.equals(BlockShape.EMPTY_CUBE_DATA);
@@ -49,13 +53,13 @@ export class FaceShape extends Serializable() {
     notequal(ArgumentShape) {
         return this.SourceBlockData.notequal(ArgumentShape.SourceBlockData) || this.AdjacentBlockData.notequal(ArgumentShape.AdjacentBlockData) || this.FaceDirection !== ArgumentShape.FaceDirection;
     }
-    getFaceDirection() {
+    get faceDirection() {
         return this.FaceDirection;
     }
-    getSourceBlockShape() {
+    get sourceBlockShape() {
         return new BlockShape(this.SourceBlockData);
     }
-    getAdjacentBlockShape() {
+    get adjacentBlockShape() {
         return new BlockShape(this.AdjacentBlockData);
     }
 }

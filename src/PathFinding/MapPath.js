@@ -29,13 +29,14 @@ import { MovementModality, MovementType } from "../PathFinding.js";
  * @author Impaler
  */
 export class MapPath extends Serializable() {
+    Length = 0;
+    StepCount = 0;
+    StartCoordinates = new MapCoordinate();
+    GoalCoordinates = new MapCoordinate();
+    MovementModality = null;
     constructor() {
         super();
-        this.Length = 0;
-        this.StepCount = 0;
         this.MovementType = new MovementModality(MovementType.MOVEMENT_TYPE_WALK, 0, 0);
-        this.StartCoordinates = new MapCoordinate();
-        this.GoalCoordinates = new MapCoordinate();
     }
 }
 

@@ -15,6 +15,9 @@
  You should have received a copy of the GNU General Public License
  along with Khazad.  If not, see <http://www.gnu.org/licenses/> */
 
+import { Serializable } from "../other/Serializable.js";
+import { PathWalker } from "./PathWalker.js";
+
 
 
 /**
@@ -26,5 +29,20 @@
  *
  * @author Impaler
  */
-export class CoordinatePathWalker {}
-//TODO waiting on CoordinatePath, PathWalker
+export class CoordinatePathWalker extends PathWalker(Serializable()) {
+    TargetPath = null;
+    CurrentStep = 0;
+    constructor(SourcePath) {
+        super();
+        this.TargetPath = SourcePath;
+    }
+    equals(that) {
+        if (this === that)
+            return true;
+        return this.TargetPath === that.TargetPath && this.CurrentStep === that.CurrentStep;
+    }
+    reset() {
+        this.CurrentStep = 0;
+    }
+
+}

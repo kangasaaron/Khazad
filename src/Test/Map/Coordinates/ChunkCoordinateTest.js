@@ -93,7 +93,7 @@ QUnit.module("Map/Coordinates/ChunkCoordinate test", function() {
 
     QUnit.test("getVector", function(assert) {
         let coord = new ChunkCoordinate(10, 11, 12);
-        assert.ok((coord.getVector()).equals(new THREE.Vector3(10 * 32, 11 * 32, 12 * 32)));
+        assert.ok((coord.vector).equals(new THREE.Vector3(10 * 32, 11 * 32, 12 * 32)));
     })
 
     QUnit.test("toString test", function(assert) {

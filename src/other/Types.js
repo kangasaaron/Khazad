@@ -256,14 +256,28 @@ function isExtendedBy(superClass, klass) {
     return false;
 }
 
+function descriptorKind(descriptor) {
+    if (typeof descriptor !== "object")
+        return null;
+    if ("value" in descriptor)
+        return typeof descriptor.value;
+    if ("get" in descriptor) {
+        if ("set" in descriptor) {
+            return "getter/setter";
+        }
+        return "getter";
+    } else if ("set" in descriptor) {
+        return "setter";
+    }
+    return null;
+}
+
 function isImplementedBy(iface, klass) {
-    if (!iface.isInterface) return false;
-    let exampleOfInterface = iface();
-    if (!Object.getOwnPropertyNames(exampleOfInterface).filter(name => typeof exampleOfInterface[name] === "function" && name !== "constructor").every(name => name in klass))
-        return false;
-    let prototypeOfExampleOfInterface = exampleOfInterface.prototype || exampleOfInterface.__proto__ || Object.getPrototypeOf(exampleOfInterface);
-    let prototypeOfKlass = klass.prototype || klass.__proto__ || Object.getPrototypeOf(klass);
-    return Object.getOwnPropertyNames(prototypeOfExampleOfInterface).filter(propertyName => typeof prototypeOfExampleOfInterface[propertyName] === "function" && name !== "constructor").every(functionName => functionName in prototypeOfKlass)
+    if ("Mixins" in klass)
+        return iface.isInterface && typeof iface == "function" && "Mixins" in klass && "name" in iface && iface.name in klass.Mixins;
+    else if ("Mixins" in klass.constructor)
+        return iface.isInterface && typeof iface == "function" && "Mixins" in klass.constructor && "name" in iface && iface.name in klass.constructor.Mixins;
+    return false;
 }
 
 function inheritsFrom(superClassOrInterface, klass) {

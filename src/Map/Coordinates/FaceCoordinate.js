@@ -29,6 +29,8 @@ import { Direction } from "./Direction.js";
  * @author Impaler
  */
 export class FaceCoordinate extends BlockCoordinate {
+    FaceCoordinate = Direction.DIRECTION_NONE;
+
     constructor(...args) {
         if (args.length == 0) {
             super(0);
@@ -75,13 +77,13 @@ export class FaceCoordinate extends BlockCoordinate {
     getFaceDirection() { // TODO turn into getter
         return this.FaceDirection;
     }
-    equals(ArgumentCoordinates) {
-        if (!ArgumentCoordinates) return false;
-        if (ArgumentCoordinates === this)
+    equals(that) {
+        if (!that) return false;
+        if (that === this)
             return true;
-        if (!Types.hasAll(ArgumentCoordinates, 'DetailLevel', 'Data', 'FaceDirection'))
+        if (!Types.hasAll(that, 'DetailLevel', 'Data', 'FaceDirection'))
             return false;
-        return this.FaceDirection == ArgumentCoordinates.FaceDirection && this.Data === ArgumentCoordinates.Data && this.DetailLevel.equals(ArgumentCoordinates.DetailLevel);
+        return this.FaceDirection == that.FaceDirection && this.Data === that.Data && this.DetailLevel.equals(that.DetailLevel);
     }
     hashCode() { // TODO turn into getter
         let Key = this.Data;

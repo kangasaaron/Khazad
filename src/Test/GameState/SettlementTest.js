@@ -13,7 +13,7 @@ QUnit.module("GameState/Settlement tests", function() {
         assert.ok(Array.isArray(s.Citizens) && s.Citizens.length == 0);
         assert.ok(s.JobSystem !== null && s.JobSystem !== undefined);
 
-        assert.ok(s.getJobManager(), s.JobSystem);
+        assert.ok(s.jobManager, s.JobSystem);
     });
 
     QUnit.test("addCitizen", function(assert) {

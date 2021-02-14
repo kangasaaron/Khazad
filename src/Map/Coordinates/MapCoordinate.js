@@ -31,10 +31,13 @@ import { SectorCoordinate } from "./SectorCoordinate.js";
  * @author Impaler
  */
 export class MapCoordinate extends Serializable() {
+    Chunk = null;
+    Block = null;
+    Region = new RegionCoordinate();
+    Sector = new SectorCoordinate();
+
     constructor( /*ChunkCoordinate or nothing*/ Cell, /*BlockCoordinate or nothing*/ Cube) {
         super();
-        this.Region = new RegionCoordinate();
-        this.Sector = new SectorCoordinate();
         if (Cell) {
             if (Cell instanceof ChunkCoordinate)
                 this.Chunk = Cell.clone();
@@ -140,14 +143,14 @@ export class MapCoordinate extends Serializable() {
         this.Block.set(CubeX, CubeY, CubeZ);
     }
 
-    equals(Arg) {
-        if (Arg === this)
+    equals(that) {
+        if (that === this)
             return true;
-        if (!Arg)
+        if (!that)
             return false;
-        if (!Types.hasAll(Arg, "Chunk", "Block") || !Types.hasAll(Arg.Block, "Data", "DetailLevel"))
+        if (!Types.hasAll(that, "Chunk", "Block") || !Types.hasAll(that.Block, "Data", "DetailLevel"))
             return false;
-        return (this.Chunk.equals(Arg.Chunk) && this.Block.Data == Arg.Block.Data && this.Block.DetailLevel.equals(Arg.Block.DetailLevel));
+        return (this.Chunk.equals(that.Chunk) && this.Block.Data == that.Block.Data && this.Block.DetailLevel.equals(that.Block.DetailLevel));
     }
 
     clone() {

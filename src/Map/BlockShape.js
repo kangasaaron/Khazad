@@ -26,6 +26,8 @@ import { BlockCoordinate, Direction, Axis } from "./Coordinates.js";
  */
 
 export class BlockShape extends Serializable() {
+    Data = new Short(0);
+
     constructor(...args) {
         super();
         if (args.length == 0) {

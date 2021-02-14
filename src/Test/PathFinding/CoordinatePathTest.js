@@ -1,6 +1,6 @@
 import { MapCoordinate } from "../../Map/Coordinates.js";
 import { Serializable, Types } from "../../other.js";
-import { CoordinatePath, MapPath, MovementModality, MovementType } from "../../PathFinding.js";
+import { CoordinatePath, CoordinatePathWalker, MapPath, MovementModality, MovementType } from "../../PathFinding.js";
 
 QUnit.module("PathFinding/CoordinatePath tests", function() {
     QUnit.test("statics", function(assert) {
@@ -33,5 +33,11 @@ QUnit.module("PathFinding/CoordinatePath tests", function() {
         });
     });
 
-    QUnit.test.todo("getPathWalker", function(assert) {});
+    QUnit.test("getPathWalker", function(assert) {
+        let s = new MapCoordinate();
+        let g = new MapCoordinate();
+        let p = new CoordinatePath(10, [s, 0, g]);
+        let w = p.getPathWalker();
+        assert.ok(w.equals(new CoordinatePathWalker(p)));
+    });
 });

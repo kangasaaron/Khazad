@@ -32,4 +32,4 @@
  */
 export class AStar {}
 
-// TODO waiting on PathAlgorithm, Pool, VectorPath
+// TODO waiting on not much, i think

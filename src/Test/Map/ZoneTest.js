@@ -27,8 +27,8 @@ QUnit.module("Map/Zone tests", function() {
 
         let z = new FakeZone(param1, 12);
 
-        assert.ok(z.getID(), 12);
-        assert.ok(Types.is("map", z.getZoneMap()) && z.getZoneMap().size === 0);
+        assert.ok(z.ID, 12);
+        assert.ok(Types.is("map", z.zoneMap) && z.zoneMap.size === 0);
         assert.equal(z.Dirty, true);
 
         assert.equal(ZoneAddSelectionCalls.length, 2);
@@ -68,7 +68,7 @@ QUnit.module("Map/Zone tests", function() {
         let v = new VolumeSelection(new MapCoordinate(new ChunkCoordinate(0, 0, 0)), new MapCoordinate(new ChunkCoordinate(1, 1, 2)));
 
         z.addSelection(v);
-        assert.equal(z.getZoneMap().size, 2);
+        assert.equal(z.zoneMap.size, 2);
         assert.equal(z.Dirty, true);
     });
     QUnit.test("addMapCoordinate/removeMapCoordinate/isCoordinateInZone", function(assert) {

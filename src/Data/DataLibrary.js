@@ -25,24 +25,26 @@ import { DataBase } from "./DataBase.js";
 import { DataManager } from "./DataManager.js";
 
 export class DataLibrary extends Serializable(Object) {
+    _Entries = [];
+    _DataClass;
+    _Data;
     constructor(Class, Parent) {
         super();
         Types.mustBeExtendedBy(DataBase, Class);
         Types.mustBe(DataManager, Parent);
-        this.Entries = [];
-        this.DataClass = Class;
-        this.Data = Parent;
+        this._DataClass = Class;
+        this._Data = Parent;
     }
 
     postProcessDataClass() {
-        for (let Entry of this.Entries) {
+        for (let Entry of this._Entries) {
             Entry.postProcessing();
         }
     }
 
     loadElement(XMLEntry) {
         try {
-            let NewEntry = new this.DataClass();
+            let NewEntry = new this._DataClass();
             NewEntry.loadData(XMLEntry, this);
         } catch (ex) {
             if (ex instanceof TypeError) {
@@ -57,12 +59,12 @@ export class DataLibrary extends Serializable(Object) {
 
     indexEntry(Name, NewEntry) {
         if (Name !== null)
-            this.Data.addLabel(Name, this.Entries.length);
-        this.Entries.push(NewEntry);
-        return this.Entries.length - 1;
+            this._Data.addLabel(Name, this._Entries.length);
+        this._Entries.push(NewEntry);
+        return this._Entries.length - 1;
     }
 
-    getEntries() { // TODO turn into setter
-        return this.Entries;
+    get entries() {
+        return this._Entries;
     }
 }

@@ -40,6 +40,9 @@ export const MovementType = defineEnum(
  * @author Impaler
  */
 export class MovementModality extends Serializable() {
+    MovementTypeCapable = [];
+    MovementTypeSize = [];
+    MovementTypeSpeed = [];
     constructor(MoveType, Speed, Size) {
         Types.mustBe(MovementType, MoveType);
         Types.mustBe('finiteNumber', Speed);

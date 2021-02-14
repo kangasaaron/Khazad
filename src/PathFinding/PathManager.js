@@ -34,4 +34,4 @@ export class PathManager {}
 
 //TODO API stuff: ExecutorService
 
-//TODO waiting on PathAlgorithm, PathTester, KhazadGrid, AStar
+//TODO waiting on PathTester, KhazadGrid, AStar

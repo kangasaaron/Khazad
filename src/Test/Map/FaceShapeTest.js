@@ -39,9 +39,9 @@ QUnit.module("Map/FaceShape tests", function() {
 
     QUnit.test("getters", function(assert) {
         let f = new FaceShape();
-        let d = f.getFaceDirection();
+        let d = f.faceDirection;
         assert.equal(d, Direction.DIRECTION_DESTINATION);
-        assert.ok((f.getSourceBlockShape()).equals(new BlockShape(new Short(0))));
-        assert.ok((f.getAdjacentBlockShape()).equals(new BlockShape(new Short(0))));
+        assert.ok((f.sourceBlockShape).equals(new BlockShape(new Short(0))));
+        assert.ok((f.adjacentBlockShape).equals(new BlockShape(new Short(0))));
     });
 });

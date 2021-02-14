@@ -31,8 +31,8 @@ QUnit.module("PathFinding/PathAlgorithm tests", function() {
         a.GraphReads = 1;
         a.ExpandedNodes = 2;
 
-        assert.equal(a.getGraphReads(), 1);
-        assert.equal(a.getExpandedNodes(), 2);
+        assert.equal(a.graphReads, 1);
+        assert.equal(a.expandedNodes, 2);
 
         a.setEndPoints(S, G);
 

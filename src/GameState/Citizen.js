@@ -17,7 +17,6 @@
 
 import { Serializable } from "../other.js";
 
-
 /**
  * The class representing the actual Dwarves and their livestock which are
  * responsive to the players Job commands.
@@ -25,4 +24,8 @@ import { Serializable } from "../other.js";
  * @author Impaler
  */
 
-export class Citizen extends Serializable() {} // TODO - waiting on GivenNameData and Task
+export class Citizen extends Serializable() {
+
+}
+
+// TODO - waiting on GivenNameData and Task

@@ -33,11 +33,12 @@ import { Axis } from "./Axis.js";
 let Direction = defineEnumOpen({
         "name": "Direction",
         "klass": class DirectionClass extends Enum {
+            AxisValues = [];
             constructor(value, name, XAxis, YAxis, ZAxis) {
                 Types.mustBe('string', name);
                 Types.mustBeAll('finiteInteger', value, XAxis, YAxis, ZAxis);
                 super((new Byte(value)).valueOf(), name);
-                this.AxisValues = [];
+
                 this.AxisValues[Axis.AXIS_X.ordinal] = XAxis;
                 this.AxisValues[Axis.AXIS_Y.ordinal] = YAxis;
                 this.AxisValues[Axis.AXIS_Z.ordinal] = ZAxis;

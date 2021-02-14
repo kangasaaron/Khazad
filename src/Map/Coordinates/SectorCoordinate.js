@@ -25,6 +25,8 @@ import { Types } from "../../other/Types.js";
  * @author Impaler
  */
 export class SectorCoordinate extends Serializable() {
+    X = new Byte(0);
+    Y = new Byte(0);
 
     constructor(x = 0, y = 0) {
         Types.mustBeAll('finiteInteger', x, y);
@@ -33,16 +35,16 @@ export class SectorCoordinate extends Serializable() {
         this.Y = new Byte(y);
     }
 
-    equals(ArgumentCoordinates) {
-        if (!ArgumentCoordinates)
+    equals(that) {
+        if (!that)
             return false;
-        if (ArgumentCoordinates === this)
+        if (that === this)
             return true;
-        if (!Types.hasAll(ArgumentCoordinates, 'X', 'Y'))
+        if (!Types.hasAll(that, 'X', 'Y'))
             return false;
-        if (!Types.are('finiteNumber', ArgumentCoordinates.X, ArgumentCoordinates.Y))
+        if (!Types.are('finiteNumber', that.X, that.Y))
             return false;
-        return (ArgumentCoordinates.X.equals(this.X) && ArgumentCoordinates.Y.equals(this.Y));
+        return (that.X.equals(this.X) && that.Y.equals(this.Y));
     }
 
     copy(ArgumentCoordinates) {

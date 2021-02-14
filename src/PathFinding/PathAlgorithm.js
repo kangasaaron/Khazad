@@ -30,22 +30,22 @@ import { Serializable, Types, addPropertiesToClass } from "../other.js";
  * @author Impaler
  */
 export class PathAlgorithm extends Serializable() {
+    GraphReads = 0;
+    ExpandedNodes = 0;
+    SearchGraph = null;
+    Modality = null;
+    StartCoordinates = null;
+    GoalCoordinates = null;
+    MainHeuristic = null;
+    TieBreakerHeuristic = null;
+    FinalPath = null;
     constructor() {
         super();
-        this.GraphReads = 0;
-        this.ExpandedNodes = 0;
-        this.SearchGraph = null;
-        this.Modality = null;
-        this.StartCoordinates = null;
-        this.GoalCoordinates = null;
-        this.MainHeuristic = null;
-        this.TieBreakerHeuristic = null;
-        this.FinalPath = null;
     }
-    getGraphReads() { // TODO change into real getter
+    get graphReads() { // TODO change into real getter
         return this.GraphReads;
     }
-    getExpandedNodes() { // TODO change into real getter
+    get expandedNodes() { // TODO change into real getter
         return this.ExpandedNodes;
     }
     setEndPoints( /*MapCoordinate*/ StartCoords, /*MapCoordinate*/ GoalCoords) {

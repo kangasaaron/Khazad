@@ -27,6 +27,10 @@ import { Serializable } from "../../other/Serializable.js";
  * @author Impaler
  */
 export class ChunkCoordinate extends Serializable() {
+    X = 0;
+    Y = 0;
+    Z = 0;
+
     constructor(X = 0, Y = 0, Z = 0) {
         Types.mustBeAll('finiteInteger', X, Y, Z);
         super();
@@ -46,14 +50,14 @@ export class ChunkCoordinate extends Serializable() {
         result.copy(this);
         return result;
     }
-    equals(ArgumentCoordinate) {
-        if (!Types.hasAll(ArgumentCoordinate, 'X', 'Y', 'Z'))
+    equals(that) {
+        if (!Types.hasAll(that, 'X', 'Y', 'Z'))
             return false;
-        if (!Types.are('finiteInteger', ArgumentCoordinate.X, ArgumentCoordinate.Y, ArgumentCoordinate.Z))
+        if (!Types.are('finiteInteger', that.X, that.Y, that.Z))
             return false;
-        return this.X == ArgumentCoordinate.X &&
-            this.Y == ArgumentCoordinate.Y &&
-            this.Z == ArgumentCoordinate.Z;
+        return this.X == that.X &&
+            this.Y == that.Y &&
+            this.Z == that.Z;
     }
     hashCode() { // TODO turn into getter
         let Key = 0;
@@ -69,7 +73,7 @@ export class ChunkCoordinate extends Serializable() {
     toString() {
         return `X ${this.X} Y ${this.Y} Z ${this.Z}`;
     }
-    getVector() { // TODO turn into getter
+    get vector() { // TODO turn into getter
         let x = (this.X * BlockCoordinate.CHUNK_EDGE_SIZE);
         let y = (this.Y * BlockCoordinate.CHUNK_EDGE_SIZE);
         let z = (this.Z * BlockCoordinate.CHUNK_EDGE_SIZE);

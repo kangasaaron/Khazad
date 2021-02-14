@@ -11,11 +11,11 @@ QUnit.module("GameState/Citizen tests", function() {
         let c = new Citizen();
     });
 
-    QUnit.test.todo("findTask", function(assert) {
+    QUnit.test.todo("findTask", function(assert) { // Waiting on Task
 
     });
 
-    QUnit.test.todo("generateName", function(assert) {
+    QUnit.test.todo("generateName", function(assert) { // Waiting on GivenNameData
 
     });
 });

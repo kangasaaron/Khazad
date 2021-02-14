@@ -25,6 +25,8 @@ import { Types } from "../other/Types.js";
  * @author Impaler
  */
 export class Pawn extends Actor {
+    CreatureTypeID = 0;
+
     constructor(CreatureTypeID, id, Seed, SpawnLocation) {
             Types.mustBe('finiteNumber', CreatureTypeID);
             Types.mustBe('finiteNumber', Seed);

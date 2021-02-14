@@ -20,8 +20,8 @@ QUnit.module("Data/DataLibrary test", function() {
         let dl = new DataLibrary(p1, p2);
         assert.ok(dl instanceof DataLibrary);
         assert.ok(dl !== undefined);
-        assert.equal(dl.DataClass, p1);
-        assert.equal(dl.Data, p2);
+        assert.equal(dl._DataClass, p1);
+        assert.equal(dl._Data, p2);
     });
 
     QUnit.test("postprocessing test", function(assert) {
@@ -37,8 +37,8 @@ QUnit.module("Data/DataLibrary test", function() {
         let dl = new DataLibrary(FakeDataBase, new DataManager()),
             e1 = new entry(),
             e2 = new entry();
-        dl.Entries.push(e1);
-        dl.Entries.push(e2);
+        dl._Entries.push(e1);
+        dl._Entries.push(e2);
 
         dl.postProcessDataClass();
 
@@ -46,11 +46,11 @@ QUnit.module("Data/DataLibrary test", function() {
         assert.equal(e2._postprocessing_calls, 1);
     });
 
-    QUnit.test("getEntries test", function(assert) {
+    QUnit.test("get entries test", function(assert) {
         let dl = new DataLibrary(FakeDataBase, new DataManager());
         let h = Symbol("hello");
-        dl.Entries = h;
-        assert.equal(dl.getEntries(), h);
+        dl._Entries = h;
+        assert.equal(dl.entries, h);
     });
 
     QUnit.test("indexEntry test", function(assert) {
@@ -65,12 +65,12 @@ QUnit.module("Data/DataLibrary test", function() {
         let dl = new DataLibrary(FakeDataBase, new DataManager()),
             param = Symbol("IndexEntry"),
             dat = new Data();
-        dl.Data = dat;
-        assert.equal(dl.Entries.length, 0);
+        dl._Data = dat;
+        assert.equal(dl.entries.length, 0);
         let ret = dl.indexEntry("name", param);
         assert.equal(ret, 0);
-        assert.equal(dl.Entries.length, 1);
-        assert.equal(dl.Entries[0], param);
+        assert.equal(dl.entries.length, 1);
+        assert.equal(dl.entries[0], param);
         assert.equal(dat._addLabel.length, 1);
         assert.equal(dat._addLabel[0].Name, "name");
         assert.equal(dat._addLabel[0].NewEntry, 0);

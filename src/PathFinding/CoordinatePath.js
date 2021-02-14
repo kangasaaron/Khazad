@@ -15,7 +15,8 @@
  You should have received a copy of the GNU General Public License
  along with Khazad.  If not, see <http://www.gnu.org/licenses/> */
 
-import { MapPath } from "../PathFinding/MapPath.js";
+import { CoordinatePathWalker } from "./CoordinatePathWalker.js";
+import { MapPath } from "./MapPath.js";
 
 /**
  * A simple path representation in the form of a list of MapCoordinates, the
@@ -25,6 +26,11 @@ import { MapPath } from "../PathFinding/MapPath.js";
  * @author Impaler
  */
 export class CoordinatePath extends MapPath {
+    Length = 0;
+    PathCourse = [];
+    StepCount = 0;
+    StartCoordinates = null;
+    GoalCoordinates = null;
     constructor(PathLength, Course) {
         super();
         this.Length = PathLength;
@@ -33,5 +39,7 @@ export class CoordinatePath extends MapPath {
         this.StartCoordinates = this.PathCourse[0];
         this.GoalCoordinates = this.PathCourse[this.PathCourse.length - 1];
     }
+    getPathWalker() {
+        return new CoordinatePathWalker(this);
+    }
 }
-//TODO not waiting on anything

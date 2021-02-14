@@ -7,15 +7,16 @@ import { Direction } from "./Direction.js";
  * @author Impaler
  */
 export class BlockCoordinate extends Serializable() {
+    _data = 0; // Index bitpacking   0 YYYYY XXXXX ZZZZZ
+    DetailLevel = new Byte(0);
+    // this.Data = 0;
+    Size = 0;
+    Max = 0;
+    Mask = 0;
+    Shift = 0;
+
     constructor(...args) {
         super();
-        this._data = 0; // Index bitpacking   0 YYYYY XXXXX ZZZZZ
-        this.DetailLevel = new Byte(0);
-        // this.Data = 0;
-        this.Size = 0;
-        this.Max = 0;
-        this.Mask = 0;
-        this.Shift = 0;
         if (args.length == 1) {
             if (Types.is('finiteNumber', args[0])) {
                 this.DetailLevel = new Byte(args[0]);
