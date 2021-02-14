@@ -15,23 +15,21 @@
  You should have received a copy of the GNU General Public License
  along with Khazad.  If not, see <http://www.gnu.org/licenses/> */
 
+import { Serializable } from "../other/Serializable.js";
+import { addAbstractFunction } from "../other/Shims.js";
 
-
-// import java.io.Serializable;
-// import nu.xom.Element;
 /**
  *
  * @author Impaler
  */
-import { Serializable } from "../other/Serializable.js";
-import { addAbstractFunction } from "../other/Shims.js";
 
-export class DataBase extends Serializable {
+export class DataBase {
     constructor() {
-        super();
         this.Name = null;
     }
 }
+
 addAbstractFunction(DataBase, "postProcessing");
 addAbstractFunction(DataBase, "loadData");
+Serializable.becomeImplementedBy(DataBase);
 DataBase.serialVersionUID = 1;

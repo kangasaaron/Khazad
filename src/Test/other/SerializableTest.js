@@ -1,6 +1,6 @@
 import { Serializable } from "../../other/Serializable.js";
 
-QUnit.module("Serializable test", function() {
+QUnit.module("other/Serializable test", function() {
     let a = new Serializable();
     QUnit.test("test that abstract methods exist", function(assert) {
         assert.ok(a.writeObject !== null && a.writeObject !== undefined);

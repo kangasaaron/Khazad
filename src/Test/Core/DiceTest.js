@@ -1,8 +1,16 @@
 import { Dice } from "../../Core/Dice.js";
+import { Long } from "../../other/Integers.js";
+import { Serializable } from "../../other/Serializable.js";
 
 QUnit.module("Core/Dice class test", function() {
     let d = new Dice();
+
+    QUnit.test('test statics', function(assert) {
+        assert.ok(Serializable.isImplementedByClass(Dice));
+    });
+
     QUnit.test("test constructor", function(assert) {
+        assert.ok(Serializable.isImplementedBy(d));
         assert.equal(typeof d.Generator, "function");
         assert.equal(d.uses, 0);
     });
@@ -35,7 +43,7 @@ QUnit.module("Core/Dice class test", function() {
 
     QUnit.test("seed", function(assert) {
         let generator = d.Generator;
-        d.seed(2000);
+        d.seed(new Long(2000));
         assert.ok(generator !== d.Generator);
     });
 });

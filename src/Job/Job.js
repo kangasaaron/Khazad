@@ -15,118 +15,91 @@
  You should have received a copy of the GNU General Public License
  along with Khazad.  If not, see <http://www.gnu.org/licenses/> */
 
-//package Job;
+import { Byte } from "../other/Integers.js";
+import { Serializable } from "../other/Serializable.js";
+import { addAbstractFunction, defineEnum } from "../other/Shims.js";
 
-//import Game.Pawn;
-
-//import java.util.concurrent.ConcurrentLinkedQueue;
-
-//import java.io.Serializable;
 
 /**
  *
  * @author Impaler
  */
-//public abstract class Job implements Serializable {
-export class Job extends Serializable{
-	//private static final long serialVersionUID = 1;
+export class Job {
+    constructor() {
+        this.Workers = [];
+        this.Type = null;
+        this.Class = null;
+        this.Paused = false;
+        this.Priority = new Byte(0);
+        this.Name = "";
+        this.WorkersOnBrek = 0;
+        this.Manager = null;
+    }
+    newTask(parent, newType, location) {
+        // return new Task(parent, newType, location);// TODO
+    }
 
-/*	public enum JobType {
+    addPawn(NewPawn) {
+        if (NewPawn === null || NewPawn === undefined) {
+            throw new TypeError("Job.addPawn expects a valid pawn as a parameter");
+        }
+        if (this.Workers.includes(NewPawn))
+            return false;
+        let newTask = this.nextTask(NewPawn);
+        if (newTask) {
+            if (NewPawn.PrimaryJob)
+                NewPawn.PrimaryJob.releaseCitizen(NewPawn);
+            this.Workers.push(NewPawn);
+            NewPawn.PrimaryJob = this;
+            NewPawn.setTask(newTask);
+            return true;
 
-		JOB_IDLE,
-		JOB_DIG,
-		JOB_HAUL,
-		JOB_WANDER  // temporary testing
-	}
+        }
+        return false;
+    }
 
-	public enum JobClass {
+    //      public void releaseCitizen(Pawn OldCitizen) { //TODO
+    //          if (OldCitizen.PrimaryJob == this)
+    //              OldCitizen.PrimaryJob = null;
+    //          if (Workers.contains(OldCitizen)) {
+    //              Workers.remove(OldCitizen);
+    //              OldCitizen.PrimaryJob = null;
+    //              //OldCitizen.CurrentTask = null;
+    //          }
+    //      }
 
-		JOB_REAL, // Jobs ordered by the player that compete for workers
-		JOB_BREAK, // Short Jobs to fill worker needs
-		JOB_IDLE  // Jobs originating from the workers themselves
-	}
+    //      public void setOnBreak(Pawn OnBreakPawn) {//TODO
+    //          OnBreakPawn.onBreak = true;
+    //          WorkersOnBrek++;
+    //      }
 
-	JobType Type;
-	JobClass Class;
-	boolean Paused;
-	byte Priority;
-	String Name;
-	ConcurrentLinkedQueue<Pawn> Workers;
-	int WorkersOnBrek;
-	JobManager Manager;
-*/
-	//public Job() {
-constructor{
-this.Paused = false;
-this.Priority =0;
-this.Name = "";
-this.WorkersOnBrek=0;
-this.Manager=null;
-this.Type =null;
-this.Class=null;
-		this.Workers = [];//new ConcurrentLinkedQueue<Pawn>();
-	}
+    //      public abstract boolean needsWorkers();
 
-	/*public boolean */addPawn(/*Pawn*/ NewPawn) {
-		if (this.Workers.includes(NewPawn))
-			return false;
+    //      public abstract Task nextTask(Pawn IdleCitizen);
 
-		let newTask = this.nextTask(NewPawn);
-		if (newTask != null) {
-			if (NewPawn.PrimaryJob != null)
-				NewPawn.PrimaryJob.releaseCitizen(NewPawn);
+    //      public abstract float evaluatePawn(Pawn IdleCitizen);
 
-			this.Workers.add(NewPawn);
-			NewPawn.PrimaryJob = this;
-			NewPawn.setTask(newTask);
-			return true;
-		}
-		return false;
-	}
-
-	/*public void */releaseCitizen(/*Pawn */OldCitizen) {
-		if (OldCitizen.PrimaryJob == this)
-			OldCitizen.PrimaryJob = null;
-		if (this.Workers.includes(OldCitizen)) {
-			this.Workers.remove(OldCitizen);
-			OldCitizen.PrimaryJob = null;
-			//OldCitizen.CurrentTask = null;
-		}
-	}
-
-	/*public void */setOnBreak(/*Pawn*/ OnBreakPawn) {
-		OnBreakPawn.onBreak = true;
-		this.WorkersOnBrek++;
-	}
-
-	//public abstract boolean needsWorkers();
-
-	//public abstract Task nextTask(Pawn IdleCitizen);
-
-	//public abstract float evaluatePawn(Pawn IdleCitizen);
-	
-	/*public String */getName() {
-		return this.Name;
-	}
+    //      public String getName() {
+    //          return Name;
+    //      }
+    //  }
 }
-addAbstractMethod("needsWorkers");
 
-addAbstractMethod("nextTask");
+addAbstractFunction(Job, "needsWorkers");
+addAbstractFunction(Job, "nextTask");
+addAbstractFunction(Job, "evaluatePawn");
 
-addAbstractMethod ("evaluatePawn");
-
-Job.serialVersionUID=1;
-
-Job.JobType = defineEnum( "JobType"
-
-		"JOB_IDLE",
-		"JOB_DIG",
-		"JOB_HAUL",
-		"JOB_WANDER"  // temporary testing
-	);
+Job.serialVersionUID = 1;
+Job.JobType = defineEnum("JobType",
+    "JOB_IDLE",
+    "JOB_DIG",
+    "JOB_HAUL",
+    "JOB_WANDER"
+);
 Job.JobClass = defineEnum("JobClass",
+    "JOB_REAL",
+    "JOB_BREAK",
+    "JOB_IDLE"
+);
 
-		"JOB_REAL", // Jobs ordered by the player that compete for workers
-		"JOB_BREAK", // Short Jobs to fill worker needs
-		"JOB_IDLE"  // Jobs originating from the workers themselves
-	};
+Serializable.becomeImplementedBy(Job);

@@ -1,4 +1,5 @@
 import { Serializable } from '../other/Serializable.js';
+import { Long, LongArray } from "../other/Integers.js";
 
 /**
  *
@@ -6,45 +7,60 @@ import { Serializable } from '../other/Serializable.js';
  * @param {number} SamplingSize
  * @class
  */
-export class Clock extends Serializable {
+
+// private
+
+const calculateAverage = function calculateAverage() {
+    var Total = 0,
+        me = this;
+    Total = this.AccumulationVector.reduce(function(sum, value, index) {
+        if (index < me.SampleSize)
+            sum = new Long(sum + value);
+        return sum;
+    }, new Long(0));
+
+    this.resetAccumulationVector();
+    this.AverageTime = Total / this.SampleSize;
+}
+
+export class Clock {
     constructor(SamplingSize) {
-        super();
         this.started = false;
         this.paused = false;
         this.CPUClock = Date;
         this.AccumulationVector = [];
         this.SampleSize = 0;
-        this.StartTime = 0;
-        this.PausedTime = 0;
+        this.StartTime = new Long(0);
+        this.PausedTime = new Long(0);
         this.AverageTime = 0;
-        this.SamplingPause = 0;
+        this.SamplingPause = new Long(0);
         SamplingSize = SamplingSize || 0;
         this.setSampleSize(SamplingSize);
     }
     start() {
-        this.StartTime = this.CPUClock.now();
+        this.StartTime = new Long(this.CPUClock.now());
         this.started = true;
         this.paused = false;
         this.SampleIndex = 0;
-        this.PausedTime = 0;
-        this.SamplingPause = 0;
+        this.PausedTime = new Long(0);
+        this.SamplingPause = new Long(0);
     }
     stop() {
         var Elapsed = this.getElapsed();
         this.started = false;
         this.paused = false;
-        this.StartTime = 0;
-        this.PausedTime = 0;
+        this.StartTime = new Long(0);
+        this.PausedTime = new Long(0);
         this.SampleIndex = 0;
         return Elapsed;
     }
 
-    getElapsed() {
+    getElapsed() { // TODO turn into getter;
         if (this.started) {
             if (this.paused) {
-                return this.PausedTime;
+                return new Long(this.PausedTime);
             } else {
-                return this.CPUClock.now() - this.StartTime;
+                return new Long(this.CPUClock.now() - this.StartTime);
             }
         }
         return 0;
@@ -52,55 +68,38 @@ export class Clock extends Serializable {
     pause() {
         if ((this.started === true) && (this.paused === false)) {
             this.paused = true;
-            this.AccumulationVector[this.SampleIndex] = this.CPUClock.now() - (this.StartTime + this.SamplingPause);
-            this.PausedTime = this.CPUClock.now() - this.StartTime;
+            this.AccumulationVector[this.SampleIndex] = new Long(this.CPUClock.now() - (this.StartTime + this.SamplingPause));
+            this.PausedTime = new Long(this.CPUClock.now() - this.StartTime);
             this.SampleIndex++;
             if (this.SampleIndex === this.SampleSize) {
-                this.calculateAverage();
+                calculateAverage.call(this);
             }
         }
     }
     unpause() {
         if (this.paused === true) {
             this.paused = false;
-            this.StartTime = this.CPUClock.now() - this.PausedTime;
-            this.SamplingPause = this.PausedTime;
-            this.PausedTime = 0;
+            this.StartTime = new Long(this.CPUClock.now() - this.PausedTime);
+            this.SamplingPause = new Long(this.PausedTime);
+            this.PausedTime = new Long(0);
         }
     }
     resetAccumulationVector() {
-        this.AccumulationVector = new Array(this.SampleSize).fill(0);
+        this.AccumulationVector = new Array(this.SampleSize).fill(new Long(0));
         this.SampleIndex = 0;
     }
-    setSampleSize(Size) {
+
+    setSampleSize(Size) { // TODO turn into setter
         this.SampleSize = Size;
         if (!this.SampleSize) {
             this.SampleSize = 1;
         }
         this.resetAccumulationVector();
 
-        this.SamplingPause = 0;
+        this.SamplingPause = new Long(0);
     }
 
-    calculateAverage() {
-        var Total = 0,
-            me = this;
-        Total = this.AccumulationVector.reduce(function(sum, value, index) {
-            if (index < me.SampleSize)
-                sum += value;
-            return sum;
-        }, 0);
-        // for (var i = 0; i < this.SampleSize; i++) {
-        //     {
-        //         Total += this.AccumulationVector[i];
-        //     };
-        // }
-
-        this.resetAccumulationVector();
-        this.AverageTime = Total / this.SampleSize;
-    }
-
-    getAverage() {
+    getAverage() { // TODO turn into getter
         return this.AverageTime;
     }
 
@@ -118,4 +117,6 @@ export class Clock extends Serializable {
         return clonedClock;
     }
 }
-Clock.serialVersionUID = 1;
+
+Serializable.becomeImplementedBy(Clock);
+Clock.serialVersionUID = BigInt(1);

@@ -25,25 +25,30 @@ export class Enum extends Number {
     }
 }
 
-
-export const defineEnum = function defineEnum(name, ...values) {
-    let newEnum = class extends Enum {};
+export const defineEnumOpen = function defineEnumOpen(def, ...values) {
+    let newEnum;
+    if (def.klass) {
+        newEnum = def.klass;
+    } else {
+        newEnum = class extends Enum {};
+    }
     Object.defineProperty(newEnum, 'name', {
         "writable": false,
         "configurable": false,
         "enumerable": false,
-        "value": name
+        "value": def.name
     });
 
     Object.defineProperty(newEnum.prototype, 'enumName', {
         "configurable": false,
         "enumerable": false,
         "get": function() {
-            return name;
+            return def.name;
         }
     });
     let vals = [],
-        nextValue = 0;
+        nextValue = 0,
+        otherArgs = [];
 
     for (let v of values) {
         let name, value, enumValue;
@@ -51,12 +56,14 @@ export const defineEnum = function defineEnum(name, ...values) {
             name = Object.getOwnPropertyNames(v)[0];
             value = v[name];
             nextValue = value;
+            otherArgs = "args" in v ? v.args : [];
         } else {
             name = v;
             value = nextValue;
+            otherArgs = [];
         }
         nextValue++;
-        enumValue = new newEnum(value, name);
+        enumValue = new newEnum(value, name, ...otherArgs);
         Object.defineProperty(newEnum, name, {
             "writeable": false,
             "configurable": false,
@@ -74,9 +81,18 @@ export const defineEnum = function defineEnum(name, ...values) {
         "value": vals
     });
 
-    Object.freeze(newEnum);
     return newEnum;
 }
+
+export const defineEnum = function defineEnum(...args) {
+    let name = args.shift();
+    let newEnum = defineEnumOpen({
+            name
+        },
+        ...args);
+    Object.freeze(newEnum);
+    return newEnum;
+};
 
 export const aggregation = (baseClass, ...mixins) => {
     class base extends baseClass {
@@ -113,12 +129,13 @@ export const addAbstractFunction = function addAbstractFunction(klass, functionN
 };
 
 const addAbstractFunctionToObject = function addAbstractFunctionToObject(klass, functionName) {
+    if (functionName in klass) return;
     Object.defineProperty(klass, functionName, {
-        writable: false,
+        writable: true,
         enumerable: false,
         configurable: true,
         value: (() => {
             throw new ReferenceError(`abstract function ${klass.name}.${functionName} called`);
-        }).bind(klass)
+        })
     })
 }

@@ -19,9 +19,15 @@
  *
  * @author Impaler
  */
-class DataLibrary extends Serializable {
+import { Serializable } from "../other/Serializable.js";
+
+class DataLibrary {
     constructor(Class, Parent) {
         this.Entries = [];
+        if (Class === undefined || Class === null)
+            throw new TypeError("DataLibrary constructor parameter 1 cannot be null or undefined");
+        if (Parent === undefined || Parent === null)
+            throw new TypeError("DataLibrary constructor parameter 2 cannot be null or undefined");
         this.DataClass = Class;
         this.Data = Parent;
     }
@@ -34,28 +40,31 @@ class DataLibrary extends Serializable {
 
     loadElement(XMLEntry) {
         try {
-            let NewEntry = DataClass.newInstance();
+            let NewEntry = new this.DataClass();
             NewEntry.loadData(XMLEntry, this);
         } catch (ex) {
-            if (ex instanceof InstantiationException) {
-                console.error(ex.getMessage());
-            } else if (ex instanceof IllegalAccessException) {
-                console.error(ex.getMessage());
+            if (ex instanceof TypeError) {
+                console.error(ex.message);
+            } else if (ex instanceof ReferenceError) {
+                console.error(ex.message);
+            } else {
+                throw ex;
             }
         }
     }
 
     indexEntry(Name, NewEntry) {
         if (Name !== null)
-            Data.addLabel(Name, this.Entries.length);
-        Entries.push(NewEntry);
+            this.Data.addLabel(Name, this.Entries.length);
+        this.Entries.push(NewEntry);
         return this.Entries.length - 1;
     }
 
-    getEntries() {
+    getEntries() { // TODO turn into setter
         return this.Entries;
     }
 }
+Serializable.becomeImplementedBy(DataLibrary);
 DataLibrary.serialVersionUID = 1;
 
 export { DataLibrary };

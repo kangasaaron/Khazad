@@ -1,8 +1,14 @@
 import { DataBase } from "../../Data/DataBase.js";
+import { Serializable } from "../../other/Serializable.js";
 
 QUnit.module("Data/DataBase class test", function() {
+    QUnit.test("statics", function(assert) {
+        assert.ok(Serializable.isImplementedByClass(DataBase));
+    });
+
     QUnit.test("constructor", function(assert) {
         let a = new DataBase();
+        assert.ok(Serializable.isImplementedBy(a));
         assert.ok(a !== undefined && a !== null);
     });
     QUnit.test("Name", function(assert) {

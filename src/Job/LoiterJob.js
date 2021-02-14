@@ -18,32 +18,17 @@
  *
  * @author Impaler
  */
-import { __extends } from "../other/Shims.js";
+import { Job } from "./Job.js";
 
-var Job;
-
-// import Game.Pawn;
-// import java.io.Serializable;
-(function(Job_1) {
-    var LoiterJob = /** @class */ (function(_super) {
-        __extends(LoiterJob, _super);
-
-        function LoiterJob() {
-            return _super !== null && _super.apply(this, arguments) || this;
-        }
-        LoiterJob.prototype.needsWorkers = function() {
-            return false;
-        };
-        LoiterJob.prototype.nextTask = function(IdleCitizen) {
-            return new Task(this, Task.TaskType.TASK_LOITER, null);
-        };
-        LoiterJob.prototype.evaluatePawn = function(IdleCitizen) {
-            return 0;
-        };
-        LoiterJob.serialVersionUID = 1;
-        return LoiterJob;
-    })(Job_1.Job);
-    Job_1.LoiterJob = LoiterJob;
-    LoiterJob["__class"] = "Job.LoiterJob";
-    LoiterJob["__interfaces"] = ["java.io.Serializable"];
-})(Job || (Job = {}));
+export class LoiterJob extends Job {
+    needsWorkers() {
+        return false;
+    }
+    nextTask(IdleCitizen) {
+        return this.newTask(this, "Task.TaskType.TASK_LOITER", null); // TODO this shouldn't be a string, but should actually be the enum value
+    }
+    evaluatePawn(IdleCitizen) {
+        return 0;
+    }
+}
+LoiterJob.serialVersionUID = 1;

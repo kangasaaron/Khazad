@@ -1,6 +1,6 @@
 import { defineEnum, Enum } from "../../other/Shims.js";
 
-QUnit.module('Enum test', function() {
+QUnit.module('other/Enum test', function() {
     let Colors = defineEnum('Colors',
         'Red', 'Green', 'Blue'
     );

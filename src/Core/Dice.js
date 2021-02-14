@@ -2,17 +2,18 @@
  *
  * @author Impaler
  */
+import { Long } from "../other/Integers.js";
 import { Serializable } from "../other/Serializable.js";
 
-export class Dice extends Serializable {
+export class Dice {
     constructor() {
-        super();
+        // super();
         this.Generator = null;
         this.seed(0);
         this.uses = 0;
     }
-    seed(Seed) {
-        this.Generator = d3.randomLcg(Seed);
+    seed(Seed) { // TODO turn into setter
+        this.Generator = d3.randomLcg(Number(Seed));
         this.uses = 0;
     }
     rollInt(Min, Max) {
@@ -32,4 +33,5 @@ export class Dice extends Serializable {
         return this.Generator() * (Max - Min) + Min;
     }
 }
-Dice.serialVersionUID = 1;
+Dice.serialVersionUID = new Long(1);
+Serializable.becomeImplementedBy(Dice);
