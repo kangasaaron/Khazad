@@ -24,7 +24,7 @@ import { Types } from "../other/Types.js";
 import { DataBase } from "./DataBase.js";
 import { DataManager } from "./DataManager.js";
 
-export class DataLibrary extends Serializable(Object) {
+export class DataLibrary extends Serializable() {
     _Entries = [];
     _DataClass;
     _Data;

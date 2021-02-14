@@ -24,10 +24,10 @@ import { Types } from "../other/Types.js";
  */
 
 export class VolumeSelection {
-    OriginLocation = new MapCoordinate();
-    TerminalLocation = new MapCoordinate();
+    _OriginLocation = new MapCoordinate();
+    _TerminalLocation = new MapCoordinate();
     // Used by Rendering
-    Dirty = true;
+    _Dirty = true;
 
     constructor(SelectionOrigin = new MapCoordinate(), SelectionTerminus = new MapCoordinate()) {
         Types.mustBeAll(MapCoordinate, SelectionOrigin, SelectionTerminus);
@@ -44,7 +44,7 @@ export class VolumeSelection {
         let minY = Math.min(SelectionTerminus.getY(), SelectionOrigin.getY());
         let minZ = Math.min(SelectionTerminus.getZ(), SelectionOrigin.getZ());
 
-        this.OriginLocation.set(minX, minY, minZ);
-        this.TerminalLocation.set(maxX, maxY, maxZ);
+        this._OriginLocation.set(minX, minY, minZ);
+        this._TerminalLocation.set(maxX, maxY, maxZ);
     }
 }

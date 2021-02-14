@@ -1,6 +1,6 @@
-import {
-    Deque
-} from "../other.js";
+// import {
+//     Deque
+// } from "../other.js";
 /**
  *
  * @author Impaler
@@ -12,28 +12,37 @@ import {
 // removeLast
 // removeFirst
 
-export class LinkedListDeque{
-    _storage = [];
-    constructor(){
-        this._storage = [];
+let storage = new WeakMap();
+
+export class LinkedListDeque {
+    constructor() {
+        this.clear();
     }
-    insertFront(item){
-        this._storage.unshift(item);
+    insertFront(item) {
+        let a = storage.get(this);
+        a.unshift(item);
+        storage.set(this, a);
     }
-    isEmpty(){
-        return this._storage.length === 0;
+    isEmpty() {
+        return this.size() === 0;
     }
-    clear(){
-        this._storage = [];
+    clear() {
+        storage.set(this, []);
     }
-    size(){
-        return this._storage.length;
+    size() {
+        return storage.get(this).length;
     }
-    removeLast(){
-        return this._storage.pop();
+    removeLast() {
+        let a = storage.get(this);
+        let result = a.pop();
+        storage.set(this, a);
+        return result;
     }
-    removeFirst(){
-        return this._storage.shift();
+    removeFirst() {
+        let a = storage.get(this);
+        let result = a.shift();
+        storage.set(this, a);
+        return result;
     }
 }
 
@@ -114,7 +123,7 @@ export class LinkedListDeque{
 //     toArray(){
 //         return Array.from(this);
 //     }
-    
+
 //     // from queue
 //     element() {
 //         return super[0];

@@ -187,9 +187,9 @@ export class BlockCoordinate extends Serializable() {
     clone() {
         return new BlockCoordinate(this.DetailLevel, this.Data);
     }
-    equals(Arg) {
-        Types.mustHaveAll(Arg, "Data", "DetailLevel");
-        return (Arg.Data == this.Data && Arg.DetailLevel.equals(this.DetailLevel));
+    equals(that) {
+        Types.mustHaveAll(that, "Data", "DetailLevel");
+        return (that.Data == this.Data && that.DetailLevel.valueOf() === this.DetailLevel.valueOf());
     }
     getValueonAxis(AxialComponent) {
         Types.mustBe(Axis, AxialComponent);

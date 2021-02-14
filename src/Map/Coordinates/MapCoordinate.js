@@ -65,38 +65,38 @@ export class MapCoordinate extends Serializable() {
     }
     set(x, y, z) {
         Types.mustBeAll('finiteInteger', x, y, z);
-        this.Chunk.X = parseInt(x / BlockCoordinate.CHUNK_EDGE_SIZE);
+        this.Chunk._X = parseInt(x / BlockCoordinate.CHUNK_EDGE_SIZE);
         if (x < 0) {
-            this.Chunk.X--;
-            x += (BlockCoordinate.CHUNK_EDGE_SIZE * this.Chunk.X);
+            this.Chunk._X--;
+            x += (BlockCoordinate.CHUNK_EDGE_SIZE * this.Chunk.getX());
         }
         this.Block.set(Axis.AXIS_X, x % BlockCoordinate.CHUNK_EDGE_SIZE);
 
-        this.Chunk.Y = parseInt(y / BlockCoordinate.CHUNK_EDGE_SIZE);
+        this.Chunk._Y = parseInt(y / BlockCoordinate.CHUNK_EDGE_SIZE);
         if (y < 0) {
-            this.Chunk.Y--;
-            y += (BlockCoordinate.CHUNK_EDGE_SIZE * this.Chunk.Y);
+            this.Chunk._Y--;
+            y += (BlockCoordinate.CHUNK_EDGE_SIZE * this.Chunk.getY());
         }
         this.Block.set(Axis.AXIS_Y, y % BlockCoordinate.CHUNK_EDGE_SIZE);
 
-        this.Chunk.Z = parseInt(z / BlockCoordinate.CHUNK_EDGE_SIZE);
+        this.Chunk._Z = parseInt(z / BlockCoordinate.CHUNK_EDGE_SIZE);
         if (z < 0) {
-            this.Chunk.Z--;
-            z += (BlockCoordinate.CHUNK_EDGE_SIZE * this.Chunk.Z);
+            this.Chunk._Z--;
+            z += (BlockCoordinate.CHUNK_EDGE_SIZE * this.Chunk.getZ());
         }
         this.Block.set(Axis.AXIS_Z, z % BlockCoordinate.CHUNK_EDGE_SIZE);
     }
 
     getX() { // TODO turn into getter
-        return (this.Chunk.X * BlockCoordinate.CHUNK_EDGE_SIZE) + this.Block.getX();
+        return (this.Chunk.getX() * BlockCoordinate.CHUNK_EDGE_SIZE) + this.Block.getX();
     }
 
     getY() { // TODO turn into getter
-        return (this.Chunk.Y * BlockCoordinate.CHUNK_EDGE_SIZE) + this.Block.getY();
+        return (this.Chunk.getY() * BlockCoordinate.CHUNK_EDGE_SIZE) + this.Block.getY();
     }
 
     getZ() { // TODO turn into getter
-        return (this.Chunk.Z * BlockCoordinate.CHUNK_EDGE_SIZE) + this.Block.getZ();
+        return (this.Chunk.getZ() * BlockCoordinate.CHUNK_EDGE_SIZE) + this.Block.getZ();
     }
 
     translate(DirectionType) {
@@ -132,9 +132,9 @@ export class MapCoordinate extends Serializable() {
             CelltranslateZ += -1;
         }
 
-        this.Chunk.X += CelltranslateX;
-        this.Chunk.Y += CelltranslateY;
-        this.Chunk.Z += CelltranslateZ;
+        this.Chunk._X += CelltranslateX;
+        this.Chunk._Y += CelltranslateY;
+        this.Chunk._Z += CelltranslateZ;
 
         let CubeX = parseInt(RawX % BlockCoordinate.CHUNK_EDGE_SIZE);
         let CubeY = parseInt(RawY % BlockCoordinate.CHUNK_EDGE_SIZE);
@@ -168,8 +168,8 @@ export class MapCoordinate extends Serializable() {
     }
     hashCode() { // TODO turn into getter
         let hash = 3;
-        hash += 17 * this.Chunk.X;
-        hash += 37 * this.Chunk.Y;
+        hash += 17 * this.Chunk.getX();
+        hash += 37 * this.Chunk.getY();
         hash += 5 * this.Block.Data;
         return hash;
     }

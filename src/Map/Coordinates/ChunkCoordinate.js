@@ -27,23 +27,32 @@ import { Serializable } from "../../other/Serializable.js";
  * @author Impaler
  */
 export class ChunkCoordinate extends Serializable() {
-    X = 0;
-    Y = 0;
-    Z = 0;
+    _X = 0;
+    _Y = 0;
+    _Z = 0;
 
     constructor(X = 0, Y = 0, Z = 0) {
         Types.mustBeAll('finiteInteger', X, Y, Z);
         super();
-        this.X = X;
-        this.Y = Y;
-        this.Z = Z;
+        this._X = X;
+        this._Y = Y;
+        this._Z = Z;
+    }
+    getX() {
+        return this._X;
+    }
+    getY() {
+        return this._Y;
+    }
+    getZ() {
+        return this._Z;
     }
     copy(ArgumentCoordinate) {
-        Types.mustHaveAll(ArgumentCoordinate, 'X', 'Y', 'Z');
-        Types.mustBeAll('finiteInteger', ArgumentCoordinate.X, ArgumentCoordinate.Y, ArgumentCoordinate.Z);
-        this.X = ArgumentCoordinate.X;
-        this.Y = ArgumentCoordinate.Y;
-        this.Z = ArgumentCoordinate.Z;
+        Types.mustHaveAll(ArgumentCoordinate, 'getX', 'getY', 'getZ');
+        Types.mustBeAll('finiteInteger', ArgumentCoordinate.getX(), ArgumentCoordinate.getY(), ArgumentCoordinate.getZ());
+        this._X = ArgumentCoordinate.getX();
+        this._Y = ArgumentCoordinate.getY();
+        this._Z = ArgumentCoordinate.getZ();
     }
     clone() {
         let result = new ChunkCoordinate();
@@ -51,32 +60,32 @@ export class ChunkCoordinate extends Serializable() {
         return result;
     }
     equals(that) {
-        if (!Types.hasAll(that, 'X', 'Y', 'Z'))
+        if (!Types.hasAll(that, 'getX', 'getY', 'getZ'))
             return false;
-        if (!Types.are('finiteInteger', that.X, that.Y, that.Z))
+        if (!Types.are('finiteInteger', that.getX(), that.getY(), that.getZ()))
             return false;
-        return this.X == that.X &&
-            this.Y == that.Y &&
-            this.Z == that.Z;
+        return this._X == that.getX() &&
+            this._Y == that.getY() &&
+            this._Z == that.getZ();
     }
     hashCode() { // TODO turn into getter
         let Key = 0;
 
-        Key += this.X;
+        Key += this._X;
         Key <<= 12;
-        Key += this.Y;
+        Key += this._Y;
         Key <<= 12;
-        Key += this.Z;
+        Key += this._Z;
 
         return Key;
     }
     toString() {
-        return `X ${this.X} Y ${this.Y} Z ${this.Z}`;
+        return `X ${this._X} Y ${this._Y} Z ${this._Z}`;
     }
-    get vector() { // TODO turn into getter
-        let x = (this.X * BlockCoordinate.CHUNK_EDGE_SIZE);
-        let y = (this.Y * BlockCoordinate.CHUNK_EDGE_SIZE);
-        let z = (this.Z * BlockCoordinate.CHUNK_EDGE_SIZE);
+    get vector() {
+        let x = (this._X * BlockCoordinate.CHUNK_EDGE_SIZE);
+        let y = (this._Y * BlockCoordinate.CHUNK_EDGE_SIZE);
+        let z = (this._Z * BlockCoordinate.CHUNK_EDGE_SIZE);
 
         if (x < 0)
             x++;

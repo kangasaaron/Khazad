@@ -9,58 +9,58 @@ QUnit.module("Map/Coordinates/SectorCoordinate test", function() {
 
     QUnit.test("constructor test", function(assert) {
         assert.throws(function() {
-            let rc = new SectorCoordinate(0, "a");
+            let sectorCoordinate = new SectorCoordinate(0, "a");
         });
 
-        let rc = new SectorCoordinate(0, 1);
-        assert.ok(rc !== undefined);
-        assert.ok(rc instanceof SectorCoordinate);
-        assert.equal(rc.X, 0);
-        assert.equal(rc.Y, 1);
+        let sectorCoordinate = new SectorCoordinate(0, 1);
+        assert.ok(sectorCoordinate !== undefined);
+        assert.ok(sectorCoordinate instanceof SectorCoordinate);
+        assert.equal(sectorCoordinate.getX(), 0);
+        assert.equal(sectorCoordinate.getY(), 1);
     });
 
     QUnit.test("equals test", function(assert) {
-        let c1 = new SectorCoordinate();
-        let c2 = new SectorCoordinate();
-        assert.ok(c1.equals(c2));
+        let coord1 = new SectorCoordinate();
+        let coord2 = new SectorCoordinate();
+        assert.ok(coord1.equals(coord2));
 
-        assert.ok(c1.equals(c1));
+        assert.ok(coord1.equals(coord1));
 
-        assert.ok(!c1.equals(Math));
+        assert.ok(!coord1.equals(Math));
 
-        assert.ok(!c1.equals(null));
-        assert.ok(!c1.equals(undefined));
+        assert.ok(!coord1.equals(null));
+        assert.ok(!coord1.equals(undefined));
         let c3 = new SectorCoordinate(1, 2);
-        assert.ok(!c1.equals(c3));
+        assert.ok(!coord1.equals(c3));
     });
 
     QUnit.test("copy test", function(assert) {
-        let c1 = new SectorCoordinate();
-        let c2 = new SectorCoordinate(4, 5);
+        let coord1 = new SectorCoordinate();
+        let coord2 = new SectorCoordinate(4, 5);
 
-        assert.equal(c1.X, 0);
-        assert.equal(c1.Y, 0);
+        assert.equal(coord1.getX(), 0);
+        assert.equal(coord1.getY(), 0);
 
-        assert.equal(c2.X, 4);
-        assert.equal(c2.Y, 5);
+        assert.equal(coord2.getX(), 4);
+        assert.equal(coord2.getY(), 5);
 
-        c1.copy(c2);
+        coord1.copy(coord2);
 
-        assert.equal(c1.X, 4);
-        assert.equal(c1.Y, 5);
+        assert.equal(coord1.getX(), 4);
+        assert.equal(coord1.getY(), 5);
     });
 
     QUnit.test("hashCode test", function(assert) {
-        let c1 = new SectorCoordinate(0, 0);
-        assert.equal(c1.hashCode(), 3)
+        let coord1 = new SectorCoordinate(0, 0);
+        assert.equal(coord1.hashCode(), 3)
 
-        let c2 = new SectorCoordinate(1, 0);
-        assert.equal(c2.hashCode(), 20);
+        let coord2 = new SectorCoordinate(1, 0);
+        assert.equal(coord2.hashCode(), 20);
 
-        let c3 = new SectorCoordinate(0, 1);
-        assert.equal(c3.hashCode(), 40);
+        let coord3 = new SectorCoordinate(0, 1);
+        assert.equal(coord3.hashCode(), 40);
 
-        let c4 = new SectorCoordinate(1, 1);
-        assert.equal(c4.hashCode(), 57);
+        let coord4 = new SectorCoordinate(1, 1);
+        assert.equal(coord4.hashCode(), 57);
     });
 });

@@ -12,15 +12,15 @@ QUnit.module("Map/Coordinates/MapCoordinate test", function() {
         assert.ok(m !== null);
         assert.ok(m instanceof MapCoordinate);
         assert.ok(m.Region instanceof RegionCoordinate);
-        assert.equal(m.Region.X, 0);
-        assert.equal(m.Region.Y, 0);
+        assert.equal(m.Region.getX(), 0);
+        assert.equal(m.Region.getY(), 0);
         assert.ok(m.Sector instanceof SectorCoordinate);
-        assert.equal(m.Sector.X, 0);
-        assert.equal(m.Sector.Y, 0);
+        assert.equal(m.Sector.getX(), 0);
+        assert.equal(m.Sector.getY(), 0);
         assert.ok(m.Chunk instanceof ChunkCoordinate);
-        assert.equal(m.Chunk.X, 0);
-        assert.equal(m.Chunk.Y, 0);
-        assert.equal(m.Chunk.Z, 0);
+        assert.equal(m.Chunk.getX(), 0);
+        assert.equal(m.Chunk.getY(), 0);
+        assert.equal(m.Chunk.getZ(), 0);
         assert.ok(m.Block instanceof BlockCoordinate);
         assert.equal(m.Block.Data, 0);
         assert.equal(m.Block.DetailLevel, 0);
@@ -31,15 +31,15 @@ QUnit.module("Map/Coordinates/MapCoordinate test", function() {
         assert.ok(m !== null);
         assert.ok(m instanceof MapCoordinate);
         assert.ok(m.Region instanceof RegionCoordinate);
-        assert.equal(m.Region.X, 0);
-        assert.equal(m.Region.Y, 0);
+        assert.equal(m.Region.getX(), 0);
+        assert.equal(m.Region.getY(), 0);
         assert.ok(m.Sector instanceof SectorCoordinate);
-        assert.equal(m.Sector.X, 0);
-        assert.equal(m.Sector.Y, 0);
+        assert.equal(m.Sector.getX(), 0);
+        assert.equal(m.Sector.getY(), 0);
         assert.ok(m.Chunk instanceof ChunkCoordinate);
-        assert.equal(m.Chunk.X, 10);
-        assert.equal(m.Chunk.Y, 15);
-        assert.equal(m.Chunk.Z, 20);
+        assert.equal(m.Chunk.getX(), 10);
+        assert.equal(m.Chunk.getY(), 15);
+        assert.equal(m.Chunk.getZ(), 20);
         assert.ok(m.Block instanceof BlockCoordinate);
         assert.equal(m.Block.DetailLevel, 5);
         assert.equal(m.Block.Data, 6);
@@ -51,15 +51,15 @@ QUnit.module("Map/Coordinates/MapCoordinate test", function() {
 
     QUnit.test("set...", function(assert) {
         let m = new MapCoordinate();
-        assert.equal(m.Chunk.X, 0);
-        assert.equal(m.Chunk.Y, 0);
-        assert.equal(m.Chunk.Z, 0);
+        assert.equal(m.Chunk.getX(), 0);
+        assert.equal(m.Chunk.getY(), 0);
+        assert.equal(m.Chunk.getZ(), 0);
 
         let c = new ChunkCoordinate(1, 2, 3);
         m.setChunkCoordinate(c);
-        assert.equal(m.Chunk.X, 1);
-        assert.equal(m.Chunk.Y, 2);
-        assert.equal(m.Chunk.Z, 3);
+        assert.equal(m.Chunk.getX(), 1);
+        assert.equal(m.Chunk.getY(), 2);
+        assert.equal(m.Chunk.getZ(), 3);
 
         assert.throws(function() {
             a.setChunkCoordinate();
@@ -88,10 +88,10 @@ QUnit.module("Map/Coordinates/MapCoordinate test", function() {
         assert.equal(m.getZ(), 5);
     });
 
-    QUnit.test("getVector test", function(assert) {
+    QUnit.test("get Vector test", function(assert) {
         let a = new MapCoordinate();
         a.set(3, 4, 5);
-        assert.ok((a.getVector()).equals(new THREE.Vector3(3, 4, 5)));
+        assert.ok(a.getVector().equals(new THREE.Vector3(3, 4, 5)));
     });
     QUnit.test("translate test", function(assert) {
         let a = new MapCoordinate();
@@ -146,45 +146,45 @@ QUnit.module("Map/Coordinates/MapCoordinate test", function() {
         let a = new MapCoordinate(new ChunkCoordinate(1, 2, 3), new BlockCoordinate(0, 78));
         a.Sector = new SectorCoordinate(10, 11);
         a.Region = new RegionCoordinate();
-        a.Region.X = 9;
-        a.Region.Y = 8;
+        a.Region._X = 9;
+        a.Region._Y = 8;
         let b = a.clone();
 
-        assert.equal(b.Chunk.X, 1);
-        assert.equal(b.Chunk.Y, 2);
-        assert.equal(b.Chunk.Z, 3);
+        assert.equal(b.Chunk.getX(), 1);
+        assert.equal(b.Chunk.getY(), 2);
+        assert.equal(b.Chunk.getZ(), 3);
 
         assert.equal(b.Block.DetailLevel, 0);
         assert.equal(b.Block.Data, 78);
 
-        assert.equal(b.Region.X, 9);
-        assert.equal(b.Region.Y, 8);
+        assert.equal(b.Region.getX(), 9);
+        assert.equal(b.Region.getY(), 8);
 
-        assert.equal(b.Sector.X, 10);
-        assert.equal(b.Sector.Y, 11);
+        assert.equal(b.Sector.getX(), 10);
+        assert.equal(b.Sector.getY(), 11);
 
     });
     QUnit.test("copy test", function(assert) {
         let m = new MapCoordinate(new ChunkCoordinate(1, 2, 3), new BlockCoordinate(0, 78));
         m.Sector = new SectorCoordinate(10, 11);
         m.Region = new RegionCoordinate();
-        m.Region.X = 9;
-        m.Region.Y = 8;
+        m.Region._X = 9;
+        m.Region._Y = 8;
         let b = new MapCoordinate();
         b.copy(m);
 
-        assert.equal(b.Chunk.X, 1);
-        assert.equal(b.Chunk.Y, 2);
-        assert.equal(b.Chunk.Z, 3);
+        assert.equal(b.Chunk.getX(), 1);
+        assert.equal(b.Chunk.getY(), 2);
+        assert.equal(b.Chunk.getZ(), 3);
 
         assert.equal(b.Block.DetailLevel, 0);
         assert.equal(b.Block.Data, 78);
 
-        assert.equal(b.Region.X, 9);
-        assert.equal(b.Region.Y, 8);
+        assert.equal(b.Region.getX(), 9);
+        assert.equal(b.Region.getY(), 8);
 
-        assert.equal(b.Sector.X, 10);
-        assert.equal(b.Sector.Y, 11);
+        assert.equal(b.Sector.getX(), 10);
+        assert.equal(b.Sector.getY(), 11);
     });
     QUnit.test("hashCode test", function(assert) {
         let m = new MapCoordinate(new ChunkCoordinate(1, 2, 3), new BlockCoordinate(0, 78));

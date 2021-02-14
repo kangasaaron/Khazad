@@ -14,27 +14,27 @@ QUnit.module("Map/Coordinates/RegionCoordinate test", function() {
             original.copy(Math);
         });
         assert.throws(function() {
-            original.copy({ X: 0 });
+            original.copy({ getX: () => 0 });
         });
         assert.throws(function() {
-            original.copy({ X: 0, Y: "a" });
+            original.copy({ getX: () => 0, getY: () => "a" });
         });
 
         let rc = new RegionCoordinate();
         assert.ok(rc !== undefined);
         assert.ok(rc instanceof RegionCoordinate);
-        assert.equal(rc.X, 0);
-        assert.equal(rc.Y, 0);
+        assert.equal(rc.getX(), 0);
+        assert.equal(rc.getY(), 0);
 
-        rc.copy({ X: 5, Y: 10 });
-        assert.equal(rc.X, 5);
-        assert.equal(rc.Y, 10);
+        rc.copy({ getX: () => 5, getY: () => 10 });
+        assert.equal(rc.getX(), 5);
+        assert.equal(rc.getY(), 10);
 
         let toCopy = new RegionCoordinate();
-        toCopy.X = 1;
-        toCopy.Y = 20;
+        toCopy._X = 1;
+        toCopy._Y = 20;
         rc.copy(toCopy);
-        assert.equal(rc.X, 1);
-        assert.equal(rc.Y, 20);
+        assert.equal(rc.getX(), 1);
+        assert.equal(rc.getY(), 20);
     });
 });

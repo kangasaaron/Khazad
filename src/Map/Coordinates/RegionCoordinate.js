@@ -25,18 +25,24 @@ import { Types } from "../../other/Types.js";
  */
 
 export class RegionCoordinate extends Serializable() {
-    X = 0;
-    Y = 0;
+    _X = 0;
+    _Y = 0;
 
     copy(ArgumentCoordinates) {
-        Types.mustHaveAll(ArgumentCoordinates, 'X', 'Y');
-        Types.mustBeAll('finiteInteger', ArgumentCoordinates.X, ArgumentCoordinates.Y);
-        this.X = ArgumentCoordinates.X;
-        this.Y = ArgumentCoordinates.Y;
+        Types.mustHaveAll(ArgumentCoordinates, 'getX', 'getY');
+        Types.mustBeAll('finiteInteger', ArgumentCoordinates.getX(), ArgumentCoordinates.getY());
+        this._X = ArgumentCoordinates.getX();
+        this._Y = ArgumentCoordinates.getY();
+    }
+    getX() {
+        return this._X;
+    }
+    getY() {
+        return this._Y;
     }
     equals(that) {
         if (this === that)
             return true;
-        return this.X == that.X && this.Y == that.Y;
+        return this.getX() == that.getX() && this.getY() == that.getY();
     }
 }

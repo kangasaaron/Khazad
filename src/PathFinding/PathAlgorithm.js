@@ -39,10 +39,10 @@ export class PathAlgorithm extends Serializable() {
     MainHeuristic = null;
     TieBreakerHeuristic = null;
     FinalPath = null;
-    get graphReads() { // TODO change into real getter
+    get graphReads() {
         return this.GraphReads;
     }
-    get expandedNodes() { // TODO change into real getter
+    get expandedNodes() {
         return this.ExpandedNodes;
     }
     setEndPoints( /*MapCoordinate*/ StartCoords, /*MapCoordinate*/ GoalCoords) {

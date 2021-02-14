@@ -45,8 +45,8 @@ export class Zone extends Serializable() {
         // Object.freeze(this);
     }
     addSelection(Selection) {
-        let Origin = Selection.OriginLocation;
-        let Terminal = Selection.TerminalLocation;
+        let Origin = Selection._OriginLocation;
+        let Terminal = Selection._TerminalLocation;
         let TargetCoords = new MapCoordinate();
 
         for (let x = Origin.getX(), xend = Terminal.getX(); x < xend; x++) {
@@ -67,7 +67,7 @@ export class Zone extends Serializable() {
         }
         this.Dirty = true;
     }
-    get zoneMap() { 
+    get zoneMap() {
         return this.ZoneMap;
     }
     get ID() {

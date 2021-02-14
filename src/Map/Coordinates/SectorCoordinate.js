@@ -25,14 +25,20 @@ import { Types } from "../../other/Types.js";
  * @author Impaler
  */
 export class SectorCoordinate extends Serializable() {
-    X = new Byte(0);
-    Y = new Byte(0);
+    _X = new Byte(0);
+    _Y = new Byte(0);
 
     constructor(x = 0, y = 0) {
         Types.mustBeAll('finiteInteger', x, y);
         super();
-        this.X = new Byte(x);
-        this.Y = new Byte(y);
+        this._X = new Byte(x);
+        this._Y = new Byte(y);
+    }
+    getX() {
+        return this._X;
+    }
+    getY() {
+        return this._Y;
     }
 
     equals(that) {
@@ -40,24 +46,24 @@ export class SectorCoordinate extends Serializable() {
             return false;
         if (that === this)
             return true;
-        if (!Types.hasAll(that, 'X', 'Y'))
+        if (!Types.hasAll(that, 'getX', 'getY'))
             return false;
-        if (!Types.are('finiteNumber', that.X, that.Y))
+        if (!Types.are('finiteNumber', that.getX(), that.getY()))
             return false;
-        return (that.X.equals(this.X) && that.Y.equals(this.Y));
+        return (that.getX().valueOf() === this._X.valueOf()) && (that.getY().valueOf() === this._Y.valueOf())
     }
 
     copy(ArgumentCoordinates) {
-        Types.mustHaveAll(ArgumentCoordinates, "X", "Y");
-        Types.mustBeAll('finiteInteger', ArgumentCoordinates.X, ArgumentCoordinates.Y);
-        this.X = new Byte(ArgumentCoordinates.X);
-        this.Y = new Byte(ArgumentCoordinates.Y);
+        Types.mustHaveAll(ArgumentCoordinates, "getX", "getY");
+        Types.mustBeAll('finiteInteger', ArgumentCoordinates.getX(), ArgumentCoordinates.getY());
+        this._X = new Byte(ArgumentCoordinates.getX());
+        this._Y = new Byte(ArgumentCoordinates.getY());
     }
 
     hashCode() { // TODO turn into getter
         let hash = 3;
-        hash += 17 * this.X;
-        hash += 37 * this.Y;
+        hash += 17 * this._X;
+        hash += 37 * this._Y;
         return hash;
     }
 }
