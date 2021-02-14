@@ -28,9 +28,6 @@ export class RegionCoordinate extends Serializable() {
     X = 0;
     Y = 0;
 
-    constructor() {
-        super();
-    }
     copy(ArgumentCoordinates) {
         Types.mustHaveAll(ArgumentCoordinates, 'X', 'Y');
         Types.mustBeAll('finiteInteger', ArgumentCoordinates.X, ArgumentCoordinates.Y);

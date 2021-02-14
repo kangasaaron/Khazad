@@ -30,11 +30,11 @@ import { MapCoordinate } from "./Coordinates/MapCoordinate.js";
  */
 export class Zone extends Serializable() {
     constructor(Volumes = [], ID = 0) {
-        super();
         Types.mustBe("array", Volumes);
         if (Volumes.length)
             Types.mustBeAll(VolumeSelection, ...Volumes);
         Types.mustBe("finiteInteger", ID);
+        super();
 
         this.ZoneMap = new Map();
         for (let Selection of Volumes) {
@@ -67,10 +67,10 @@ export class Zone extends Serializable() {
         }
         this.Dirty = true;
     }
-    get zoneMap() { // TODO change into real getter
+    get zoneMap() { 
         return this.ZoneMap;
     }
-    get ID() { //TODO change into real getter
+    get ID() {
         return this._ID;
     }
     readObject(ois) {

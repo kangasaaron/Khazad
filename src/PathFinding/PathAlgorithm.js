@@ -39,9 +39,6 @@ export class PathAlgorithm extends Serializable() {
     MainHeuristic = null;
     TieBreakerHeuristic = null;
     FinalPath = null;
-    constructor() {
-        super();
-    }
     get graphReads() { // TODO change into real getter
         return this.GraphReads;
     }

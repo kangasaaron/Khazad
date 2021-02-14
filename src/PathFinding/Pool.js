@@ -27,9 +27,6 @@ export class Pool extends Serializable() {
     _ObjectFactory = null;
     _InUse = false;
     _ObjectCount = 0;
-    constructor() {
-        super();
-    }
     set Factory(NewValue) {
         this._InUse = true;
         //Wipe();

@@ -20,7 +20,7 @@ QUnit.module("GameState/Temporal tests", function() {
         let a = new Temporal();
         assert.ok(a instanceof Temporal);
         assert.equal(a.ID, 0);
-        assert.equal(a.WakeTick, 1);
+        assert.equal(a._WakeTick, 1);
 
         assert.ok("wake" in a && typeof a.wake == "function")
         assert.ok("Retire" in a && typeof a.Retire == "function")
@@ -28,9 +28,9 @@ QUnit.module("GameState/Temporal tests", function() {
 
     QUnit.test("compareTo", function(assert) {
         let a = new Temporal();
-        a.WakeTick = 20;
+        a._WakeTick = 20;
         let b = new Temporal();
-        b.WakeTick = 10;
+        b._WakeTick = 10;
 
         assert.equal(a.compareTo(b), 1);
         assert.equal(b.compareTo(a), -1);
@@ -38,16 +38,16 @@ QUnit.module("GameState/Temporal tests", function() {
         assert.equal(a.compareTo(Math), 1);
     });
 
-    QUnit.test("getID", function(assert) {
+    QUnit.test("get ID", function(assert) {
         let a = new Temporal();
-        a.ID = Symbol("hey");
-        assert.equal(a.ID, a.getID());
+        a._ID = Symbol("hey");
+        assert.equal(a._ID, a.ID);
     });
 
-    QUnit.test("ResetWakeTick", function(assert) {
+    QUnit.test("set WakeTick", function(assert) {
         let a = new Temporal();
-        a.WakeTick = 100;
-        a.ResetWakeTick(250);
-        assert.equal(a.WakeTick, 250);
+        a._WakeTick = 100;
+        a.WakeTick = 250;
+        assert.equal(a._WakeTick, 250);
     });
 });

@@ -26,18 +26,18 @@ QUnit.module("Data/Types/GivenNameGroupData test", function() {
     QUnit.test("getters", function(assert) {
         let a = new GivenNameGroupData();
         let mygroup = Symbol("group");
-        a.group = mygroup;
+        a._group = mygroup;
         let mygender = Symbol("gender");
-        a.gender = mygender;
+        a._gender = mygender;
         let myprefixes = Symbol("prefixes");
-        a.prefixes = myprefixes;
+        a._prefixes = myprefixes;
         let mysuffixes = Symbol("suffixes");
-        a.suffixes = mysuffixes;
+        a._suffixes = mysuffixes;
 
-        assert.equal(a.getGroup(), mygroup);
-        assert.equal(a.getGender(), mygender);
-        assert.equal(a.getPrefixes(), myprefixes);
-        assert.equal(a.getSuffixes(), mysuffixes);
+        assert.equal(a.group, mygroup);
+        assert.equal(a.gender, mygender);
+        assert.equal(a.prefixes, myprefixes);
+        assert.equal(a.suffixes, mysuffixes);
     });
 
     QUnit.test("loadData", function(assert) {
@@ -72,15 +72,15 @@ QUnit.module("Data/Types/GivenNameGroupData test", function() {
         assert.equal(dataLibrary.indexEntry.getCall(0).args[0], "GIVEN_NAMEGROUP_TOLKEINESQUE_GENDER_MALE");
         assert.equal(dataLibrary.indexEntry.getCall(0).args[1], a);
 
-        assert.equal(a.getGroup(), "GIVEN_NAMEGROUP_TOLKEINESQUE")
-        assert.equal(a.getGender(), "GENDER_MALE");
-        let p = a.getPrefixes();
+        assert.equal(a.group, "GIVEN_NAMEGROUP_TOLKEINESQUE")
+        assert.equal(a.gender, "GENDER_MALE");
+        let p = a.prefixes;
         assert.ok(Array.isArray(p));
         assert.equal(p.length, 2);
         assert.equal(p[0], "N");
         assert.equal(p[1], "D");
 
-        let s = a.getSuffixes();
+        let s = a.suffixes;
         assert.ok(Array.isArray(s));
         assert.equal(s.length, 3)
         assert.equal(s[0], "ori");

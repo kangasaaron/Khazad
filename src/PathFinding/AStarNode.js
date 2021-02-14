@@ -41,9 +41,6 @@ export class AStarNode extends Comparable(Serializable()) {
     Parent = null;
     ParentDirection = Direction.DIRECTION_NONE;
 
-    constructor() {
-        super();
-    }
     set(TargetCoordinates, ParentNode, SourceDirection, DistanceFromStart, MinimumCost, TieBreaker) {
         this.Parent = ParentNode;
         this.ParentDirection = SourceDirection;

@@ -11,7 +11,4 @@ export class RouteRequest extends Serializable() {
     Start = new MapCoordinate();
     Goal = new MapCoordinate();
     GoalZone = new Zone();
-    constructor() {
-        super();
-    }
 }

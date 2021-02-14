@@ -15,6 +15,7 @@
  You should have received a copy of the GNU General Public License
  along with Khazad.  If not, see <http://www.gnu.org/licenses/> */
 
+import { Pawn } from "./Pawn.js";
 import { Serializable } from "../other.js";
 
 /**
@@ -28,4 +29,4 @@ export class Citizen extends Serializable() {
 
 }
 
-// TODO - waiting on GivenNameData and Task
+// TODO - waiting Task, Pawn

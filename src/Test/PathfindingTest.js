@@ -21,7 +21,7 @@ import { MovementModality, MovementType } from "../PathFinding/MovementModality.
 import { Navigator } from "../PathFinding/Navigator.js"
 import { PathAlgorithm } from "../PathFinding/PathAlgorithm.js"
 import { PathManager } from "../PathFinding/PathManager.js"
-import { PathTester } from "../PathFinding/PathTester.js"
+import { PathTester, ProfileResultCode } from "../PathFinding/PathTester.js"
 import { PathWalker } from "../PathFinding/PathWalker.js"
 import { Pool } from "../PathFinding/Pool.js"
 import { RouteRequest } from "../PathFinding/RouteRequest.js"
@@ -52,6 +52,7 @@ QUnit.module('Data package', function() {
         assert.equal(PathFinding.PathAlgorithm, PathAlgorithm);
         assert.equal(PathFinding.PathManager, PathManager);
         assert.equal(PathFinding.PathTester, PathTester);
+        assert.equal(PathFinding.ProfileResultCode, ProfileResultCode);
         assert.equal(PathFinding.PathWalker, PathWalker);
         assert.equal(PathFinding.Pool, Pool);
         assert.equal(PathFinding.RouteRequest, RouteRequest);

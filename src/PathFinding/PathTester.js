@@ -15,7 +15,7 @@
  You should have received a copy of the GNU General Public License
  along with Khazad.  If not, see <http://www.gnu.org/licenses/> */
 
-import { defineEnum } from "../other.js";
+import { defineEnum, Serializable } from "../other.js";
 
 /**
  * A data agragating class used to statisticly sample the speed and efficency
@@ -32,6 +32,21 @@ export const ProfileResultCode = defineEnum("ProfileResultCode",
     "PATH_CODE_FAILURE_UNKNOWN"
 );
 
-export class PathTester {}
+export class PathTester extends Serializable(){
+	ParentManager = null; //PathManager
+    PathDice = null; //Dice
 
-//TODO waiting on not much at all...
+    // Used for manual testing
+    ManualStartCoords = null; //MapCoordinate
+    ManualGoalCoords = null;  //MapCoordinate
+	ManualPath = null;//MapPath
+	ManualProfileGroup = null; //GroupProfile
+	CurrentProfileGroup = null; //GroupProfile
+	ProfileGroupList = [];
+    TestCoords = [];
+    StartCoordsList = [];
+    GoalCoordsList = [];
+	TestingIterations = 0;
+	Basic = null; //MovementModality
+}
+

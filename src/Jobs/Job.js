@@ -35,9 +35,6 @@ export class Job extends Serializable() {
     WorkersOnBreak = 0;
     Manager = null;
 
-    constructor() {
-        super();
-    }
     newTask(parent, newType, location) {
         Types.mustBe(Job, parent);
         Types.mustBe(Task.TaskType, newType);

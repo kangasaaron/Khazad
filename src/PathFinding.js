@@ -20,7 +20,7 @@ import { MovementModality, MovementType } from "./PathFinding/MovementModality.j
 import { Navigator } from "./PathFinding/Navigator.js";
 import { PathAlgorithm } from "./PathFinding/PathAlgorithm.js";
 import { PathManager } from "./PathFinding/PathManager.js";
-import { PathTester } from "./PathFinding/PathTester.js";
+import { PathTester,ProfileResultCode } from "./PathFinding/PathTester.js";
 import { PathWalker } from "./PathFinding/PathWalker.js";
 import { Pool } from "./PathFinding/Pool.js";
 import { RouteRequest } from "./PathFinding/RouteRequest.js";
@@ -50,6 +50,7 @@ export const PathFinding = {
     PathAlgorithm,
     PathManager,
     PathTester,
+    ProfileResultCode,
     PathWalker,
     Pool,
     RouteRequest,
@@ -79,6 +80,7 @@ export { Navigator };
 export { PathAlgorithm };
 export { PathManager };
 export { PathTester };
+export { ProfileResultCode };
 export { PathWalker };
 export { Pool };
 export { RouteRequest };

@@ -34,22 +34,6 @@ import { createNewInterface } from "../other.js";
  * @author Impaler
  */
 
-// export const GridInterface = function GridInterFace(Base = Object) {
-//     let GridInterFace = class GridInterface extends AbstractClass(Base) {
-//         getEdgeCost() { this.abstractFunction("GridInterface", "getEdgeCost"); }
-//         getDirectionEdgeSet() { this.abstractFunction("GridInterface", "getDirectionEdgeSet"); }
-//         getModality() { this.abstractFunction("GridInterface", "getModality"); }
-//         getConnectivityZone() { this.abstractFunction("GridInterface", "getConnectivityZone"); }
-//         isPathPossible() { this.abstractFunction("GridInterface", "isPathPossible"); }
-//         dirtyMapCoordinate() { this.abstractFunction("GridInterface", "dirtyMapCoordinate"); }
-//         contains() { this.abstractFunction("GridInterface", "contains"); }
-//         getPassableCoordinates() { this.abstractFunction("GridInterface", "getPassableCoordinates"); }
-//     }
-//     GridInterface.Mixins = GridInterface.Mixins || {};
-//     GridInterface.Mixins.GridInterface = GridInterface;
-//     GridInterface.isInterface = true;
-//     return GridInterface;
-// }
 export const GridInterface = createNewInterface(
     "GridInterface",
     "getEdgeCost",

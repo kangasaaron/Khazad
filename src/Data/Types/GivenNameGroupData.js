@@ -20,47 +20,43 @@ import { DataBase } from "../DataBase.js";
  * @author  Dallas
  */
 export class GivenNameGroupData extends DataBase {
-    constructor() {
-        super();
-
-        this.group = "";
-        this.gender = "";
-        this.prefixes = [];
-        this.suffixes = [];
-    }
+    _group = "";
+    _gender = "";
+    _prefixes = [];
+    _suffixes = [];
     postProcessing() {
         return true;
     }
-    getGroup() { // TODO turn into a real getter
-        return this.group;
+    get group() {
+        return this._group;
     }
-    getGender() { // TODO turn into a real getter
-        return this.gender;
+    get gender() {
+        return this._gender;
     }
-    getPrefixes() { // TODO turn into a real getter
-        return this.prefixes;
+    get prefixes() {
+        return this._prefixes;
     }
-    getSuffixes() { // TODO turn into a real getter
-        return this.suffixes;
+    get suffixes() {
+        return this._suffixes;
     }
     loadData(GivenNameEntry, Library) {
         let Name = GivenNameEntry.getElementsByTagName("Name")[0];
-        this.group = Name.getAttribute("Label");
+        this._group = Name.getAttribute("Label");
 
         let elementPrefixes = GivenNameEntry.getElementsByTagName("GivenNamePrefixes")[0];
-        this.gender = elementPrefixes.getAttribute("gender");
+        this._gender = elementPrefixes.getAttribute("gender");
         let elementPrefixesChildren = elementPrefixes.children;
-        this.prefixes = new Array(elementPrefixesChildren.length);
+        this._prefixes = new Array(elementPrefixesChildren.length);
         for (let i = 0; i < elementPrefixesChildren.length; i++) {
-            this.prefixes[i] = elementPrefixesChildren[i].getAttribute("text");
+            this._prefixes[i] = elementPrefixesChildren[i].getAttribute("text");
         }
         let elementSuffixes = GivenNameEntry.getElementsByTagName("GivenNameSuffixes")[0];
         let elementSuffixesChildren = elementSuffixes.children;
-        this.suffixes = new Array(elementSuffixesChildren.length);
+        this._suffixes = new Array(elementSuffixesChildren.length);
         for (let i = 0; i < elementSuffixesChildren.length; i++) {
-            this.suffixes[i] = elementSuffixesChildren[i].getAttribute("text");
+            this._suffixes[i] = elementSuffixesChildren[i].getAttribute("text");
         }
-        Library.indexEntry(this.getGroup() + "_" + this.getGender(), this);
+        Library.indexEntry(this.group + "_" + this.gender, this);
         return false;
     }
 }

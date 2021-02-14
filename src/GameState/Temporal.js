@@ -28,45 +28,50 @@ import { Serializable, Types, Comparable } from "../other.js";
  */
 
 export class Temporal extends Comparable(Serializable()) {
-    ID = 0;
-    WakeTick = 1;
+    _ID = 0;
+    // The future time for wake to be called
+    _WakeTick = 1;
 
-    constructor() {
-        super();
-        // The future time for wake to be called
-    }
     compareTo(Target) {
-        if (!Types.has(Target, "WakeTick"))
+        if (!"WakeTick" in Target)
+            return 1;
+        if(!Number.isFinite(Number(Target.WakeTick)))
             return 1;
 
         if (this.WakeTick < Target.WakeTick) {
             return -1;
-        } else if (this.WakeTick == Target.WakeTick) {
-            return 0;
-        } else {
+        } else if (this.WakeTick > Target.WakeTick) {
             return 1;
-        }
+        } 
+        return 0;
     }
-    getID() {
-        return this.ID;
+    get WakeTick(){
+        return this._WakeTick;
+    }
+    get ID() {
+        return this._ID;
     }
     Retire() {
         //GAME->getTemporal()->RetireTemporal(this);
     }
-    ResetWakeTick(NewWakeTick) {
+    set WakeTick(NewWakeTick) {
         // notify Temporal Manager?
-        Types.mustBe("number", NewWakeTick);
-        this.WakeTick = NewWakeTick;
+        // Types.mustBe("number", NewWakeTick);
+        let sanitized = Number(NewWakeTick);
+        if(Number.isFinite(sanitized))
+            this._WakeTick = sanitized;
     }
     wake() {
-        this.abstractFunction("Temporal", "wake");
+        throw new ReferenceError(`abstract function Temporal.prototype.wake called`);
     }
 }
 
-Temporal.TICKS_PER_SECOND = 12;
-Temporal.TICKS_PER_MINUTE = 720;
-Temporal.TICKS_PER_HOUR = 43200;
-Temporal.TICKS_PER_DAY = 1036800;
-Temporal.TICKS_PER_WEEK = 7257600;
-Temporal.TICKS_PER_MONTH = 29030400;
-Temporal.TICKS_PER_YEAR = 348364800;
+Object.defineProperties(Temporal,{
+    "TICKS_PER_SECOND":{ value: 12,enumerable:true,writable:false,configurable:false},
+    "TICKS_PER_MINUTE":{ value: 720,enumerable:true,writable:false,configurable:false},
+    "TICKS_PER_HOUR":{ value: 43200,enumerable:true,writable:false,configurable:false},
+    "TICKS_PER_DAY":{ value: 1036800,enumerable:true,writable:false,configurable:false},
+    "TICKS_PER_WEEK":{ value: 7257600,enumerable:true,writable:false,configurable:false},
+    "TICKS_PER_MONTH":{ value: 29030400,enumerable:true,writable:false,configurable:false},
+    "TICKS_PER_YEAR":{ value: 348364800,enumerable:true,writable:false,configurable:false}
+});

@@ -25,9 +25,9 @@ import { DataLibrary } from "./DataLibrary.js";
  */
 
 export class DataBase extends Serializable() {
+    Name = null;
     constructor() {
         super();
-        this.Name = null;
     }
     loadData(Element, Library) {
         Types.mustBe("object", Element);

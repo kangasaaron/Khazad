@@ -147,10 +147,9 @@ export function addPropertiesToClass(klass, name, ...properties) {
         addPropertyToClass(klass, name, property);
 }
 
-
-export function createNewInterface(name, ...members) {
+export function createNewSubInterface(superInterface,name,...members){
     let interfaceMaker = function(Base = Object) {
-        let klass = class extends Base {};
+        let klass = class extends superInterface(Base) {};
 
         Object.defineProperty(klass, 'name', { writable: true, configurable: false, enumerable: false, value: name });
         Object.defineProperty(klass.prototype, 'name', { writable: true, configurable: false, enumerable: false, value: name });
@@ -168,4 +167,9 @@ export function createNewInterface(name, ...members) {
     interfaceMaker.isInterface = true;
 
     return interfaceMaker;
+}
+
+
+export function createNewInterface(name, ...members) {
+    return createNewSubInterface((b) => b,name,...members);
 }

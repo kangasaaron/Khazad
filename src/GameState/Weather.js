@@ -26,51 +26,51 @@ import { Serializable } from "../other.js";
  */
 export class Weather extends Serializable(Temporal) {
 
-    Suncolor = new THREE.Color(0xffffff);
-    Sun = new THREE.DirectionalLight(this.Suncolor.clone().multiplyScalar(0.6));
-    SunVec = new THREE.Vector3();
-    Rotation = new THREE.Quaternion();
+    _Suncolor = new THREE.Color(0xffffff);
+    _Sun = new THREE.DirectionalLight(this._Suncolor.clone().multiplyScalar(0.6));
+    _SunVec = new THREE.Vector3();
+    _Rotation = new THREE.Quaternion();
 
     constructor() {
         super();
-        this.Rotation.setFromAxisAngle(new THREE.Vector3(0, 1, 0), 0.25 * Math.PI / 180);
+        this._Rotation.setFromAxisAngle(new THREE.Vector3(0, 1, 0), 0.25 * Math.PI / 180);
     }
 
     wake(CurrentTick) {
         if (CurrentTick >= this.WakeTick) {
             // Day Rotation
-            this.SunVec = this.Rotation.multiply(new THREE.Quaternion(this.SunVec.x, this.SunVec.y, this.SunVec.z, 1));
-            this.updateSun();
+            this._SunVec = this._Rotation.multiply(new THREE.Quaternion(this._SunVec.x, this._SunVec.y, this._SunVec.z, 1));
+            this._updateSun();
 
             this.WakeTick = CurrentTick + Temporal.TICKS_PER_MINUTE;
         }
         return this.WakeTick;
     }
 
-    updateSun() {
-        this.Sun.target = this.SunVec.clone();
-        let Z = this.SunVec.z;
+    attachSun(TerrainNode) {
+        this._SunVec.set(0, 0, -1);
+        this._SunVec.normalize();
+        this._Sun.target = this._SunVec.clone();
+
+        TerrainNode.addLight(this._Sun);
+    }
+
+
+    _updateSun() {
+        this._Sun.target = this._SunVec.clone();
+        let Z = this._SunVec.z;
         if (Z > 0) {
-            this.Sun.color = this.Suncolor.clone().multiplyScalar(0.6);
+            this._Sun.color = this._Suncolor.clone().multiplyScalar(0.6);
         } else {
-            this.Sun.color = this.Suncolor.clone().multiplyScalar((0.6) * (Z * -1));
+            this._Sun.color = this._Suncolor.clone().multiplyScalar((0.6) * (Z * -1));
         }
     }
-
-    attachSun(TerrainNode) {
-        this.SunVec.set(0, 0, -1);
-        this.SunVec.normalize();
-        this.Sun.target = this.SunVec.clone();
-
-        TerrainNode.addLight(this.Sun);
-    }
-
     // this method is used by serialization
     readObject(ois) {
         // default deserialization
         ois.defaultReadObject();
         // fix transients
-        this.Sun = new THREE.DirectionalLight(this.Suncolor.clone().multiplyScalar(0.6));
-        this.updateSun();
+        this._Sun = new THREE.DirectionalLight(this._Suncolor.clone().multiplyScalar(0.6));
+        this._updateSun();
     }
 }
